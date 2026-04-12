@@ -21,7 +21,6 @@ body {
     height: 30px;
     top: 5px;
     left: 2px;
-    angle: 0 deg;
     opacity: 1;
     border-width: 4px;
 }
@@ -158,9 +157,6 @@ body {
     font-weight: 300;
     font-style: Light;
     font-size: 16px;
-    leading-trim: NONE;
-    line-height: 120%;
-    letter-spacing: 0%;
     color: rgba(137, 188, 217, 1);
     margin: 0px;
 }
@@ -170,9 +166,6 @@ body {
     font-weight: 400;
     font-style: Regular;
     font-size: 88px;
-    leading-trim: NONE;
-    line-height: 120%;
-    letter-spacing: 0%;
     text-align: center;
     color: rgba(248, 245, 236, 1);
     margin: 0px;
@@ -378,8 +371,95 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    height: 73px;
+    gap: 20px;
 }
 
-.lets-talk-button{
-    
+.lets-talk-button {
+    width: 90px;
+    height: 38px;
+    border-radius: 30px;
+    border-width: 1px;
+    padding-top: 13px;
+    padding-right: 30px;
+    padding-bottom: 13px;
+    padding-left: 30px;
+    gap: 10px;
+    border: 1px solid #89BCD9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.lets-talk-button:hover {
+    background-color: #3F454A;
+    transition: 0.3s ease;
+}
+
+.lets-talk-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    color: #89BCD9;
+
+}
+
+.my-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.skills-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    row-gap: 25px;
+    flex-wrap: wrap;
+    max-width: 300px;
+}
+
+.my-skills-default-elipse {
+    width: 375px;
+    height: 391px;
+    background-image: url("./img/Default my skills elipse.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.my-skills-default-elipse:hover {
+    background-image: url("./img/Hover my skills elipse.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.3s ease-in-out;
+}
+
+.skills-currently-learning-positioning{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 79px;
+}
+.skill-icon-currently{
+    height: 60px;
+    width: 60px;
+}
+
+.why-me-details-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
 }
