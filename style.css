@@ -3,9 +3,10 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     margin: 0px;
 }
+
 .menu-bar {
     height: 104px;
     width: 100%;
@@ -106,8 +107,8 @@ body{
 }
 
 .hero-section {
-    height: 705px;
     opacity: 1;
+    height: 705px;
     top: 41px;
     left: 114px;
     display: flex;
@@ -116,7 +117,11 @@ body{
 }
 
 .profile-elipse-hover {
-    background-image: url("/img/Property 1 hover.svg");
+    position: relative;
+    background-image: url("/img/Property 1 Default.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 2;
     width: 579.9999900737229px;
     height: 615.9999894576091px;
     opacity: 1;
@@ -125,13 +130,14 @@ body{
 }
 
 .profile-elipse-hover:hover {
-    background-image: url("/img/Property 1 Default.svg");
+    background-image: url("/img/Property 1 hover.svg");
     transition: 0.3s ease;
     width: 579.9999900737229px;
     height: 615.9999894576091px;
     opacity: 1;
     top: 66.3px;
     left: 62.23px;
+    z-index: 9999;
 }
 
 .profile-picture-div {
@@ -183,7 +189,7 @@ body{
     margin: 0px;
 }
 
-.hero-section-logowhite{
+.hero-section-logowhite {
     display: flex;
     width: 100%;
     align-items: center;
@@ -206,11 +212,12 @@ body{
     justify-content: center;
 }
 
-.arrow-down-img{
+.arrow-down-img {
     cursor: pointer;
     transition: 0.3s ease;
 }
-.arrow-down-div{
+
+.arrow-down-div {
     border-radius: 30px;
     height: 300px;
     display: flex;
@@ -218,13 +225,13 @@ body{
     align-items: flex-end;
 }
 
-.arrow-down-img:hover{
+.arrow-down-img:hover {
     background-color: #3F454A;
     transition: 0.3s ease;
     border-radius: 30px;
 }
 
-.social-media-hero-section{
+.social-media-hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -232,7 +239,7 @@ body{
     height: 122px;
 }
 
-.social-media-hero-icon{
+.social-media-hero-icon {
     cursor: pointer;
 }
 
@@ -273,16 +280,106 @@ body{
 
 .social-icon {
     cursor: pointer;
-    transition: transform 0.3s ease, fill 0.3s ease, stroke 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 50%;
 }
 
 .social-icon:hover {
-    transform: scale(1.1);
+    background-color: #89BCD9;
 }
 
-.social-icon:hover path,
-.social-icon:hover circle,
-.social-icon:hover rect {
-    fill: #89BCD9;
-    stroke: #89BCD9;
+.email:hover circle,
+.email:hover rect,
+.email:hover path {
+    stroke: rgba(38, 46, 52, 1);
+
+}
+
+.github:hover path {
+    fill: rgba(38, 46, 52, 1);
+}
+
+.linkedin:hover path {
+    stroke: rgba(38, 46, 52, 1);
+    stroke-width: 2;
+}
+
+.why-me {
+    height: 307px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.why-me-p {
+    font-family: Anta;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 60px;
+    text-align: center;
+    color: #89BCD9;
+    margin-bottom: 50px;
+}
+
+.why-me-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.i-am {
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    color: #89BCD9;
+}
+
+.why-me-details-standpoint-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.located-in {
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    color: rgba(248, 245, 236, 1);
+}
+
+.why-me-details-standpoint-text-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.why-me-details-standpoint-text-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.why-me-details-text-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    color: #F8F5EC;
+    margin: 0px;
+}
+
+.why-me-details-text-button {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.lets-talk-button{
+    
 }
