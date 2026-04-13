@@ -425,41 +425,356 @@ body {
 }
 
 .my-skills-default-elipse {
-    width: 375px;
-    height: 391px;
-    background-image: url("./img/Default my skills elipse.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
+    position: relative;
+    width: clamp(280px, 10vw, 380px);
+    aspect-ratio: 1 / 1;
+    background: url("./img/Default my skills elipse.svg") center/contain no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 25px;
+    gap: 10px;
+    padding: 2rem;
+    overflow: visible;
+    z-index: 1;
 }
 
-.my-skills-default-elipse:hover {
-    background-image: url("./img/Hover my skills elipse.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    transition: 0.3s ease-in-out;
+.my-skills-default-elipse::after {
+    content: "";
+    position: absolute;
+    inset: -12%;
+    background: url("./img/Hover my skills elipse.svg") center/contain no-repeat;
+    opacity: 0;
+    transition: opacity 0.35s ease-out;
+    z-index: -1;
 }
 
-.skills-currently-learning-positioning{
+.my-skills-default-elipse:hover::after {
+    opacity: 1;
+}
+
+.skills-currently-learning-positioning {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     gap: 79px;
 }
-.skill-icon-currently{
+
+.skill-icon-currently {
     height: 60px;
     width: 60px;
 }
 
-.why-me-details-icons{
+.why-me-details-icons {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 40px;
+}
+
+
+body {
+    --sb-track-color: #262e34;
+    --sb-thumb-color: #89bcd9;
+    --sb-size: 6px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size)
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 7px;
+
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+.my-projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-names {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 50px;
+}
+
+.project-details {
+    background: #89BCD912;
+    height: 548px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-names-tabs {
+    font-family: Josefin Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 30px;
+    color: #89BCD9;
+    cursor: pointer;
+    margin: 0px;
+    transition: 0.3s ease;
+}
+
+.projects-names-tabs:hover {
+    color: #F8F5EC;
+}
+
+.highlight {
+    background: #89BCD912;
+    height: 81px;
+    border-radius: 15px 15px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px 0px 50px;
+}
+
+/* Project Details Section */
+.project-details-placement-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.project-details-description-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-details-description-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.project-details-description-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+.project-details-description-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.description-dot-icon {
+    width: 29px;
+    height: 26px;
+}
+
+.project-details-description-title {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 28px;
+    color: #F8F5EC;
+    margin: 0;
+}
+
+.project-details-description-duration {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    color: #F8F5EC;
+    margin: 0;
+    padding-left: 27px;
+}
+
+.project-details-description-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    color: #F8F5EC;
+    margin: 0;
+    padding-left: 44px;
+    line-height: 1.6;
+}
+
+.project-details-pictures-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    gap: 15px;
+}
+
+.project-details-technologies-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.project-details-pictures-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    color: #F8F5EC;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.projects-pictures-techonolgies-combined {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.projects-pictures-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.projects-live-test-button {
+    width: 132px;
+    height: 48px;
+    border-radius: 30px;
+    background: #89BCD9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.projects-live-test-button:hover {
+    background: #F8F5EC;
+}
+
+.projects-live-test-button-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    color: #262E34;
+    margin: 0px;
+}
+
+.projects-github-button {
+    width: 120px;
+    height: 48px;
+    border-radius: 30px;
+    border-width: 1px;
+    gap: 10px;
+    border: 1px solid #89BCD9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3 ease;
+    cursor: pointer;
+}
+
+.projects-github-button:hover {
+    background: #464E53;
+}
+
+.projects-github-button-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    color: #89BCD9;
+}
+
+.pokeDex-screenshot {
+    width: 320px;
+    border-radius: 30px;
+}
+
+.need-a-teamplayer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.need-a-team-player-headline {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: #89BCD9;
+}
+
+.need-a-teamplayer-elipse-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.need-a-teamplayer-elipse {
+    height: 400px;
+    width: 400px;
+    background: url("./img/Need a team player elipse default.svg");
+    transition: 0.3s ease;
+}
+
+.need-a-teamplayer-elipse:hover {
+    background: url("./img/Need a team player elipse hover.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-me-placement-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-me-description-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    color: #F8F5EC;
 }

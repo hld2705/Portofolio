@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Sancreek&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <script src="./templates/my-project-template.js" defer></script>
     <script src="./script.js"></script>
     <title>Portofolio</title>
 </head>
@@ -86,7 +87,7 @@
 
             <div>
                 <h1 class="hero-section-text-h1">Halid Crnkic</h1>
-                <p class="hero-section-text-p">FULLSTACK DEVELOPER</p>
+                <p class="hero-section-text-p">FRONTEND DEVELOPER</p>
             </div>
             <div class="arrow-down-div">
                 <img class="arrow-down-img" src="./img/Arrow down.svg">
@@ -153,12 +154,54 @@
                 <div class="my-skills-default-elipse">
                     <p class="why-me-details-text-text">I am currently learning</p>
                     <div class="why-me-details-icons">
-                            <img class="skill-icon-currently" src="./img/Skill Angular.svg">
-                            <img class="skill-icon-currently" src="./img/Skill TypeScript.svg">
+                        <img class="skill-icon-currently" src="./img/Skill Angular.svg">
+                        <img class="skill-icon-currently" src="./img/Skill TypeScript.svg">
                     </div>
                     <div>
-                        <p class="why-me-details-text-text">Currently trying to master <br>Angular and TypeScript<br> to add to the versatility <br>of my coding experience</p>
+                        <p class="why-me-details-text-text">Currently trying to master <br>Angular and TypeScript<br> to
+                            add to the versatility <br>of my coding experience</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-projects">
+        <p class="why-me-p">My Projects</p>
+        <div class="project-names">
+            <p class="project-names-tabs" id="join" onclick="templateRoute('join')">1. Join</p>
+            <p class="project-names-tabs" id="el_pollo_loco" onclick="templateRoute('el_pollo_loco')">2. El Pollo Loco
+            </p>
+            <p class="project-names-tabs" id="pokedex" onclick="templateRoute('pokedex')">3. PokeDex</p>
+        </div>
+        <div class="project-details" id="project-details">
+        </div>
+    </div>
+
+    <div class="need-a-teamplayer">
+        <div>
+            <p class="need-a-team-player-headline">Need a teamplayer? Here's what my colleagues say about me</p>
+        </div>
+
+        <div class="need-a-teamplayer-elipse-div">
+            <div class="need-a-teamplayer-elipse"></div>
+            <div class="need-a-teamplayer-elipse"></div>
+            <div class="need-a-teamplayer-elipse"></div>
+        </div>
+    </div>
+
+    <div class="contact-me-placement-div">
+        <div class="contact-me">
+            <p class="why-me-p">Contact me</p>
+            <div class="contact-me-description">
+                <p class="contact-me-description-text">If my portofolio raised any interest in working together and or collaborating together, feel free
+                    to reach out in hopes of bringing your project to the next level together
+                </p>
+                <div>
+                
+                </div>
+                <div>
+
                 </div>
             </div>
         </div>
