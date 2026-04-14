@@ -14,6 +14,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo-dark-mob {
@@ -125,6 +128,7 @@ body {
     height: 615.9999894576091px;
     opacity: 1;
     top: 66.3px;
+    overflow: hidden;
     left: 62.23px;
 }
 
@@ -759,16 +763,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contact-me {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .contact-me-placement-div {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 80px 0;
 }
 
 .contact-me-description-text {
@@ -777,4 +784,254 @@ body::-webkit-scrollbar-thumb {
     font-size: 18px;
     text-align: justify;
     color: #F8F5EC;
+}
+
+.contact-me-email-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-me-email-div img {
+    width: 22px;
+    height: 22px;
+}
+
+.contact-me-p {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    color: #F8F5EC;
+    margin: 7px;
+    white-space: nowrap;
+}
+
+.contact-me-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    gap: 80px;
+    margin-top: 20px;
+}
+
+.contact-me-icons-placement {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact-me-formular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-me-formular-first-two-fields {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-me-formular-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    color: #89BCD9;
+    margin: 0px;
+    margin-left: 17px;
+}
+
+.contact-formular-first-two-inputfields {
+    width: 415px;
+    height: 60px;
+    top: 20px;
+    border-width: 1px;
+    border-radius: 30px;
+    border: 1px solid #89BCD9;
+    background-color: #262E34;
+    margin-bottom: 25px;
+    outline: none;
+    caret-color: #FFFFFF;
+    padding-left: 20px;
+}
+
+.contact-me-formular-last-inputfield {
+    width: 911px;
+    height: 146.6px;
+    border: 1px solid #89BCD9;
+    border-radius: 30px;
+    background-color: #262E34;
+    outline: none;
+    caret-color: #FFFFFF;
+    padding: 20px;
+    box-sizing: border-box;
+    resize: none;
+    line-height: 1.5;
+    color: #FFFFFF;
+    font-family: Josefin Sans, sans-serif;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.contact-formular-first-two-inputfields:focus {
+    background-color: #313F48;
+    border: 1px solid #89BCD9;
+}
+
+.contact-me-formular-last-inputfield:focus {
+    background-color: #313F48;
+    border: 1px solid #89BCD9;
+}
+
+.contact-me-formular-privacy-policy-accept {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: 100px;
+}
+
+.contact-me-last-formular-checkbox-placement-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-me-checkbox-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    color: #F8F5EC;
+}
+
+.contact-link {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    background: #262E34;
+    background-color: none;
+    text-decoration: none;
+    color: #89BCD9;
+    cursor: pointer;
+}
+
+.contact-me-send-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 101px;
+    height: 48px;
+    top: 32px;
+    left: 810px;
+    opacity: 0.5;
+    border-width: 1px;
+    gap: 10px;
+    border-radius: 30px;
+    border: 1px solid #F8F5EC
+}
+
+.contact-me-send-button-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    color: #F8F5EC;
+}
+
+.contact-me-formular-privacy-policy-accept-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer {
+    background-color: #89BCD9;
+    width: 100%;
+    height: 214px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-placement-div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 18px;
+    color: #262E34;
+    text-decoration: none;
+}
+
+.footer-social-media-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.footer-social-media-div .social-icon {
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 50%;
+    color: #464E53;
+}
+
+
+.footer-social-media-div .social-icon:hover {
+    background-color: #F8F5EC;
+}
+
+
+.footer-social-media-div .social-icon.email circle,
+.footer-social-media-div .social-icon.email rect,
+.footer-social-media-div .social-icon.email path {
+    stroke: #464E53;
+}
+
+
+.footer-social-media-div .social-icon.email:hover circle,
+.footer-social-media-div .social-icon.email:hover rect,
+.footer-social-media-div .social-icon.email:hover path {
+    stroke: #262E34;
+}
+
+
+.footer-social-media-div .social-icon.github path {
+    fill: #464E53;
+    stroke: none;
+}
+
+
+.footer-social-media-div .social-icon.github:hover path {
+    fill: #262E34;
+}
+
+
+.footer-social-media-div .social-icon.linkedin path {
+    stroke: #464E53;
+    fill: none;
+}
+
+
+.footer-social-media-div .social-icon.linkedin:hover path {
+    stroke: #262E34;
 }
