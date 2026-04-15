@@ -29,6 +29,10 @@ body {
     border-width: 4px;
 }
 
+.logo-dark-mob-responsive {
+    display: none;
+}
+
 .logodark-text-div {
     display: flex;
     align-items: center;
@@ -161,6 +165,14 @@ body {
     cursor: pointer;
 }
 
+.burger-menu {
+    display: none;
+}
+
+.menu-bar-responsive {
+    display: none;
+}
+
 @media (min-width: 540px) and (max-width: 980px) {
     .menu-buttons {
         display: flex;
@@ -172,5 +184,59 @@ body {
 
     .legal-notice-title {
         padding-left: 49px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 540px) {
+
+    .menu-bar {
+        display: none;
+    }
+
+    .menu-bar-responsive {
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-right: 15px;
+    }
+
+    .logo-dark-mob-responsive {
+        display: block;
+        width: 48px;
+        height: 30px;
+        top: 5px;
+        left: 2px;
+        opacity: 1;
+        border-width: 4px;
+        filter: invert()
+    }
+
+    .hero-section-logowhite-center {
+        position: absolute;
+        left: 14%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .burger-menu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    .legal-notice-p {
+        font-family: Anta;
+        font-weight: 400;
+        font-size: 38px;
+        color: #89BCD9;
+        margin-top: 100px;
+    }
+
+    .legal-notice-title {
+        padding-left: 33px;
+        padding-bottom: 60px;
     }
 }
