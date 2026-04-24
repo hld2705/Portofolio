@@ -732,7 +732,9 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow-x: auto;
 }
+
 
 .need-a-team-player-headline {
     font-family: Josefin Sans;
@@ -754,12 +756,14 @@ body::-webkit-scrollbar-thumb {
     width: 400px;
     background: url("./img/Need a team player elipse default.svg");
     transition: 0.3s ease;
+    overflow: hidden;
 }
 
 .need-a-teamplayer-elipse:hover {
     background: url("./img/Need a team player elipse hover.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    overflow: hidden;
 }
 
 .contact-me {
@@ -1036,3 +1040,4 @@ footer {
 .footer-social-media-div .social-icon.linkedin:hover path {
     stroke: #262E34;
 }
+

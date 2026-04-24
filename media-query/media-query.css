@@ -1,0 +1,208 @@
+.menu-bar-responsive {
+    display: none;
+}
+
+.name-arrow-responsive {
+    display: none;
+}
+
+.lets-talk-button-responsive {
+    display: none;
+}
+
+.responsive-footer{
+    display: none;
+}
+
+.arrow-down-div-responsive{
+    display: none;
+}
+
+.arrow-down-img-responsive{
+    display: none;
+}
+@media (min-width: 320px) and (max-width: 950px) {
+    .hero-section-logo-text-placement-div {
+        display: none;
+    }
+
+    .name-arrow-responsive {
+        display: flex;
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+
+    .lets-talk-button-responsive {
+        height: 38px;
+        border-radius: 30px;
+        border-width: 1px;
+        padding-top: 13px;
+        padding-right: 30px;
+        padding-bottom: 13px;
+        padding-left: 30px;
+        gap: 10px;
+        border: 1px solid #89BCD9;
+        background-color: #89BCD9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: #262E34;
+    }
+
+    .lets-talk-text {
+        color: #262E34;
+    }
+
+    .why-me-p {
+        margin-top: 10px;
+    }
+
+    .project-details-placement-div {
+        display: none;
+    }
+
+    .arrow-down-div-responsive{
+        border-radius: 30px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 10px;
+    }
+
+    .arrow-down-img-responsive{
+        display: block;
+    }
+
+    .my-skills-default-elipse {
+        width: auto;
+    }
+
+    .skills-currently-learning-positioning {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .why-me-details-standpoint-text-div {
+        flex-direction: column;
+        gap: 5px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .why-me {
+        height: 374px;
+    }
+
+    .lets-talk-button {
+        display: none;
+    }
+
+    .menu-bar {
+        display: none;
+    }
+
+    .menu-bar-responsive {
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-right: 15px;
+        padding-bottom: 20px;
+    }
+
+    .hero-section-logowhite-center {
+        position: absolute;
+        left: 14%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .halid-logo {
+        height: 72px;
+        width: 58px;
+    }
+
+    .need-a-team-player {
+        overflow-x: auto;
+    }
+
+    .arrow-down-img {
+        display: none;
+    }
+
+    .contact-me-description {
+        flex-direction: column-reverse;
+        gap: 25px;
+    }
+
+    .contact-me-description-text {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .contact-me-icons-placement {
+        padding-left: 40px;
+    }
+
+    .contact-me-formular-first-two-fields {
+        flex-direction: column;
+        gap: 0px;
+        width: 100%;
+    }
+
+    .contact-me-last-formular-checkbox-placement-div {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .contact-formular-first-two-inputfields,
+    .contact-me-formular-last-inputfield {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    input,
+    textarea {
+        margin: 0;
+        padding: 10px;
+    }
+
+    .contact-me-formular {
+        width: 100%;
+        max-width: 911px;
+    }
+
+    .input-field-responsive{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .responsive-footer {
+        display: flex;
+        background-color: #89BCD9;
+        width: 100%;
+        height: 214px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: auto;
+    }
+
+    .footer-links-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}
