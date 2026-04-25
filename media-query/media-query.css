@@ -22,6 +22,45 @@
     display: none;
 }
 @media (min-width: 320px) and (max-width: 950px) {
+
+     .hero-section {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        top: auto;
+        left: auto;
+    }
+    
+    .profile-elipse-hover {
+        width: 80% !important;
+        max-width: 350px;
+        height: auto !important;
+        aspect-ratio: 580 / 616;
+        top: auto !important;
+        left: auto !important;
+        margin: 0 auto;
+    }
+    
+    .profile-picture-div {
+        width: 100%;
+        height: auto;
+    }
+    
+    .profile-picture-img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    
+    .profile-elipse-hover:hover {
+        background-image: url("/img/Property 1 Default.svg") !important;
+        width: 80% !important;
+        max-width: 350px;
+        height: auto !important;
+        top: auto !important;
+        left: auto !important;
+    }
+
     .hero-section-logo-text-placement-div {
         display: none;
     }
@@ -57,10 +96,6 @@
 
     .why-me-p {
         margin-top: 10px;
-    }
-
-    .project-details-placement-div {
-        display: none;
     }
 
     .arrow-down-div-responsive{
@@ -204,5 +239,164 @@
         align-items: center;
         justify-content: center;
         gap: 20px;
+    }
+
+    .project-details {
+        height: auto;
+        min-height: 548px;
+        padding: 20px;
+        width: auto;
+    }
+
+    .project-details-placement-div {
+        flex-direction: column;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .project-details-description-section {
+        gap: 25px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 30px;
+        width: auto;
+    }
+
+    .project-details-description-header {
+        flex-wrap: wrap;
+    }
+
+    .project-details-description-title {
+        font-size: 22px;
+    }
+
+    .project-details-description-duration {
+        padding-left: 44px; /* Align with text */
+        font-size: 16px;
+    }
+
+    .project-details-description-text {
+        padding-left: 44px;
+        font-size: 16px;
+    }
+
+    .description-dot-icon {
+        width: 20px;
+        height: 18px;
+    }
+
+    /* Make pictures section responsive */
+    .project-details-pictures-div {
+        padding: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project-details-pictures-div img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .pokeDex-screenshot {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .project-details-technologies-div {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .project-details-technologies-div img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .projects-pictures-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .projects-live-test-button,
+    .projects-github-button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 950px) {
+    .project-details {
+        height: auto;
+        padding: 20px;
+    }
+
+    .project-details-placement-div {
+        flex-direction: column;
+        padding: 0;
+        gap: 30px;
+    }
+
+    /* Reorder: Description first, then image */
+    .project-details-description-div {
+        order: 1;
+    }
+
+    .project-details-pictures-div {
+        order: 2;
+        padding: 20px 0;
+    }
+
+    /* Compact text styling */
+    .project-details-description-title {
+        font-size: 20px;
+    }
+
+    .project-details-description-duration,
+    .project-details-description-text {
+        font-size: 14px;
+        padding-left: 35px;
+    }
+
+    .description-dot-icon {
+        width: 16px;
+        height: 14px;
+    }
+
+    .project-details-description-header {
+        gap: 10px;
+    }
+
+    /* Fix button layout */
+    .projects-pictures-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .projects-live-test-button,
+    .projects-github-button {
+        width: 120px;
+        height: 44px;
+    }
+
+    .projects-live-test-button-text,
+    .projects-github-button-text {
+        font-size: 16px;
+    }
+
+    /* Technologies icons */
+    .project-details-technologies-div {
+        gap: 20px;
+    }
+
+    .project-details-technologies-div img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .project-details-pictures-text {
+        font-size: 16px;
     }
 }
