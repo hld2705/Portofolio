@@ -61,6 +61,7 @@ body {
     font-style: Medium;
     font-size: 26px;
     text-align: center;
+    padding: 0 25px;
     color: rgba(38, 46, 52, 1);
     cursor: pointer;
 }
@@ -1147,6 +1148,8 @@ footer {
     background-image: url("/img/Menu-bar-clicked-elipse.svg");
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
+    white-space: nowrap;
     height: 60px;
     display: flex;
     align-items: center;

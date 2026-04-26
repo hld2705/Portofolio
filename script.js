@@ -67,3 +67,27 @@ async function arrowScrollHeader(){
     arrowUp.classList.remove("arrow-down-img-clicked");
 }
 
+/**
+ * Function for making the menu-bar buttons scrollable
+ */
+function menuScroll(id){
+    const elements = {
+        whyMe: ["anchor2-why-me", 750],
+        skills: ["anchor3-skills", 1050],
+        projects: ["anchor4-projects", 1600],
+        contacts: ["anchor5-contacts", 3000],
+        letstalk: ["anchor5-contacts", 3000]
+    };
+    
+    removeHighlight();
+    document.getElementById(elements[id][0]).classList.add("menu-bar-highlight");
+    setTimeout(() => window.scrollTo(0, elements[id][1]), 200);
+}
+
+/**
+ * Removes the highlights from the menu bar
+ */
+function removeHighlight(){
+    const ids = ["anchor2-why-me", "anchor3-skills", "anchor4-projects", "anchor5-contacts"];
+    ids.forEach(id => document.getElementById(id).classList.remove("menu-bar-highlight"));
+}
