@@ -10,27 +10,35 @@
     display: none;
 }
 
-.responsive-footer{
+.responsive-footer {
     display: none;
 }
 
-.arrow-down-div-responsive{
+.arrow-down-div-responsive {
     display: none;
 }
 
-.arrow-down-img-responsive{
+.arrow-down-img-responsive {
     display: none;
 }
+
 @media (min-width: 320px) and (max-width: 950px) {
 
-     .hero-section {
+    .game-screenshot-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    
+    .hero-section {
         flex-direction: column;
         height: auto;
-        padding: 20px;
         top: auto;
         left: auto;
     }
-    
+
     .profile-elipse-hover {
         width: 80% !important;
         max-width: 350px;
@@ -40,18 +48,18 @@
         left: auto !important;
         margin: 0 auto;
     }
-    
+
     .profile-picture-div {
         width: 100%;
         height: auto;
     }
-    
+
     .profile-picture-img {
         width: 100%;
         height: auto;
         object-fit: contain;
     }
-    
+
     .profile-elipse-hover:hover {
         background-image: url("/img/Property 1 Default.svg") !important;
         width: 80% !important;
@@ -98,7 +106,7 @@
         margin-top: 10px;
     }
 
-    .arrow-down-div-responsive{
+    .arrow-down-div-responsive {
         border-radius: 30px;
         height: 100px;
         display: flex;
@@ -107,7 +115,7 @@
         margin-top: 10px;
     }
 
-    .arrow-down-img-responsive{
+    .arrow-down-img-responsive {
         display: block;
     }
 
@@ -174,15 +182,16 @@
     .contact-me-description {
         flex-direction: column-reverse;
         gap: 25px;
+        max-width: 100%;
     }
 
     .contact-me-description-text {
         padding-right: 40px;
-        padding-left: 40px;
+        padding-left: 25px;
     }
 
     .contact-me-icons-placement {
-        padding-left: 40px;
+        padding-left: 25px;
     }
 
     .contact-me-formular-first-two-fields {
@@ -210,10 +219,11 @@
 
     .contact-me-formular {
         width: 100%;
-        max-width: 911px;
+        max-width: 95%;
+        padding-left: 10px;;
     }
 
-    .input-field-responsive{
+    .input-field-responsive {
         width: 100%;
         max-width: 500px;
     }
@@ -272,7 +282,8 @@
     }
 
     .project-details-description-duration {
-        padding-left: 44px; /* Align with text */
+        padding-left: 44px;
+        /* Align with text */
         font-size: 16px;
     }
 
@@ -329,6 +340,11 @@
     .project-details {
         height: auto;
         padding: 20px;
+        top: 38px;
+        opacity: 1;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
     }
 
     .project-details-placement-div {
@@ -398,5 +414,119 @@
 
     .project-details-pictures-text {
         font-size: 16px;
+    }
+
+    .project-names-tabs {
+        font-family: Josefin Sans;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 20px;
+        color: #89BCD9;
+        cursor: pointer;
+        margin: 0px;
+        transition: 0.3s ease;
+        word-break: keep-all;
+        white-space: normal;
+    }
+
+    .game-screenshot {
+        height: 190px;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1400px) {
+    .project-details-description-title {
+        font-size: 22px;
+    }
+
+    .project-details-description-text {
+        font-family: Josefin Sans;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 15px;
+        color: #F8F5EC;
+        margin: 0;
+        padding-left: 44px;
+        line-height: 1.2;
+    }
+
+    .project-details-description-section {
+        gap: 0px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    .why-me-details-text-text {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 1.2;
+    }
+
+    .contact-me-formular-privacy-policy-accept{
+     max-width: 95%;
+        padding-left: 10px;
+    }
+
+    .contact-me-checkbox-text{
+        word-break: keep-all;
+        white-space: normal;
+    }
+
+    .game-screenshot-el-pollo-loco{
+        height: 160px;
+    }
+
+    .project-details-description-section{
+        padding-left: 0px;
+    }
+
+    .project-details{
+        padding: 19px;
+    }
+
+    .why-me-p {
+        margin-top: 83px;
+        font-size: 44px;
+    }
+
+    .contact-me-email-div{
+        gap: 0px;
+    }
+
+    .contact-me-p{
+        font-size:17px;
+    }
+
+    .project-names {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 0px;
+    }
+
+    .highlight {
+        background: #89BCD912;
+        height: 81px;
+        border-radius: 15px 15px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 15px 0px 15px;
+    }
+
+    .project-names-tabs {
+        font-family: Josefin Sans;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 15px;
+        color: #89BCD9;
+        cursor: pointer;
+        margin: 0px;
+        transition: 0.3s ease;
+        word-break: keep-all;
+        white-space: normal;
     }
 }

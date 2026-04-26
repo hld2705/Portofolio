@@ -199,18 +199,20 @@ function pokeDexTemplate() {
  * Responsive template for mobile devices
  */
 function joinTemplateResponsive() {
-    return `<div class="project-details-placement-div>
+    return `<div class="project-details-placement-div">
                 <div class="projects-details-descreption-div">
                     <div class="project-details-description-section">
                         <div class="project-details-title-responsive">
-                            <p class="blue-title-responsive">Join</p>
-                            <p class="white-description-responsive">
-                            Technologies: HTML,CSS,JavaScript,Firebase<br>
-                            Duration: 2 Months
-                            </p>
-                        </div>
-                        <div>
-                            <img src="./img/Screenshot join.svg">
+                            <div>
+                                <p class="blue-title-responsive">Join</p>
+                                <p class="white-description-responsive">
+                                Technologies: HTML,CSS,JavaScript,Firebase<br>
+                                Duration: 2 Months
+                                </p>
+                            </div>
+                        </div> <!-- Added missing closing div -->
+                        <div class="game-screenshot-div">
+                            <img class="game-screenshot" src="./img/Screenshot join.svg">
                         </div>
                         <div class="project-details-description-responsive">
                             <div class="project-details-description-responsive-elipse">
@@ -218,39 +220,39 @@ function joinTemplateResponsive() {
                                     <img src="./img/Ellipse 8.svg" class="description-dot-icon">
                                     <p class="blue-title-responsive">About the project</p>
                                 </div>
-                            <p class="white-description-responsive">Task manager inspired by the Kanban System. Create and organize tasks using 
+                                <p class="white-description-responsive">Task manager inspired by the Kanban System. Create and organize tasks using 
                                 drag and drop functions, assign users and categories.
-                            </p>
+                                </p>
                             </div>
                         </div>
                         <div class="project-details-description-responsive-elipse">
-                                <div class="elipse-notes-description-responsive">
-                                    <img src="./img/Ellipse 8.svg" class="description-dot-icon">
-                                    <p class="blue-title-responsive">How I have organised my work process</p>
-                                </div>
+                            <div class="elipse-notes-description-responsive">
+                                <img src="./img/Ellipse 8.svg" class="description-dot-icon">
+                                <p class="blue-title-responsive">How I have organised my work process</p>
+                            </div>
                             <p class="white-description-responsive">I've organized my work in such way that me and my colleagues 
                             focused on all of the important parts firstly, connecting all of the small pieces with firebase, and keeping our 
                             database structured, every single detail was very much precisely construced, so much so that we actually did the responsive
                             part for a whole month for the best user experience.
                             </p>
+                        </div>
+                        <div class="project-details-description-responsive-elipse">
+                            <div class="elipse-notes-description-responsive">
+                                <img src="./img/Ellipse 8.svg" class="description-dot-icon">
+                                <p class="blue-title-responsive">My group work experience</p>
                             </div>
-                            <div class="project-details-description-responsive-elipse">
-                                <div class="elipse-notes-description-responsive">
-                                    <img src="./img/Ellipse 8.svg" class="description-dot-icon">
-                                    <p class="blue-title-responsive">My group work experience</p>
-                                </div>
                             <p class="white-description-responsive">Our team consisted of three people each with its own assigment.
                             My role was focusing on the "backend" part, keep the comunication and all of the individual loops running smoothly as possible.
                             Was very pleased with the competence of my teammates, as it provided for both a painfree and fun time working on this project.
                             </p>
-                            </div>
-                           <div class="projects-pictures-buttons">
+                        </div>
+                        <div class="projects-pictures-buttons">
                             <div class="projects-live-test-button"><p class="projects-live-test-button-text">Live Test</p></div>
                             <div class="projects-github-button"><p class="projects-github-button-text">GitHub</p></div>
-                            </div> 
+                        </div> 
                     </div>
                 </div>
-            </div>`
+            </div>`;
 }
 
 
@@ -258,7 +260,7 @@ function joinTemplateResponsive() {
  * Responsive template for mobile devices
  */
 function elPolloLocoTemplateResponsive() {
-    return `<div class="project-details-placement-div>
+    return `<div class="project-details-placement-div">
                 <div class="projects-details-descreption-div">
                     <div class="project-details-description-section">
                         <div class="project-details-title-responsive">
@@ -268,8 +270,8 @@ function elPolloLocoTemplateResponsive() {
                             Duration: 3 Weeks
                             </p>
                         </div>
-                        <div>
-                            <img src="./img/Screenshot El_pollo_loco.svg">
+                        <div class="game-screenshot-div">
+                            <img class="game-screenshot-el-pollo-loco" src="./img/Screenshot El_pollo_loco.svg">
                         </div>
                         <div class="project-details-description-responsive">
                             <div class="project-details-description-responsive-elipse">
@@ -317,7 +319,7 @@ function elPolloLocoTemplateResponsive() {
  * Responsive template for mobile devices
  */
 function pokeDexTemplateResponsive() {
-    return `<div class="project-details-placement-div>
+    return `<div class="project-details-placement-div">
                 <div class="projects-details-descreption-div">
                     <div class="project-details-description-section">
                         <div class="project-details-title-responsive">
@@ -327,8 +329,8 @@ function pokeDexTemplateResponsive() {
                             Duration: 3 Weeks
                             </p>
                         </div>
-                        <div>
-                            <img src="./img/Screenshot join.svg">
+                        <div class="game-screenshot-div">
+                            <img class="pokeDex-screenshot" src="./img/Screenshot PokeDex.svg">
                         </div>
                         <div class="project-details-description-responsive">
                             <div class="project-details-description-responsive-elipse">

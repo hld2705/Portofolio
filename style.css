@@ -544,6 +544,8 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
     margin: 0px;
     transition: 0.3s ease;
+    word-break: keep-all;
+    white-space: normal;
 }
 
 .projects-names-tabs:hover {
@@ -821,7 +823,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%;
+    max-width: 71%;
     gap: 80px;
     margin-top: 20px;
 }
@@ -892,11 +894,13 @@ body::-webkit-scrollbar-thumb {
 .contact-formular-first-two-inputfields:focus {
     background-color: #313F48;
     border: 1px solid #89BCD9;
+    transition: 0.3s ease-in;
 }
 
 .contact-me-formular-last-inputfield:focus {
     background-color: #313F48;
     border: 1px solid #89BCD9;
+    transition: 0.3s ease-in;
 }
 
 .contact-me-formular-privacy-policy-accept {
@@ -1093,4 +1097,33 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 30px;
+}
+
+/* Add this to your CSS */
+.located-in {
+    font-family: Josefin Sans;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 30px;
+    color: rgba(248, 245, 236, 1);
+    display: inline-block;
+}
+
+/* Blinking cursor effect */
+.located-in::after {
+    content: "|";
+    animation: blink 1s step-end infinite;
+    margin-left: 1px;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+
+/* Hide horizontal scrollbars on all elements */
+* {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
