@@ -102,7 +102,7 @@
                 <p class="hero-section-text-p">FRONTEND DEVELOPER</p>
             </div>
             <div class="arrow-down-div">
-                <img class="arrow-down-img" src="./img/Arrow down.svg" id="arrowdown">
+                <img class="arrow-down-img" src="./img/Arrow down.svg" onclick="arrowScrollFooter()">
             </div>
         </div>
     </div>
@@ -112,7 +112,7 @@
         <p class="hero-section-text-p">FRONTEND DEVELOPER</p>
     </div>
     <div class="arrow-down-div-responsive">
-        <img class="arrow-down-img-responsive" src="./img/Arrow down.svg">
+        <img class="arrow-down-img-responsive" src="./img/Arrow down.svg" id="arrowdown" onclick="arrowScrollFooter()">
     </div>
 
     <div class="menu-bar">
@@ -122,10 +122,10 @@
             <p class="under-logodark-text-text">developer</p>
         </div>
         <div class="menu-buttons">
-            <p id="anchor2" class="menu-text">Why me</p>
-            <p id="anchor3" class="menu-text">Skills</p>
-            <p id="anchor4" class="menu-text">Projects</p>
-            <p id="anchor5" class="menu-text">Contact</p>
+            <p id="anchor2-why-me" class="menu-text">Why me</p>
+            <p id="anchor3-skills" class="menu-text">Skills</p>
+            <p id="anchor4-projects" class="menu-text">Projects</p>
+            <p id="anchor5-contacts" class="menu-text">Contact</p>
         </div>
         <div class="menu-buttons-language">
             <p class="menu-buttons-language-text" id="de" onclick="translateDeutsch()">DE</p>
@@ -133,10 +133,10 @@
         </div>
     </div>
 
-    <div class="why-me" id="why-me">
+    <div class="why-me">
         <p class="why-me-p">Why me</p>
         <div class="why-me-details">
-            <div class="why-me-details-standpoint-text-div">
+            <div class="why-me-details-standpoint-text-div" id="why-me">
                 <div class="why-me-details-standpoint-text-icons">
                     <img class="standpoint-icon" src="./img/standpoint icon.svg">
                     <p class="i-am">I am </p>
@@ -159,7 +159,7 @@
     </div>
 
     <div class="my-skills">
-        <p class="why-me-p">My Skills</p>
+        <p class="why-me-p" id="my-skills">My Skills</p>
         <div class="skills-currently-learning-positioning">
             <div class="skills-icons">
                 <img class="skill-icon" src="./img/Skill HTML.svg">
@@ -191,7 +191,7 @@
     </div>
 
     <div class="my-projects">
-        <p class="why-me-p">My Projects</p>
+        <p class="why-me-p" id="my-projects">My Projects</p>
         <div class="project-names">
             <p class="project-names-tabs" id="join" onclick="templateRoute('join')">1. Join</p>
             <p class="project-names-tabs" id="el_pollo_loco" onclick="templateRoute('el_pollo_loco')">2. El Pollo Loco
@@ -217,7 +217,7 @@
     <div class="contact-me-placement-div">
         <div>
             <div class="contact-me">
-                <p class="why-me-p">Contact me</p>
+                <p class="why-me-p" id="contact-me">Contact me</p>
                 <div class="contact-me-description">
                     <div>
                         <p class="contact-me-description-text">If my portofolio raised any interest in working together
@@ -240,7 +240,7 @@
             </div>
         </div>
         <div>
-            <img class="arrow-down-img" src="./img/Arrow up.svg" id="arrowup">
+            <img class="arrow-down-img" src="./img/Arrow up.svg" onclick="arrowScrollHeader()">
         </div>
 
 
@@ -270,8 +270,12 @@
                     <p class="contact-me-send-button-text">Send</p>
                 </div>
             </div>
-        </div>
 
+
+        </div>
+        <div class="arrow-down-div-responsive" >
+            <img class="arrow-up-img-responsive" src="./img/Arrow up.svg" id="arrowup" onclick="arrowScrollHeader()">
+        </div>
     </div>
     <footer>
         <div class="footer-placement-div">

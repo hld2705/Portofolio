@@ -22,6 +22,9 @@
     display: none;
 }
 
+.arrow-up-img-responsive {
+    display: none;
+}
 @media (min-width: 320px) and (max-width: 950px) {
 
     .game-screenshot-div{
@@ -117,6 +120,12 @@
 
     .arrow-down-img-responsive {
         display: block;
+        cursor: pointer;
+    }
+
+    .arrow-up-img-responsive{
+        display: block;
+        cursor: pointer;
     }
 
     .my-skills-default-elipse {
@@ -220,7 +229,8 @@
     .contact-me-formular {
         width: 100%;
         max-width: 95%;
-        padding-left: 10px;;
+        padding-left: 10px;
+        padding-bottom: 50px;
     }
 
     .input-field-responsive {
@@ -333,6 +343,9 @@
     .projects-github-button {
         width: 100%;
         max-width: 200px;
+    }
+    .contact-me-formular-privacy-policy-accept{
+        padding-bottom: 50px;
     }
 }
 

@@ -233,6 +233,12 @@ body {
     border-radius: 30px;
 }
 
+.arrow-down-img-clicked {
+    background-color: #3F454A;
+    transition: 0.3s ease;
+    border-radius: 30px;
+}
+
 .social-media-hero-section {
     display: flex;
     flex-direction: column;
@@ -1070,21 +1076,21 @@ footer {
     line-height: 1.8;
 }
 
-.project-details-title-responsive{
+.project-details-title-responsive {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
 }
 
-.project-details-description-responsive{
+.project-details-description-responsive {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: left;
 }
 
-.project-details-description-responsive-elipse{
+.project-details-description-responsive-elipse {
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -1092,7 +1098,7 @@ footer {
     flex-direction: column;
 }
 
-.elipse-notes-description-responsive{
+.elipse-notes-description-responsive {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1117,13 +1123,33 @@ footer {
 }
 
 @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
 
 
 /* Hide horizontal scrollbars on all elements */
 * {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.menu-bar-highlight {
+    background-image: url("/img/Menu-bar-clicked-elipse.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F8F5EC;
 }
