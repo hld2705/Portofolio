@@ -119,6 +119,51 @@ body {
     justify-content: space-evenly;
 }
 
+.hero-section-responsive {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu-eclipse-responsive {
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+}
+
+.menu-text-responsive {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 0.1;
+}
+
+.menu-buttons-language-responsive {
+    bottom: 8px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+}
+
+.menu-buttons-responsive {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 17px;
+}
+
+.d_none {
+    display: none;
+}
+
 .profile-elipse-hover {
     position: relative;
     background-image: url("/img/Property 1 Default.svg");

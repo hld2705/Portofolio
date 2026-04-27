@@ -76,7 +76,7 @@ function menuScroll(id){
         skills: ["anchor3-skills", 1050],
         projects: ["anchor4-projects", 1600],
         contacts: ["anchor5-contacts", 3000],
-        letstalk: ["anchor5-contacts", 3000]
+        letstalk: ["anchor5-contacts", 4500]
     };
     
     removeHighlight();
@@ -90,4 +90,21 @@ function menuScroll(id){
 function removeHighlight(){
     const ids = ["anchor2-why-me", "anchor3-skills", "anchor4-projects", "anchor5-contacts"];
     ids.forEach(id => document.getElementById(id).classList.remove("menu-bar-highlight"));
+}
+
+
+/**
+ * Responsive menu - toggles between showing responsive menu and profile picture
+ */
+function responsiveMenu() {
+    let elipseResponsive = document.getElementById("hero-section-responsive");
+    let profilePicture = document.getElementById("menu-profile-picture");
+    
+    if (elipseResponsive.style.display === "flex") {
+        profilePicture.style.display = "flex";
+        elipseResponsive.style.display = "none";
+    } else {
+        profilePicture.style.display = "none";
+        elipseResponsive.style.display = "flex";
+    }
 }

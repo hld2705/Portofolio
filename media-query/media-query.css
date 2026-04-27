@@ -25,16 +25,17 @@
 .arrow-up-img-responsive {
     display: none;
 }
+
 @media (min-width: 320px) and (max-width: 950px) {
 
-    .game-screenshot-div{
+    .game-screenshot-div {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
     }
 
-    
+
     .hero-section {
         flex-direction: column;
         height: auto;
@@ -123,7 +124,7 @@
         cursor: pointer;
     }
 
-    .arrow-up-img-responsive{
+    .arrow-up-img-responsive {
         display: block;
         cursor: pointer;
     }
@@ -344,7 +345,8 @@
         width: 100%;
         max-width: 200px;
     }
-    .contact-me-formular-privacy-policy-accept{
+
+    .contact-me-formular-privacy-policy-accept {
         padding-bottom: 50px;
     }
 }
@@ -467,9 +469,26 @@
         gap: 0px;
     }
 
+    .hero-section-responsive {
+        display: none;
+    }
+
+    .hero-section-text-p {
+        font-size: 24px;
+    }
+
+    .hero-section-text-h1 {
+        font-size: 62px;
+    }
+
 }
 
 @media (min-width: 320px) and (max-width: 500px) {
+
+    .menu-eclipse-responsive {
+        width: 80%;
+    }
+
     .why-me-details-text-text {
         font-size: 14px;
         padding-left: 10px;
@@ -477,25 +496,25 @@
         line-height: 1.2;
     }
 
-    .contact-me-formular-privacy-policy-accept{
-     max-width: 95%;
+    .contact-me-formular-privacy-policy-accept {
+        max-width: 95%;
         padding-left: 10px;
     }
 
-    .contact-me-checkbox-text{
+    .contact-me-checkbox-text {
         word-break: keep-all;
         white-space: normal;
     }
 
-    .game-screenshot-el-pollo-loco{
+    .game-screenshot-el-pollo-loco {
         height: 160px;
     }
 
-    .project-details-description-section{
+    .project-details-description-section {
         padding-left: 0px;
     }
 
-    .project-details{
+    .project-details {
         padding: 19px;
     }
 
@@ -504,12 +523,12 @@
         font-size: 44px;
     }
 
-    .contact-me-email-div{
+    .contact-me-email-div {
         gap: 0px;
     }
 
-    .contact-me-p{
-        font-size:17px;
+    .contact-me-p {
+        font-size: 17px;
     }
 
     .project-names {

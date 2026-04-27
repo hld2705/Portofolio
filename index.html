@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Sancreek&display=swap"
         rel="stylesheet">
+        <link rel="icon" type="image/png" href="./img/favicon/favicon.ico">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./media-query/media-query.css">
     <script src="./templates/my-project-template.js" defer></script>
@@ -24,13 +25,27 @@
             <div class="hero-section-logowhite-center">
                 <img class="halid-logo" src="/img/Halid logo.png">
             </div>
-            <img class="burger-menu" src="/img/burger menu.svg">
+            <img class="burger-menu" src="/img/burger menu.svg" onclick="responsiveMenu()" id="burger-menu">
         </div>
+        
     </div>
 
     <div class="hero-section" id="hero-section">
-        <div class="profile-elipse-hover">
-            <div class="profile-picture-div">
+        <div class="hero-section-responsive" id="hero-section-responsive" style="display: none;">
+            <img class="menu-eclipse-responsive"src="./img/Menu-responsive-elipse.svg">
+            <div class="menu-buttons-responsive">
+            <p id="anchor2-why-me-responsive" class="menu-text-responsive" onclick="menuScroll('whyMe')">Why me</p>
+            <p id="anchor3-skills-responsive" class="menu-text-responsive" onclick="menuScroll('skills')">Skills</p>
+            <p id="anchor4-projects-responsive" class="menu-text-responsive" onclick="menuScroll('projects')">Projects</p>
+            <p id="anchor5-contacts-responsive" class="menu-text-responsive" onclick="menuScroll('contacts')">Contact</p>
+        </div>
+        <div class="menu-buttons-language-responsive">
+            <p class="menu-buttons-language-text" id="de" onclick="translateDeutsch()">DE</p>
+            <p class="menu-buttons-language-text" id="en" onclick="translateEnglish()">EN</p>
+        </div>
+        </div>
+        <div class="profile-elipse-hover" id="menu-profile-picture">
+            <div class="profile-picture-div" >
                 <img class="profile-picture-img" src="./img/portofolio-profile-picture.png">
             </div>
         </div>
