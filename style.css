@@ -166,7 +166,7 @@ body {
 
 .profile-elipse-hover {
     position: relative;
-    background-image: url("/img/Property 1 Default.svg");
+    background-image: url("./img/Property 1 Default.svg");
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 2;
@@ -182,7 +182,7 @@ body {
 }
 
 .profile-elipse-hover:hover {
-    background-image: url("/img/Property 1 hover.svg");
+    background-image: url("./img/Property 1 hover.svg");
     transition: 0.3s ease;
     width: 579.9999900737229px;
     height: 615.9999894576091px;
@@ -464,6 +464,7 @@ body {
     font-style: Regular;
     font-size: 18px;
     color: #89BCD9;
+    white-space: nowrap;
 
 }
 
@@ -1151,7 +1152,19 @@ footer {
     gap: 30px;
 }
 
-/* Add this to your CSS */
+.footer-link {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 18px;
+    color: #262E34;
+    text-decoration: none;
+}
+
+.footer-link:hover{
+color: #F8F5EC;
+}
+
+
 .located-in {
     font-family: Josefin Sans;
     font-weight: 700;
@@ -1161,7 +1174,7 @@ footer {
     display: inline-block;
 }
 
-/* Blinking cursor effect */
+
 .located-in::after {
     content: "|";
     animation: blink 1s step-end infinite;
@@ -1180,17 +1193,14 @@ footer {
     }
 }
 
-
-/* Hide horizontal scrollbars on all elements */
 * {
     -ms-overflow-style: none;
-    /* IE and Edge */
     scrollbar-width: none;
-    /* Firefox */
+
 }
 
 .menu-bar-highlight {
-    background-image: url("/img/Menu-bar-clicked-elipse.svg");
+    background-image: url("./img/Menu-bar-clicked-elipse.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

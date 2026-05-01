@@ -3,6 +3,7 @@
  */
 function init() {
     templateRoute('join');
+    setLanguage('en');
 }
 
 /**

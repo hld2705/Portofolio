@@ -10,12 +10,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Sancreek&display=swap"
         rel="stylesheet">
+    <script src="../script.js"></script>
+    <script src="../translations/translate.js"></script>
     <title>Portofolio</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/pages/impressum-style.css">
 </head>
 
-<body>
+<body onload="init()">
 
     <div class="menu-bar-responsive">
         <div>
@@ -32,17 +34,17 @@
         <div class="logodark-text-div" id="anchor1">
             <img class="logo-dark-mob" src="/img/Logo icon.svg">
             <p class="under-logodark-text-name">H.Crnkic</p>
-            <p class="under-logodark-text-text">developer</p>
+            <p class="under-logodark-text-text" data-i18n="developer">developer</p>
         </div>
         <div class="menu-buttons">
-            <p id="anchor2" class="menu-text">Why me</p>
-            <p id="anchor3" class="menu-text">Skills</p>
-            <p id="anchor4" class="menu-text">Projects</p>
-            <p id="anchor5" class="menu-text">Contact</p>
+            <p id="anchor2" class="menu-text" data-i18n="whyMe">Why me</p>
+            <p id="anchor3" class="menu-text" data-i18n="skills">Skills</p>
+            <p id="anchor4" class="menu-text" data-i18n="projects">Projects</p>
+            <p id="anchor5" class="menu-text" data-i18n="contact">Contact</p>
         </div>
         <div class="menu-buttons-language">
-            <p class="menu-buttons-language-text" id="de" onclick="translateDeutsch()">DE</p>
-            <p class="menu-buttons-language-text" id="en" onclick="translateEnglish()">EN</p>
+            <p class="menu-buttons-language-text" id="de" onclick="setLanguage('de')">DE</p>
+            <p class="menu-buttons-language-text" id="en" onclick="setLanguage('en')">EN</p>
         </div>
     </div>
 
@@ -52,38 +54,40 @@
             <img class="arrow-back" src="/img/Arrow Back.svg">
         </div>
 
-        <p class="legal-notice-p">Legal Notice</p>
+        <p class="legal-notice-p" data-i18n="legalNotice">Legal Notice</p>
         <div class="legal-notice-small-text">
 
             <p class="legal-notice-white-text">Halid Crnkic<br />
                 Mitterstra&szlig;e 39<br />
                 8055 Graz</p>
 
-            <h2 class="legal-notice-blue-text">Kontakt</h2>
+            <h2 class="legal-notice-blue-text" data-i18n="contact">Kontakt</h2>
             <p class="legal-notice-white-text">Telefon: +436764233600<br />
                 E-Mail: halidcrnkic@gmail.com</p>
 
-            <h2 class="legal-notice-white-text">
+            <h2 class="legal-notice-white-text" data-i18n="consumerDispute">
                 Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>
-            <p class="legal-notice-white-text">Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor
+            <p class="legal-notice-white-text" data-i18n="WeAreNeither">Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor
                 einer
                 Verbraucherschlichtungsstelle teilzunehmen.</p>
 
-            <p class="legal-notice-white-text">Quelle: <a class="contact-link"
-                    href="https://www.e-recht24.de">eRecht24</a></p>
+            <p class="legal-notice-white-text">
+    <span data-i18n="sourceText"></span>
+    <a class="contact-link" href="https://www.e-recht24.de" data-i18n="sourceLink"></a>
+</p>
         </div>
     </div>
 
     <footer>
         <div class="footer-placement-div">
             <div>
-                <a href="#" class="footer-text">Legal notice</a>
+                <a href="#" class="footer-text" data-i18n="legalNotice">Legal notice</a>
                 <p class="footer-text">© Halid Crnkic 2026</p>
             </div>
             <div class="logodark-text-div" id="anchor1">
                 <img class="logo-dark-mob" src="/img/Logo icon.svg">
                 <p class="under-logodark-text-name">H.Crnkic</p>
-                <p class="under-logodark-text-text">developer</p>
+                <p class="under-logodark-text-text" data-i18n="developer">developer</p>
             </div>
             <div class="footer-social-media-div">
 
@@ -133,7 +137,7 @@
         <div class="logodark-text-div" id="anchor1">
             <img class="logo-dark-mob" src="/img/Logo icon.svg">
             <p class="under-logodark-text-name">H.Crnkic</p>
-            <p class="under-logodark-text-text">developer</p>
+            <p class="under-logodark-text-text" data-i18n="developer">developer</p>
         </div>
 
         <div class="footer-social-media-div">
@@ -179,7 +183,7 @@
         </div>
 
         <div class="footer-links-name">
-            <a href="#" class="footer-text">Legal notice</a>
+            <a href="#" class="footer-text" data-i18n="legalNotice">Legal notice</a>
             <p class="footer-text">© Halid Crnkic 2026</p>
         </div>
     </div>

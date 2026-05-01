@@ -9,10 +9,10 @@ function joinTemplate() {
                         <div class="project-details-description-item">
                             <div class="project-details-description-header">
                                 <img src="./img/Ellipse 8.svg" class="description-dot-icon">
-                                <p class="project-details-description-title">About the project</p>
-                                <p class="project-details-description-duration">Duration: 2 months</p>
+                                <p class="project-details-description-title" data-i18n="about">About the project</p>
+                                <p class="project-details-description-duration" data-i18n="duration2m">Duration: 2 months</p>
                             </div>
-                            <p class="project-details-description-text">
+                            <p class="project-details-description-text" data-project="join" data-i18n="aboutText">
                                 Task manager inspired by the Kanban System. Create and organize tasks using 
                                 drag and drop functions, assign users and categories.
                             </p>
@@ -22,9 +22,9 @@ function joinTemplate() {
                         <div class="project-details-description-item">
                             <div class="project-details-description-header">
                                 <img src="./img/Ellipse 8.svg" class="description-dot-icon">
-                                <p class="project-details-description-title">How I have organised my work process</p>
+                                <p class="project-details-description-title" data-project="join" data-i18n="processTitle">How I have organised my work process</p>
                             </div>
-                            <p class="project-details-description-text">
+                            <p class="project-details-description-text" data-project="join" data-i18n="processText">
                             I've organized my work in such way that me and my colleagues 
                             focused on all of the important parts firstly, connecting all of the small pieces with firebase, and keeping our 
                             database structured, every single detail was very much precisely construced, so much so that we actually did the responsive
@@ -36,9 +36,9 @@ function joinTemplate() {
                         <div class="project-details-description-item">
                             <div class="project-details-description-header">
                                 <img src="./img/Ellipse 8.svg" class="description-dot-icon">
-                                <p class="project-details-description-title">My group work experience</p>
+                                <p class="project-details-description-title" data-project="join" data-i18n="teamTitle">My group work experience</p>
                             </div>
-                            <p class="project-details-description-text">
+                            <p class="project-details-description-text" data-project="join" data-i18n="teamText">
                             Our team consisted of three people each with its own assigment.
                             My role was focusing on the "backend" part, keep the comunication and all of the individual loops running smoothly as possible.
                             Was very pleased with the competence of my teammates, as it provided for both a painfree and fun time working on this project.
@@ -49,7 +49,7 @@ function joinTemplate() {
             </div>
         <div class="project-details-pictures-div">
                 <div class="projects-pictures-techonolgies-combined">
-                    <p class="project-details-pictures-text">Technologies</p>
+                    <p class="project-details-pictures-text" data-i18n="technologies">Technologies</p>
                         <div class="project-details-technologies-div">
                             <img src="./img/Technologie HTML.svg">
                             <img src="./img/Technologie JavaScript.svg">
@@ -76,10 +76,10 @@ function elPolloLocoTemplate() {
                         <div class="project-details-description-item">
                             <div class="project-details-description-header">
                                 <img src="./img/Ellipse 8.svg" class="description-dot-icon">
-                                <p class="project-details-description-title">About the project</p>
-                                <p class="project-details-description-duration">Duration: 3 Weeks</p>
+                                <p class="project-details-description-title" data-project="el_pollo_loco" data-i18n="aboutTitle">About the project</p>
+                                <p class="project-details-description-duration" data-i18n="duration3w">Duration: 3 Weeks</p>
                             </div>
-                            <p class="project-details-description-text">
+                            <p class="project-details-description-text" data-project="el_pollo_loco" data-i18n="aboutText">
                                 A simple Jump-and-Run game based on a object-oriented approach. Help Peppe to find all coins and salsa bottles
                                 to fight against the biggest enemy chicken.
                             </p>
@@ -89,12 +89,10 @@ function elPolloLocoTemplate() {
                         <div class="project-details-description-item">
                             <div class="project-details-description-header">
                                 <img src="./img/Ellipse 8.svg" class="description-dot-icon">
-                                <p class="project-details-description-title">How I have organised my work process</p>
+                                <p class="project-details-description-title" data-project="el_pollo_loco" data-i18n="processTitle">How I have organised my work process</p>
                             </div>
-                            <p class="project-details-description-text">
-                                I've organized my work so that i spent 2h daily on debugging and writing code aswell as the needed jsDoc documentation.
-                                I kept the game fluid, with only one defined playAnimation function runing on ~60FPS, all of the module files 
-                                are in a separate folder, facing the front is only the index and the global script.
+                            <p class="project-details-description-text" data-project="el_pollo_loco" data-i18n="processText">
+                                I spent time daily on debugging, writing code, and jsDoc documentation. The game runs smoothly at ~60 FPS with a clean module structure.
                             </p>
                         </div>
                         
@@ -102,9 +100,9 @@ function elPolloLocoTemplate() {
                         <div class="project-details-description-item">
                             <div class="project-details-description-header">
                                 <img src="./img/Ellipse 8.svg" class="description-dot-icon">
-                                <p class="project-details-description-title">What i have learnt</p>
+                                <p class="project-details-description-title" data-project="el_pollo_loco" data-i18n="teamTitle">What i have learnt</p>
                             </div>
-                            <p class="project-details-description-text">
+                            <p class="project-details-description-text" data-project="el_pollo_loco" data-i18n="teamText">
                                 This project was a real breakthrough for me, going on about defining all the small functions needed for Pepe.
                                 One of the biggest achievements is that the game is playable aswell on desktop as on mobile phones, thereby
                                 not limiting the amount of users playing. The biggest thing for me was the order each script was played,
@@ -116,7 +114,7 @@ function elPolloLocoTemplate() {
             </div>
         <div class="project-details-pictures-div">
                 <div class="projects-pictures-techonolgies-combined">
-                    <p class="project-details-pictures-text">Technologies</p>
+                    <p class="project-details-pictures-text" data-i18n="technologies">Technologies</p>
                         <div class="project-details-technologies-div">
                             <img src="./img/Technologie HTML.svg">
                             <img src="./img/Technologie JavaScript.svg">
@@ -143,10 +141,10 @@ function pokeDexTemplate() {
                         <div class="project-details-description-item">
                             <div class="project-details-description-header">
                                 <img src="./img/Ellipse 8.svg" class="description-dot-icon">
-                                <p class="project-details-description-title">About the project</p>
-                                <p class="project-details-description-duration">Duration: 3 weeks</p>
+                                <p class="project-details-description-title" data-project="pokeDex" data-i18n="about">About the project</p>
+                                <p class="project-details-description-duration" data-i18n="duration3w">Duration: 3 weeks</p>
                             </div>
-                            <p class="project-details-description-text">
+                            <p class="project-details-description-text" data-project="pokeDex" data-i18n="aboutText">
                                 Based on the PokéAPI a simple library that provides and catalogues pokemon information.
                             </p>
                         </div>
@@ -155,9 +153,9 @@ function pokeDexTemplate() {
                         <div class="project-details-description-item">
                             <div class="project-details-description-header">
                                 <img src="./img/Ellipse 8.svg" class="description-dot-icon">
-                                <p class="project-details-description-title">How I have organised my work process</p>
+                                <p class="project-details-description-title" data-project="pokeDex" data-i18n="processTitle">How I have organised my work process</p>
                             </div>
-                            <p class="project-details-description-text">
+                            <p class="project-details-description-text" data-project="pokeDex" data-i18n="processText">
                                 First introduction on to how API's work an their libraries, with the provided instructions and catalouge
                                 from the PokéAPI library, i've managed to build a really cool site.
                             </p>
@@ -167,9 +165,9 @@ function pokeDexTemplate() {
                         <div class="project-details-description-item">
                             <div class="project-details-description-header">
                                 <img src="./img/Ellipse 8.svg" class="description-dot-icon">
-                                <p class="project-details-description-title">What i have learnt</p>
+                                <p class="project-details-description-title" data-project="pokeDex" data-i18n="teamTitle">What i have learnt</p>
                             </div>
-                            <p class="project-details-description-text">
+                            <p class="project-details-description-text" data-project="pokeDex" data-i18n="teamText">
                                 This was a my first project using API's and certain libraries, had so much fun learning the connection
                                 between API's my web-page and the server.
                             </p>
@@ -179,7 +177,7 @@ function pokeDexTemplate() {
             </div>
         <div class="project-details-pictures-div">
                 <div class="projects-pictures-techonolgies-combined">
-                    <p class="project-details-pictures-text">Technologies</p>
+                    <p class="project-details-pictures-text" data-i18n="technologies">Technologies</p>
                         <div class="project-details-technologies-div">
                             <img src="./img/Technologie HTML.svg">
                             <img src="./img/Technologie JavaScript.svg">

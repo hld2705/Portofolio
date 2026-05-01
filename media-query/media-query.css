@@ -65,7 +65,7 @@
     }
 
     .profile-elipse-hover:hover {
-        background-image: url("/img/Property 1 Default.svg") !important;
+        background-image: url("../img/Property 1 Default.svg") !important;
         width: 80% !important;
         max-width: 350px;
         height: auto !important;

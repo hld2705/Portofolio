@@ -10,11 +10,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Sancreek&display=swap"
         rel="stylesheet">
-        <link rel="icon" type="image/png" href="./img/favicon/favicon.ico">
+    <link rel="icon" type="image/png" href="./img/favicon/favicon.ico">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./media-query/media-query.css">
     <script src="./templates/my-project-template.js" defer></script>
     <script src="./script.js"></script>
+    <script src="./translations/translate.js"></script>
     <title>Portofolio</title>
 </head>
 
@@ -23,29 +24,31 @@
     <div class="menu-bar-responsive">
         <div>
             <div class="hero-section-logowhite-center">
-                <img class="halid-logo" src="/img/Halid logo.png">
+                <img class="halid-logo" src="./img/Halid logo.png">
             </div>
-            <img class="burger-menu" src="/img/burger menu.svg" onclick="responsiveMenu()" id="burger-menu">
+            <img class="burger-menu" src="./img/burger menu.svg" onclick="responsiveMenu()" id="burger-menu">
         </div>
-        
+
     </div>
 
     <div class="hero-section" id="hero-section">
         <div class="hero-section-responsive" id="hero-section-responsive" style="display: none;">
-            <img class="menu-eclipse-responsive"src="./img/Menu-responsive-elipse.svg">
+            <img class="menu-eclipse-responsive" src="./img/Menu-responsive-elipse.svg">
             <div class="menu-buttons-responsive">
-            <p id="anchor2-why-me-responsive" class="menu-text-responsive" onclick="menuScroll('whyMe')">Why me</p>
-            <p id="anchor3-skills-responsive" class="menu-text-responsive" onclick="menuScroll('skills')">Skills</p>
-            <p id="anchor4-projects-responsive" class="menu-text-responsive" onclick="menuScroll('projects')">Projects</p>
-            <p id="anchor5-contacts-responsive" class="menu-text-responsive" onclick="menuScroll('contacts')">Contact</p>
-        </div>
-        <div class="menu-buttons-language-responsive">
-            <p class="menu-buttons-language-text" id="de" onclick="translateDeutsch()">DE</p>
-            <p class="menu-buttons-language-text" id="en" onclick="translateEnglish()">EN</p>
-        </div>
+                <p id="anchor2-why-me-responsive" class="menu-text-responsive" onclick="menuScroll('whyMe')">Why me</p>
+                <p id="anchor3-skills-responsive" class="menu-text-responsive" onclick="menuScroll('skills')">Skills</p>
+                <p id="anchor4-projects-responsive" class="menu-text-responsive" onclick="menuScroll('projects')">
+                    Projects</p>
+                <p id="anchor5-contacts-responsive" class="menu-text-responsive" onclick="menuScroll('contacts')">
+                    Contact</p>
+            </div>
+            <div class="menu-buttons-language-responsive">
+                <p class="menu-buttons-language-text" id="de" onclick="setLanguage('de')">DE</p>
+                <p class="menu-buttons-language-text" id="en" onclick="setLanguage('en')">EN</p>
+            </div>
         </div>
         <div class="profile-elipse-hover" id="menu-profile-picture">
-            <div class="profile-picture-div" >
+            <div class="profile-picture-div">
                 <img class="profile-picture-img" src="./img/portofolio-profile-picture.png">
             </div>
         </div>
@@ -63,7 +66,7 @@
 
                     <div>
                         <p class="under-logodark-text-name">H.Crnkic</p>
-                        <p class="logowhite-text">developer</p>
+                        <p class="logowhite-text" data-i18n="developer">developer</p>
                     </div>
                 </div>
                 <div class="social-media-hero-section">
@@ -118,7 +121,7 @@
 
             <div>
                 <h1 class="hero-section-text-h1">Halid Crnkic</h1>
-                <p class="hero-section-text-p">FRONTEND DEVELOPER</p>
+                <p class="hero-section-text-p" data-i18n="frontendDeveloper">FRONTEND DEVELOPER</p>
             </div>
             <div class="arrow-down-div">
                 <img class="arrow-down-img" src="./img/Arrow down.svg" onclick="arrowScrollFooter()">
@@ -128,7 +131,7 @@
 
     <div class="name-arrow-responsive">
         <h1 class="hero-section-text-h1">Halid Crnkic</h1>
-        <p class="hero-section-text-p">FRONTEND DEVELOPER</p>
+        <p class="hero-section-text-p" data-i18n="developer">FRONTEND DEVELOPER</p>
     </div>
     <div class="arrow-down-div-responsive">
         <img class="arrow-down-img-responsive" src="./img/Arrow down.svg" id="arrowdown" onclick="arrowScrollFooter()">
@@ -138,31 +141,33 @@
         <div class="logodark-text-div" id="anchor1">
             <img class="logo-dark-mob" src="./img/Logo icon.svg">
             <p class="under-logodark-text-name">H.Crnkic</p>
-            <p class="under-logodark-text-text">developer</p>
+            <p class="under-logodark-text-text" data-i18n="developer">developer</p>
         </div>
         <div class="menu-buttons">
-            <p id="anchor2-why-me" class="menu-text" onclick="menuScroll('whyMe')">Why me</p>
-            <p id="anchor3-skills" class="menu-text" onclick="menuScroll('skills')">Skills</p>
-            <p id="anchor4-projects" class="menu-text" onclick="menuScroll('projects')">Projects</p>
-            <p id="anchor5-contacts" class="menu-text" onclick="menuScroll('contacts')">Contact</p>
+            <p id="anchor2-why-me" class="menu-text" data-i18n="whyMe" onclick="menuScroll('whyMe')">Why me</p>
+            <p id="anchor3-skills" class="menu-text" data-i18n="skills" onclick="menuScroll('skills')">Skills</p>
+            <p id="anchor4-projects" class="menu-text" data-i18n="projects" onclick="menuScroll('projects')">Projects
+            </p>
+            <p id="anchor5-contacts" class="menu-text" data-i18n="contact" onclick="menuScroll('contacts')">Contact</p>
         </div>
         <div class="menu-buttons-language">
-            <p class="menu-buttons-language-text" id="de" onclick="translateDeutsch()">DE</p>
-            <p class="menu-buttons-language-text" id="en" onclick="translateEnglish()">EN</p>
+            <p class="menu-buttons-language-text" id="de" onclick="setLanguage('de')">DE</p>
+            <p class="menu-buttons-language-text" id="en" onclick="setLanguage('en')">EN</p>
         </div>
     </div>
 
     <div class="why-me">
-        <p class="why-me-p">Why me</p>
+        <p class="why-me-p" data-i18n="whyMe">Why me</p>
         <div class="why-me-details">
             <div class="why-me-details-standpoint-text-div" id="why-me">
                 <div class="why-me-details-standpoint-text-icons">
                     <img class="standpoint-icon" src="./img/standpoint icon.svg">
-                    <p class="i-am">I am </p>
-                    <p class="located-in"> located in Graz.. </p>
+                    <p class="i-am" data-i18n="IAm">I am </p>
+                    <p class="located-in" data-i18n="Located"> located in Graz.. </p>
                 </div>
                 <div class="why-me-details-text-button">
-                    <p class="why-me-details-text-text">I am passionate about coding because i see it <br> as a hoby.My
+                    <p class="why-me-details-text-text" data-i18n="iAmPassionate">I am passionate about coding because i
+                        see it <br> as a hoby.My
                         perfectionist attitude towards coding <br> encourages
                         me to keep pushing my own boundaries. <br> With a problem solving analytical thinking and
                         persistence <br>
@@ -170,7 +175,7 @@
                         to be the very best when it goes about coding
                     </p>
                     <div class="lets-talk-button" onclick="menuScroll('letstalk')">
-                        <p class="lets-talk-text">Let's talk</p>
+                        <p class="lets-talk-text" data-i18n="letsTalk">Let's talk</p>
                     </div>
                 </div>
             </div>
@@ -178,7 +183,7 @@
     </div>
 
     <div class="my-skills">
-        <p class="why-me-p" id="my-skills">My Skills</p>
+        <p class="why-me-p" id="my-skills" data-i18n="mySkills">My Skills</p>
         <div class="skills-currently-learning-positioning">
             <div class="skills-icons">
                 <img class="skill-icon" src="./img/Skill HTML.svg">
@@ -191,26 +196,27 @@
             </div>
             <div class="currently-learning-skills-icon">
                 <div class="my-skills-default-elipse">
-                    <p class="why-me-details-text-text">I am currently learning</p>
+                    <p class="why-me-details-text-text" data-i18n="iAmCurrentlyLearning">I am currently learning</p>
                     <div class="why-me-details-icons">
                         <img class="skill-icon-currently" src="./img/Skill Angular.svg">
                         <img class="skill-icon-currently" src="./img/Skill TypeScript.svg">
                     </div>
                     <div>
-                        <p class="why-me-details-text-text">Currently trying to master <br>Angular and TypeScript<br> to
+                        <p class="why-me-details-text-text" data-i18n="CurrentlyTrying">Currently trying to master
+                            <br>Angular and TypeScript<br> to
                             add to the versatility <br>of my coding experience</p>
                     </div>
                 </div>
             </div>
 
             <div class="lets-talk-button-responsive" onclick="menuScroll('letstalk')">
-                <p class="lets-talk-text">Let's talk</p>
+                <p class="lets-talk-text" data-i18n="letsTalk">Let's talk</p>
             </div>
         </div>
     </div>
 
     <div class="my-projects">
-        <p class="why-me-p" id="my-projects">My Projects</p>
+        <p class="why-me-p" id="my-projects" data-i18n="myProjects">My Projects</p>
         <div class="project-names">
             <p class="project-names-tabs" id="join" onclick="templateRoute('join')">1. Join</p>
             <p class="project-names-tabs" id="el_pollo_loco" onclick="templateRoute('el_pollo_loco')">2. El Pollo Loco
@@ -223,7 +229,8 @@
 
     <div class="need-a-teamplayer">
         <div>
-            <p class="need-a-team-player-headline">Need a teamplayer? Here's what my colleagues say about me</p>
+            <p class="need-a-team-player-headline" data-i18n="NeedATeamplayer">Need a teamplayer? Here's what my
+                colleagues say about me</p>
         </div>
 
         <div class="need-a-teamplayer-elipse-div">
@@ -236,11 +243,11 @@
     <div class="contact-me-placement-div">
         <div>
             <div class="contact-me">
-                <p class="why-me-p" id="contact-me">Contact me</p>
+                <p class="why-me-p" id="contact-me" data-i18n="contactMe">Contact me</p>
                 <div class="contact-me-description">
                     <div>
-                        <p class="contact-me-description-text">If my portofolio raised any interest in working together
-                            and
+                        <p class="contact-me-description-text" data-i18n="raisedInterest">
+                            If my portofolio raised any interest in working together and
                             or collaborating together, feel free
                             to reach out in hopes of bringing your project to the next level together
                         </p>
@@ -267,26 +274,28 @@
     <div class="contact-me-formular">
         <div class="contact-me-formular-first-two-fields">
             <div class="input-field-responsive">
-                <p class="contact-me-formular-text">Your name</p>
+                <p class="contact-me-formular-text" data-i18n="yourName">Your name</p>
                 <input class="contact-formular-first-two-inputfields" type="text">
             </div>
             <div class="input-field-responsive">
-                <p class="contact-me-formular-text">Your Email</p>
+                <p class="contact-me-formular-text" data-i18n="yourEmail">Your Email</p>
                 <input class="contact-formular-first-two-inputfields" type="email">
             </div>
         </div>
         <div class="contact-me-last-formular-checkbox-placement-div">
-            <p class="contact-me-formular-text">Your Message</p>
+            <p class="contact-me-formular-text" data-i18n="yourMessage">Your Message</p>
             <textarea class="contact-me-formular-last-inputfield" type="text"></textarea>
             <div class="contact-me-formular-privacy-policy-accept">
                 <div class="contact-me-formular-privacy-policy-accept-div">
                     <img src="./img/Check box.svg">
-                    <p class="contact-me-checkbox-text">I've read the <a class="contact-link" href="#">privacy
-                            policy</a>
-                        and agree to the processing of my data as outlined.</p>
+                    <p class="contact-me-checkbox-text">
+                        <span data-i18n="privacyTextStart"></span>
+                        <a class="contact-link" href="./pages/impressum.html" data-i18n="privacyLink"></a>
+                        <span data-i18n="privacyTextEnd"></span>
+                    </p>
                 </div>
                 <div class="contact-me-send-button">
-                    <p class="contact-me-send-button-text">Send</p>
+                    <p class="contact-me-send-button-text" data-i18n="send">Send</p>
                 </div>
             </div>
 
@@ -299,13 +308,13 @@
     <footer>
         <div class="footer-placement-div">
             <div>
-                <a href="./pages/impressum.html" class="footer-text">Legal notice</a>
+                <a href="./pages/impressum.html" class="footer-link" data-i18n="legalNotice">Legal notice</a>
                 <p class="footer-text">© Halid Crnkic 2026</p>
             </div>
             <div class="logodark-text-div" id="anchor1">
                 <img class="logo-dark-mob" src="./img/Logo icon.svg">
                 <p class="under-logodark-text-name">H.Crnkic</p>
-                <p class="under-logodark-text-text">developer</p>
+                <p class="under-logodark-text-text" data-i18n="developer">developer</p>
             </div>
             <div class="footer-social-media-div">
 
@@ -357,7 +366,7 @@
 
     <div class="responsive-footer">
         <div class="logodark-text-div" id="anchor1">
-            <img class="logo-dark-mob" src="/img/Logo icon.svg">
+            <img class="logo-dark-mob" src="./img/Logo icon.svg">
             <p class="under-logodark-text-name">H.Crnkic</p>
             <p class="under-logodark-text-text">developer</p>
         </div>
@@ -410,7 +419,7 @@
         </div>
 
         <div class="footer-links-name">
-            <a href="#" class="footer-text">Legal notice</a>
+            <a href="#" class="footer-link">Legal notice</a>
             <p class="footer-text">© Halid Crnkic 2026</p>
         </div>
     </div>
