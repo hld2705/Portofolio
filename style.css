@@ -937,6 +937,9 @@ body::-webkit-scrollbar-thumb {
     outline: none;
     caret-color: #FFFFFF;
     padding-left: 20px;
+    font-family: Josefin Sans, sans-serif;
+    font-size: 16px;
+    color: #FFFFFF
 }
 
 .contact-me-formular-last-inputfield {
@@ -1018,6 +1021,30 @@ body::-webkit-scrollbar-thumb {
     gap: 10px;
     border-radius: 30px;
     border: 1px solid #F8F5EC
+}
+
+.contact-me-send-button-true{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 101px;
+    height: 48px;
+    top: 32px;
+    left: 810px;
+    opacity: 0.5;
+    border-width: 1px;
+    gap: 10px;
+    border-radius: 30px;
+    border: 1px solid #89BCD9;
+    cursor: pointer;
+}
+
+.contact-me-send-button-text-true{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    color: #89BCD9;
 }
 
 .contact-me-send-button-text {
@@ -1280,4 +1307,20 @@ footer {
     text-decoration-offset: 0%;
     text-decoration-thickness: 0%;
     color: #89BCD9;
+}
+
+.check-box-img{
+    cursor: pointer;
+}
+
+.burger-menu{
+    cursor: pointer;
+}
+
+.halid-logo{
+    cursor: default;
+}
+
+.invalid-input{
+    border: 2px solid #E44C36;
 }

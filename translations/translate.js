@@ -36,7 +36,9 @@ const translations = {
         consumerDispute: "Consumer dispute resolution/Universal arbitration body",
         WeAreNeither:"We are neither willing nor obligated to participate in dispute resolution proceedings before a consumer arbitration board.",
         sourceText: "Source: ",
-        sourceLink: "eRecht24"
+        sourceLink: "eRecht24",
+        project: "Project"
+        
     },
 
     de: {
@@ -74,7 +76,8 @@ const translations = {
         consumerDispute: "Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle",
         WeAreNeither:"Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen",
         sourceText: "Quelle: ",
-        sourceLink: "eRecht24"
+        sourceLink: "eRecht24",
+        project: "Projekt"
     }
 };
 

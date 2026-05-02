@@ -13,6 +13,7 @@
     <link rel="icon" type="image/png" href="./img/favicon/favicon.ico">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./media-query/media-query.css">
+    <script src="./validation/validation.js"></script>
     <script src="./translations/translate.js"></script>
     <script src="./templates/my-project-template.js" defer></script>
     <script src="./script.js" defer></script>
@@ -303,26 +304,26 @@
         <div class="contact-me-formular-first-two-fields">
             <div class="input-field-responsive">
                 <p class="contact-me-formular-text" data-i18n="yourName">Your name</p>
-                <input class="contact-formular-first-two-inputfields" type="text">
+                <input class="contact-formular-first-two-inputfields" type="text" id="inputname">
             </div>
             <div class="input-field-responsive">
                 <p class="contact-me-formular-text" data-i18n="yourEmail">Your Email</p>
-                <input class="contact-formular-first-two-inputfields" type="email">
+                <input class="contact-formular-first-two-inputfields" type="email" id="inputemail">
             </div>
         </div>
         <div class="contact-me-last-formular-checkbox-placement-div">
             <p class="contact-me-formular-text" data-i18n="yourMessage">Your Message</p>
-            <textarea class="contact-me-formular-last-inputfield" type="text"></textarea>
+            <textarea class="contact-me-formular-last-inputfield" type="text" id="inputmessage"></textarea>
             <div class="contact-me-formular-privacy-policy-accept">
                 <div class="contact-me-formular-privacy-policy-accept-div">
-                    <img src="./img/Check box.svg">
+                    <img class="check-box-img"src="./img/Check box.svg">
                     <p class="contact-me-checkbox-text">
                         <span data-i18n="privacyTextStart"></span>
                         <a class="contact-link" href="./pages/impressum.html" data-i18n="privacyLink"></a>
                         <span data-i18n="privacyTextEnd"></span>
                     </p>
                 </div>
-                <div class="contact-me-send-button">
+                <div class="contact-me-send-button" onclick="sendMessage()">
                     <p class="contact-me-send-button-text" data-i18n="send">Send</p>
                 </div>
             </div>
