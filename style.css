@@ -107,6 +107,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #F8F5EC;
 }
 
 .hero-section {
@@ -615,15 +616,13 @@ body::-webkit-scrollbar-thumb {
     padding: 0px 50px 0px 50px;
 }
 
-/* Project Details Section */
 .project-details-placement-div {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1440px;
     padding: 40px;
 }
 
@@ -790,11 +789,10 @@ body::-webkit-scrollbar-thumb {
 .need-a-teamplayer {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     overflow-x: auto;
 }
-
 
 .need-a-team-player-headline {
     font-family: Josefin Sans;
@@ -809,14 +807,29 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     gap: 32px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.need-a-teamplayer-elipse-div:active {
+    cursor: grabbing; /* When dragging */
+}
+
+/* Style the scrollbar */
+.need-a-teamplayer-elipse-div::-webkit-scrollbar {
+    height: 8px;
 }
 
 .need-a-teamplayer-elipse {
     height: 400px;
-    width: 400px;
+    min-width: 400px;
     background: url("./img/Need a team player elipse default.svg");
     transition: 0.3s ease;
     overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
 }
 
 .need-a-teamplayer-elipse:hover {
@@ -1160,8 +1173,8 @@ footer {
     text-decoration: none;
 }
 
-.footer-link:hover{
-color: #F8F5EC;
+.footer-link:hover {
+    color: #F8F5EC;
 }
 
 
@@ -1193,10 +1206,10 @@ color: #F8F5EC;
     }
 }
 
+
 * {
     -ms-overflow-style: none;
     scrollbar-width: none;
-
 }
 
 .menu-bar-highlight {
@@ -1210,4 +1223,61 @@ color: #F8F5EC;
     align-items: center;
     justify-content: center;
     color: #F8F5EC;
+}
+
+.need-a-teamplayer-name {
+    font-family: Josefin Sans;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 26px;
+    text-align: center;
+    color: #F8F5EC;
+    margin: 0px;
+    margin-top: 53px;
+    margin-bottom: 20px;
+}
+
+.need-a-teamplayer-details {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    text-align: center;
+    color: #F8F5EC;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.need-a-teamplayer-details-positioning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 1.2;
+    max-width: 300px;
+}
+
+.need-a-teamplayer-link {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    color: #89BCD9;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.need-a-teamplayer-link-underline {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-offset: 0%;
+    text-decoration-thickness: 0%;
+    color: #89BCD9;
 }

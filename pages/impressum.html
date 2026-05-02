@@ -12,6 +12,7 @@
         rel="stylesheet">
     <script src="../script.js"></script>
     <script src="../translations/translate.js"></script>
+    <link rel="icon" type="image/png" href="../img/favicon/favicon.ico">
     <title>Portofolio</title>
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/pages/impressum-style.css">
@@ -22,14 +23,29 @@
     <div class="menu-bar-responsive">
         <div>
             <div class="hero-section-logowhite-center">
-                <img class="halid-logo" src="/img/Halid logo.png">
+                <img class="halid-logo" src="../img/Halid logo.png">
             </div>
-            <img class="burger-menu" src="/img/burger menu.svg">
+            <img class="burger-menu" src="../img/burger menu.svg" onclick="responsiveMenuImpressum()" id="burger-menu">
         </div>
-
-
     </div>
 
+    <div id="overlay">
+        <div class="hero-section-responsive-impressum" id="hero-section-responsive" style="display: none;">
+            <img class="menu-eclipse-responsive" src="../img/Menu-responsive-elipse.svg">
+            <div class="menu-buttons-responsive">
+                <p id="anchor2-why-me-responsive" class="menu-text-responsive" onclick="menuScroll('whyMe')">Why me</p>
+                <p id="anchor3-skills-responsive" class="menu-text-responsive" onclick="menuScroll('skills')">Skills</p>
+                <p id="anchor4-projects-responsive" class="menu-text-responsive" onclick="menuScroll('projects')">
+                    Projects</p>
+                <p id="anchor5-contacts-responsive" class="menu-text-responsive" onclick="menuScroll('contacts')">
+                    Contact</p>
+            </div>
+            <div class="menu-buttons-language-responsive">
+                <p class="menu-buttons-language-text" id="deresponsive" onclick="setLanguage('de')">DE</p>
+                <p class="menu-buttons-language-text" id="enresponsive" onclick="setLanguage('en')">EN</p>
+            </div>
+        </div>
+    </div>
     <div class="menu-bar">
         <div class="logodark-text-div" id="anchor1">
             <img class="logo-dark-mob" src="/img/Logo icon.svg">
@@ -51,7 +67,7 @@
     <div class="legal-notice-title">
 
         <div>
-            <img class="arrow-back" src="/img/Arrow Back.svg">
+           <a href="/index.html"> <img class="arrow-back" src="/img/Arrow Back.svg"> </a>
         </div>
 
         <p class="legal-notice-p" data-i18n="legalNotice">Legal Notice</p>
@@ -67,14 +83,15 @@
 
             <h2 class="legal-notice-white-text" data-i18n="consumerDispute">
                 Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>
-            <p class="legal-notice-white-text" data-i18n="WeAreNeither">Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor
+            <p class="legal-notice-white-text" data-i18n="WeAreNeither">Wir sind nicht bereit oder verpflichtet, an
+                Streitbeilegungsverfahren vor
                 einer
                 Verbraucherschlichtungsstelle teilzunehmen.</p>
 
             <p class="legal-notice-white-text">
-    <span data-i18n="sourceText"></span>
-    <a class="contact-link" href="https://www.e-recht24.de" data-i18n="sourceLink"></a>
-</p>
+                <span data-i18n="sourceText"></span>
+                <a class="contact-link" href="https://www.e-recht24.de" data-i18n="sourceLink"></a>
+            </p>
         </div>
     </div>
 

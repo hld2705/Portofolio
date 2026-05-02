@@ -110,6 +110,14 @@
         margin-top: 10px;
     }
 
+    .need-a-teamplayer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        overflow-x: auto;
+    }
+
     .arrow-down-div-responsive {
         border-radius: 30px;
         height: 100px;
@@ -480,6 +488,14 @@
     .hero-section-text-h1 {
         font-size: 62px;
     }
+
+    .need-a-teamplayer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+}
 
 }
 

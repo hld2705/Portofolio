@@ -190,6 +190,15 @@ body {
     display: none;
 }
 
+.hero-section-responsive-impressum {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 100px;
+}
+
 @media (min-width: 540px) and (max-width: 750px) {
     .menu-buttons {
         display: flex;
@@ -328,7 +337,7 @@ body {
         padding-bottom: 60px;
         height: auto;
     }
-    
+
 }
 
 @media (min-width: 600px) and (max-width: 1280px) {

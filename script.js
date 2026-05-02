@@ -109,3 +109,47 @@ function responsiveMenu() {
         elipseResponsive.style.display = "flex";
     }
 }
+
+/**
+ * Responsive menu - toggles between showing responsive menu
+ */
+function responsiveMenuImpressum() {
+    let elipseResponsive = document.getElementById("hero-section-responsive");
+    
+    if (elipseResponsive.style.display === "flex") {
+        elipseResponsive.style.display = "none";
+    } else {
+        elipseResponsive.style.display = "flex";
+    }
+}
+
+/**
+ * Language selection elipse
+ */
+function toggleElipse(lang) {
+    const enElipse = document.getElementById("en");
+    const deElipse = document.getElementById("de");
+    const enElipseResponsive = document.getElementById("enresponsive");
+    const deElipseResponsive = document.getElementById("deresponsive");
+    enElipse.classList.remove("elipse");
+    deElipse.classList.remove("elipse");
+    enElipseResponsive.classList.remove("elipse");
+    deElipseResponsive.classList.remove("elipse");
+    if (lang === "en") {
+        enElipse.classList.add("elipse");
+        enElipseResponsive.classList.add("elipse");
+    } else if(lang === "de"){
+        deElipse.classList.add("elipse");
+        deElipseResponsive.classList.add("elipse")
+    }
+}
+
+function closeOverlay() {
+    let overlay = document.getElementById("overlay");
+    let elipseResponsive = document.getElementById("hero-section-responsive");
+    let profilePicture = document.getElementById("menu-profile-picture");
+
+    overlay.style.display = "none";
+    elipseResponsive.style.display = "none";
+    profilePicture.style.display = "flex";
+}

@@ -138,23 +138,29 @@ const translations_projects = {
     }
 };
 
-function setLanguage(lang) {
-    const elements = document.querySelectorAll("[data-i18n]");
+const translations_teamplayer = {
+        en: {
+            philipp: "'Halid worked calmly, reliably and productively. He was always open to creative solutions and even when things got tricky, we found a way together.'",
+            lars: "'Always helpful, competent, solution-oriented'"
+        },
+        de: {
+            philipp: "'Halid arbeitet ruhig, zuverlässig und produktiv. Er war immer offen für kreative Lösungen und auch wenn’s mal knifflig wurde, haben wir gemeinsam einen Weg gefunden.'",
+            lars: "'Immer hilfsbereit, kompetent, lösungsorientiert'",
+        }
+}
 
+function setLanguage(lang) {
+    toggleElipse(lang)
+    const elements = document.querySelectorAll("[data-i18n]");
     elements.forEach(el => {
         const key = el.getAttribute("data-i18n");
         const project = el.getAttribute("data-project");
-
-        // default main translation
         let value = translations[lang]?.[key];
-
-        // if project exists, override with project translations
         if (project && translations_projects[lang]?.[project]?.[key]) {
-            value = translations_projects[lang][project][key];
-        }
-
+            value = translations_projects[lang][project][key];}
+        if (translations_teamplayer[lang]?.[key]) {
+            value = translations_teamplayer[lang][key];}
         if (value !== undefined) {
             el.innerHTML = value;
-        }
-    });
+        }});
 }
