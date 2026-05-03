@@ -812,7 +812,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .need-a-teamplayer-elipse-div:active {
-    cursor: grabbing; /* When dragging */
+    cursor: grabbing;
+    /* When dragging */
 }
 
 /* Style the scrollbar */
@@ -906,6 +907,7 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 15px;
 }
 
 .contact-me-formular-first-two-fields {
@@ -1020,10 +1022,10 @@ body::-webkit-scrollbar-thumb {
     border-width: 1px;
     gap: 10px;
     border-radius: 30px;
-    border: 1px solid #F8F5EC
+    border: 1px solid #F8F5EC;
 }
 
-.contact-me-send-button-true{
+.contact-me-send-button-true {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1039,12 +1041,8 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 
-.contact-me-send-button-text-true{
-    font-family: Josefin Sans;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 18px;
-    color: #89BCD9;
+.contact-me-send-button-true:hover {
+    background-color: #464E53;
 }
 
 .contact-me-send-button-text {
@@ -1055,11 +1053,15 @@ body::-webkit-scrollbar-thumb {
     color: #F8F5EC;
 }
 
+.contact-me-send-button-text-true {
+    color: #89BCD9;
+}
+
 .contact-me-formular-privacy-policy-accept-div {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 8px;
 }
 
 footer {
@@ -1309,18 +1311,63 @@ footer {
     color: #89BCD9;
 }
 
-.check-box-img{
+.check-box-img {
+    cursor: pointer;
+    background-image: url("./img/Check box.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.check-box-img:hover {
+    cursor: pointer;
+    background-image: url("./img/Check box hover.svg");
+    background-repeat: no-repeat;
+    transition: 0.1s ease;
+}
+
+.check-box-red {
+    background-image: url("./img/Check box red.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.check-box-checked {
+    background-image: url("./img/Check box checked.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
+.burger-menu {
     cursor: pointer;
 }
 
-.burger-menu{
-    cursor: pointer;
-}
-
-.halid-logo{
+.halid-logo {
     cursor: default;
 }
 
-.invalid-input{
+.invalid-input {
     border: 2px solid #E44C36;
+}
+
+input::placeholder {
+    color: #E44C36;
+    opacity: 1;
+}
+
+textarea::placeholder {
+    color: #E44C36;
+    opacity: 1;
+}
+
+.error-message {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    color: #E44C36;
+    margin: 0px;
+    margin-left: 17px;
 }

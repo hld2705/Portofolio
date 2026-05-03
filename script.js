@@ -4,7 +4,7 @@
 function init() {
     templateRoute('join');
     setLanguage('en');
-    sendButtonActivation();
+    //sendButtonActivation();
 }
 
 /**

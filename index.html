@@ -13,7 +13,7 @@
     <link rel="icon" type="image/png" href="./img/favicon/favicon.ico">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./media-query/media-query.css">
-    <script src="./validation/validation.js"></script>
+    <script src="./validation/validation.js" defer></script>
     <script src="./translations/translate.js"></script>
     <script src="./templates/my-project-template.js" defer></script>
     <script src="./script.js" defer></script>
@@ -305,21 +305,26 @@
             <div class="input-field-responsive">
                 <p class="contact-me-formular-text" data-i18n="yourName">Your name</p>
                 <input class="contact-formular-first-two-inputfields" type="text" id="inputname">
+                <div id="errorname"></div>
             </div>
             <div class="input-field-responsive">
                 <p class="contact-me-formular-text" data-i18n="yourEmail">Your Email</p>
                 <input class="contact-formular-first-two-inputfields" type="email" id="inputemail">
+                <div id="erroremail"></div>
             </div>
         </div>
         <div class="contact-me-last-formular-checkbox-placement-div">
+            <div style="margin-bottom: 25px; width: 100%;">
             <p class="contact-me-formular-text" data-i18n="yourMessage">Your Message</p>
             <textarea class="contact-me-formular-last-inputfield" type="text" id="inputmessage"></textarea>
+            </div>
+            <div id="errormessage"></div>
             <div class="contact-me-formular-privacy-policy-accept">
                 <div class="contact-me-formular-privacy-policy-accept-div">
-                    <img class="check-box-img"src="./img/Check box.svg">
+                    <div class="check-box-img" onclick="sendButtonActivation()" id="check-box-img"></div>
                     <p class="contact-me-checkbox-text">
                         <span data-i18n="privacyTextStart"></span>
-                        <a class="contact-link" href="./pages/impressum.html" data-i18n="privacyLink"></a>
+                        <a class="contact-link" href="./pages/impressum.html" data-i18n="privacyLink" id="privacypolicylink"></a>
                         <span data-i18n="privacyTextEnd"></span>
                     </p>
                 </div>
