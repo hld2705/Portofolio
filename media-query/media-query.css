@@ -188,6 +188,12 @@
         height: 72px;
         width: 58px;
     }
+    .check-box-img{
+        width: 50px;
+    }
+    .error-message{
+        margin-bottom: 20px;
+    }
 
     .need-a-team-player {
         overflow-x: auto;

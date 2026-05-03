@@ -15,19 +15,19 @@ function validateName() {
 
     if (name.value.trim() === "") {
         name.classList.add("invalid-input");
-        name.placeholder = "*Please enter your name!";
+        name.placeholder = "*Please enter your name!"
         return false;
     }
     if (name.value.length < 3) {
         name.classList.add("invalid-input");
-        nameError.innerHTML = `<p class="error-message">*At least 3 characters needed!</p>`
+        nameError.innerHTML = `<p class="error-message" data-i18n="threeCharactersNeeded">*At least 3 characters needed!</p>`
         return false;
     }
     if (!/^[\p{L}\s\-']+$/u.test(name.value)) {
         name.classList.add("invalid-input");
-        nameError.innerHTML = `<p class="error-message">*No special characters allowed!</p>`
+        nameError.innerHTML = `<p class="error-message" data-i18n="noSpecialCharacters">*No special characters allowed!</p>`
         return false;
-    }else{nameError.innerHTML = "";}
+    } else { nameError.innerHTML = ""; }
     return true;
 }
 
@@ -43,9 +43,9 @@ function validateEmail() {
     }
     if (email.value.length < 3) {
         email.classList.add("invalid-input");
-        emailError.innerHTML = `<p class="error-message">*At least 3 characters needed!</p>`
+        emailError.innerHTML = `<p class="error-message" data-i18n="threeCharactersNeeded">*At least 3 characters needed!</p>`
         return false;
-    }else{emailError.innerHTML = "";}
+    } else { emailError.innerHTML = ""; }
     return true;
 }
 
@@ -63,11 +63,11 @@ function validateMessage() {
 
     if (message.value.length < 5) {
         message.classList.add("invalid-input");
-        messageError.innerHTML = `<p class="error-message">*At least 5 characters needed!</p>`
+        messageError.innerHTML = `<p class="error-message" data-i18n="fiveCharactersNeeded">*At least 5 characters needed!</p>`
         return false;
-    }else{messageError.innerHTML = "";}
+    } else { messageError.innerHTML = ""; }
     return true;
-    
+
 }
 
 
@@ -75,7 +75,17 @@ function validateMessage() {
  * Validation function for the contact part of the page 
  */
 function sendMessage() {
-
+    
+    if(isFormValid()){
+        document.body.insertAdjacentHTML('beforeend', messageSentTemplate());
+        const overlay = document.querySelector('.message-sent-overlay');
+        setTimeout(() => {
+        overlay.remove();
+    }, 3000)
+    }
+    name.value = "";
+    email.value = "";
+    message.value = "";
 }
 
 /**
@@ -83,11 +93,7 @@ function sendMessage() {
  * @returns if the form is valid or not
  */
 function isFormValid() {
-    let nameValid = validateName();
-    let emailValid = validateEmail();
-    let messageValid = validateMessage();
-
-    return nameValid && emailValid && messageValid;
+    return validateName() && validateEmail() && validateMessage();
 }
 
 /**
@@ -115,6 +121,7 @@ function sendButtonActivation() {
 function checkBoxValidation(valid) {
     let checkbox = document.getElementById("check-box-img");
     let link = document.getElementById("privacypolicylink");
+    checkbox.classList.remove("check-box-checked", "check-box-red");
     if (valid) {
         checkbox.classList.add("check-box-checked");
         link.style.color = "#89BCD9";

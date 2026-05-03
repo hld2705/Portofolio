@@ -34,11 +34,16 @@ const translations = {
         yourMessage: "Your Message",
         send: "Send",
         consumerDispute: "Consumer dispute resolution/Universal arbitration body",
-        WeAreNeither:"We are neither willing nor obligated to participate in dispute resolution proceedings before a consumer arbitration board.",
+        WeAreNeither: "We are neither willing nor obligated to participate in dispute resolution proceedings before a consumer arbitration board.",
         sourceText: "Source: ",
         sourceLink: "eRecht24",
-        project: "Project"
-        
+        project: "Project",
+        nameRequired: "*Please enter your name!",
+        threeCharactersNeeded: "*At least 3 characters needed!",
+        noSpecialCharacters: "*No special characters allowed!",
+        fiveCharactersNeeded: "*At least 5 characters needed!",
+        emailRequired: "*Please enter your email!",
+        messageRequired: "*Please enter your message!",
     },
 
     de: {
@@ -74,10 +79,16 @@ const translations = {
         yourMessage: "Ihre Nachricht",
         send: "Shicken",
         consumerDispute: "Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle",
-        WeAreNeither:"Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen",
+        WeAreNeither: "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen",
         sourceText: "Quelle: ",
         sourceLink: "eRecht24",
-        project: "Projekt"
+        project: "Projekt",
+        nameRequired: "*Bitte geben Sie Ihren Namen ein!",
+        threeCharactersNeeded: "*Mindestens 3 Zeichen erforderlich!",
+        noSpecialCharacters: "*Sonderzeichen sind nicht erlaubt!",
+        fiveCharactersNeeded: "*Mindestens 5 Zeichen erforderlich!",
+        emailRequired: "*Bitte geben Sie Ihre E-Mail-Adresse ein!",
+        messageRequired: "*Bitte geben Sie Ihre Nachricht ein!",
     }
 };
 
@@ -142,17 +153,18 @@ const translations_projects = {
 };
 
 const translations_teamplayer = {
-        en: {
-            philipp: "'Halid worked calmly, reliably and productively. He was always open to creative solutions and even when things got tricky, we found a way together.'",
-            lars: "'Always helpful, competent, solution-oriented'"
-        },
-        de: {
-            philipp: "'Halid arbeitet ruhig, zuverlässig und produktiv. Er war immer offen für kreative Lösungen und auch wenn’s mal knifflig wurde, haben wir gemeinsam einen Weg gefunden.'",
-            lars: "'Immer hilfsbereit, kompetent, lösungsorientiert'",
-        }
+    en: {
+        philipp: "'Halid worked calmly, reliably and productively. He was always open to creative solutions and even when things got tricky, we found a way together.'",
+        lars: "'Always helpful, competent, solution-oriented'"
+    },
+    de: {
+        philipp: "'Halid arbeitet ruhig, zuverlässig und produktiv. Er war immer offen für kreative Lösungen und auch wenn’s mal knifflig wurde, haben wir gemeinsam einen Weg gefunden.'",
+        lars: "'Immer hilfsbereit, kompetent, lösungsorientiert'",
+    }
 }
 
 function setLanguage(lang) {
+    currentLang = lang
     toggleElipse(lang)
     const elements = document.querySelectorAll("[data-i18n]");
     elements.forEach(el => {
@@ -164,6 +176,5 @@ function setLanguage(lang) {
         if (translations_teamplayer[lang]?.[key]) {
             value = translations_teamplayer[lang][key];}
         if (value !== undefined) {
-            el.innerHTML = value;
-        }});
+            el.innerHTML = value;}});
 }
