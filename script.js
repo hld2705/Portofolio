@@ -48,7 +48,7 @@ function delay(ms) {
 /**
  * Function for the arrow to be able to scroll down also to apply and delete the needed classlist
  */
-async function arrowScrollFooter(){
+async function arrowScrollFooter() {
     let arrowDown = document.getElementById("arrowdown");
     arrowDown.classList.add("arrow-down-img-clicked");
     await delay(200);
@@ -60,7 +60,7 @@ async function arrowScrollFooter(){
 /**
  * Function for the arrow to be able to scroll up also to apply and delete the needed classlist
  */
-async function arrowScrollHeader(){
+async function arrowScrollHeader() {
     let arrowUp = document.getElementById("arrowup");
     arrowUp.classList.add("arrow-down-img-clicked");
     await delay(200);
@@ -72,7 +72,7 @@ async function arrowScrollHeader(){
 /**
  * Function for making the menu-bar buttons scrollable
  */
-function menuScroll(id){
+function menuScroll(id) {
     const elements = {
         whyMe: ["anchor2-why-me", 750],
         skills: ["anchor3-skills", 1050],
@@ -80,7 +80,7 @@ function menuScroll(id){
         contacts: ["anchor5-contacts", 3000],
         letstalk: ["anchor5-contacts", 4500]
     };
-    
+
     removeHighlight();
     document.getElementById(elements[id][0]).classList.add("menu-bar-highlight");
     setTimeout(() => window.scrollTo(0, elements[id][1]), 200);
@@ -89,11 +89,26 @@ function menuScroll(id){
 /**
  * Removes the highlights from the menu bar
  */
-function removeHighlight(){
+function removeHighlight() {
     const ids = ["anchor2-why-me", "anchor3-skills", "anchor4-projects", "anchor5-contacts"];
     ids.forEach(id => document.getElementById(id).classList.remove("menu-bar-highlight"));
 }
 
+/**
+ * Needed a separate function for menuScroll Impressum, because the page needs to route back to index.html
+ */
+function menuScrollImpressum(id) {
+    const elements = {
+        whyMe: ["anchor2-why-me", 750],
+        skills: ["anchor3-skills", 1050],
+        projects: ["anchor4-projects", 1600],
+        contacts: ["anchor5-contacts", 3000],
+    };
+    const routes = { whyMe: "#why-me", skills: "#skills", projects: "#projects", contacts: "#contact" }
+    removeHighlight();
+    document.getElementById(elements[id][0]).classList.add("menu-bar-highlight");
+    setTimeout(() => {window.location.href = "../index.html" + routes[id];}, 200)
+}
 
 /**
  * Responsive menu - toggles between showing responsive menu and profile picture
@@ -101,7 +116,7 @@ function removeHighlight(){
 function responsiveMenu() {
     let elipseResponsive = document.getElementById("hero-section-responsive");
     let profilePicture = document.getElementById("menu-profile-picture");
-    
+
     if (elipseResponsive.style.display === "flex") {
         profilePicture.style.display = "flex";
         elipseResponsive.style.display = "none";
@@ -116,7 +131,7 @@ function responsiveMenu() {
  */
 function responsiveMenuImpressum() {
     let elipseResponsive = document.getElementById("hero-section-responsive");
-    
+
     if (elipseResponsive.style.display === "flex") {
         elipseResponsive.style.display = "none";
     } else {
@@ -139,12 +154,15 @@ function toggleElipse(lang) {
     if (lang === "en") {
         enElipse.classList.add("elipse");
         enElipseResponsive.classList.add("elipse");
-    } else if(lang === "de"){
+    } else if (lang === "de") {
         deElipse.classList.add("elipse");
         deElipseResponsive.classList.add("elipse")
     }
 }
 
+/**
+ * Function that hides the profile picture once the menu bar is opened
+ */
 function closeOverlay() {
     let overlay = document.getElementById("overlay");
     let elipseResponsive = document.getElementById("hero-section-responsive");

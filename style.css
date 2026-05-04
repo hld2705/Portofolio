@@ -103,7 +103,7 @@ body {
 .elipse {
     width: 36px;
     height: 24px;
-    background-image: url("/img/Ellipse 24.svg");
+    background-image: url("./img/Ellipse 24.svg");
     display: flex;
     align-items: center;
     justify-content: center;

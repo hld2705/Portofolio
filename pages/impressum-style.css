@@ -107,10 +107,23 @@ body {
     transition: color 0.3s ease;
 }
 
+.menu-bar-highlight {
+    background-image: url("../img/Menu-bar-clicked-elipse.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    white-space: nowrap;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F8F5EC;
+}
+
 .elipse {
     width: 36px;
     height: 24px;
-    background-image: url("/img/Ellipse 24.svg");
+    background-image: url("../img/Ellipse 24.svg");
     display: flex;
     align-items: center;
     justify-content: center;
@@ -191,12 +204,69 @@ body {
 }
 
 .hero-section-responsive-impressum {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.menu-eclipse-responsive {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    background-image: url("../img/Menu-responsive-elipse.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-eclipse-responsive img {
+    display: none;
+}
+
+.menu-buttons-responsive {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    top: 100px;
+    gap: 20px;
+    z-index: 2;
+}
+
+
+.menu-buttons-language-responsive {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+    z-index: 2;
+}
+
+.menu-text-responsive {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 0.1;
+    margin: 14px;
 }
 
 @media (min-width: 540px) and (max-width: 750px) {
@@ -326,6 +396,22 @@ body {
         align-items: center;
         justify-content: center;
         gap: 20px;
+    }
+}
+
+@media(min-width: 540px) and (max-width: 750px) {
+
+    .menu-text {
+        padding: 0px 9px;
+        font-size: 20px;
+    }
+
+    .menu-buttons-language {
+        width: 68px;
+    }
+
+    .menu-buttons {
+        width: 382px;
     }
 }
 

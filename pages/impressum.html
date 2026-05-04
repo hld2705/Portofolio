@@ -14,8 +14,9 @@
     <script src="../translations/translate.js"></script>
     <link rel="icon" type="image/png" href="../img/favicon/favicon.ico">
     <title>Portofolio</title>
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/pages/impressum-style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../pages/impressum-style.css">
+    
 </head>
 
 <body onload="init()">
@@ -33,11 +34,11 @@
         <div class="hero-section-responsive-impressum" id="hero-section-responsive" style="display: none;">
             <img class="menu-eclipse-responsive" src="../img/Menu-responsive-elipse.svg">
             <div class="menu-buttons-responsive">
-                <p id="anchor2-why-me-responsive" class="menu-text-responsive" onclick="menuScroll('whyMe')">Why me</p>
-                <p id="anchor3-skills-responsive" class="menu-text-responsive" onclick="menuScroll('skills')">Skills</p>
-                <p id="anchor4-projects-responsive" class="menu-text-responsive" onclick="menuScroll('projects')">
+                <p id="anchor2-why-me-responsive" class="menu-text-responsive" onclick="menuScrollImpressum('whyMe')">Why me</p>
+                <p id="anchor3-skills-responsive" class="menu-text-responsive" onclick="menuScrollImpressum('skills')">Skills</p>
+                <p id="anchor4-projects-responsive" class="menu-text-responsive" onclick="menuScrollImpressum('projects')">
                     Projects</p>
-                <p id="anchor5-contacts-responsive" class="menu-text-responsive" onclick="menuScroll('contacts')">
+                <p id="anchor5-contacts-responsive" class="menu-text-responsive" onclick="menuScrollImpressum('contacts')">
                     Contact</p>
             </div>
             <div class="menu-buttons-language-responsive">
@@ -48,15 +49,15 @@
     </div>
     <div class="menu-bar">
         <div class="logodark-text-div" id="anchor1">
-            <img class="logo-dark-mob" src="/img/Logo icon.svg">
+            <img class="logo-dark-mob" src="../img/Logo icon.svg">
             <p class="under-logodark-text-name">H.Crnkic</p>
             <p class="under-logodark-text-text" data-i18n="developer">developer</p>
         </div>
         <div class="menu-buttons">
-            <p id="anchor2" class="menu-text" data-i18n="whyMe">Why me</p>
-            <p id="anchor3" class="menu-text" data-i18n="skills">Skills</p>
-            <p id="anchor4" class="menu-text" data-i18n="projects">Projects</p>
-            <p id="anchor5" class="menu-text" data-i18n="contact">Contact</p>
+            <p id="anchor2-why-me" class="menu-text" data-i18n="whyMe" onclick="menuScrollImpressum('whyMe')">Why me</p>
+            <p id="anchor3-skills" class="menu-text" data-i18n="skills" onclick="menuScrollImpressum('skills')">Skills</p>
+            <p id="anchor4-projects" class="menu-text" data-i18n="projects" onclick="menuScrollImpressum('projects')">Projects</p>
+            <p id="anchor5-contacts" class="menu-text" data-i18n="contact" onclick="menuScrollImpressum('contacts')">Contact</p>
         </div>
         <div class="menu-buttons-language">
             <p class="menu-buttons-language-text" id="de" onclick="setLanguage('de')">DE</p>
@@ -67,7 +68,7 @@
     <div class="legal-notice-title">
 
         <div>
-           <a href="/index.html"> <img class="arrow-back" src="/img/Arrow Back.svg"> </a>
+           <a href="../index.html"> <img class="arrow-back" src="../img/Arrow Back.svg"> </a>
         </div>
 
         <p class="legal-notice-p" data-i18n="legalNotice">Legal Notice</p>
@@ -102,7 +103,7 @@
                 <p class="footer-text">© Halid Crnkic 2026</p>
             </div>
             <div class="logodark-text-div" id="anchor1">
-                <img class="logo-dark-mob" src="/img/Logo icon.svg">
+                <img class="logo-dark-mob" src="../img/Logo icon.svg">
                 <p class="under-logodark-text-name">H.Crnkic</p>
                 <p class="under-logodark-text-text" data-i18n="developer">developer</p>
             </div>
@@ -152,7 +153,7 @@
 
     <div class="responsive-footer">
         <div class="logodark-text-div" id="anchor1">
-            <img class="logo-dark-mob" src="/img/Logo icon.svg">
+            <img class="logo-dark-mob" src="../img/Logo icon.svg">
             <p class="under-logodark-text-name">H.Crnkic</p>
             <p class="under-logodark-text-text" data-i18n="developer">developer</p>
         </div>

@@ -1,3 +1,6 @@
+/**
+ * @returns The thank you message template
+ */
 function messageSentTemplate(){
     return`<div class="message-sent-overlay">
         <div class="message-sent-content">
