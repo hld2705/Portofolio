@@ -205,14 +205,13 @@ body {
 
 .hero-section-responsive-impressum {
     position: fixed;
-    top: 0;
+    top: -100px;
     left: 0;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 999;
 }
 
 .menu-eclipse-responsive {
@@ -223,10 +222,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .menu-eclipse-responsive img {
@@ -235,7 +230,7 @@ body {
 
 .menu-buttons-responsive {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -246,6 +241,9 @@ body {
     z-index: 2;
 }
 
+.d_none {
+    display: none !important;
+}
 
 .menu-buttons-language-responsive {
     position: absolute;
@@ -257,6 +255,7 @@ body {
     justify-content: center;
     gap: 26px;
     z-index: 2;
+    top: 250px;
 }
 
 .menu-text-responsive {
@@ -326,6 +325,7 @@ body {
         justify-content: right;
         margin-right: 15px;
         padding-bottom: 20px;
+        z-index: 9999;
     }
 
     .logo-dark-mob-responsive {

@@ -144,7 +144,7 @@ body {
 }
 
 .menu-buttons-language-responsive {
-    bottom: 8px;
+    bottom: -63px;
     position: absolute;
     display: flex;
     align-items: center;

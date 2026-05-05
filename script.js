@@ -4,7 +4,6 @@
 function init() {
     templateRoute('join');
     setLanguage('en');
-    //sendButtonActivation();
 }
 
 /**
@@ -107,7 +106,7 @@ function menuScrollImpressum(id) {
     const routes = { whyMe: "#why-me", skills: "#skills", projects: "#projects", contacts: "#contact" }
     removeHighlight();
     document.getElementById(elements[id][0]).classList.add("menu-bar-highlight");
-    setTimeout(() => {window.location.href = "../index.html" + routes[id];}, 200)
+    setTimeout(() => { window.location.href = "../index.html" + routes[id]; }, 200)
 }
 
 /**
@@ -130,15 +129,9 @@ function responsiveMenu() {
  * Responsive menu - toggles between showing responsive menu
  */
 function responsiveMenuImpressum() {
-    let elipseResponsive = document.getElementById("hero-section-responsive");
-
-    if (elipseResponsive.style.display === "flex") {
-        elipseResponsive.style.display = "none";
-    } else {
-        elipseResponsive.style.display = "flex";
-    }
+    let elipseResponsive = document.getElementById("hero-section-responsive-impressum");
+    elipseResponsive.classList.toggle("d_none");
 }
-
 /**
  * Language selection elipse
  */
@@ -163,12 +156,7 @@ function toggleElipse(lang) {
 /**
  * Function that hides the profile picture once the menu bar is opened
  */
-function closeOverlay() {
-    let overlay = document.getElementById("overlay");
-    let elipseResponsive = document.getElementById("hero-section-responsive");
-    let profilePicture = document.getElementById("menu-profile-picture");
-
-    overlay.style.display = "none";
-    elipseResponsive.style.display = "none";
-    profilePicture.style.display = "flex";
-}
+document.addEventListener('click', function (event) {
+    let elipseResponsiveImpressum = document.getElementById("hero-section-responsive-impressum");
+    let elipseResponsiveMain = document.getElementById("hero-section-responsive");
+})
