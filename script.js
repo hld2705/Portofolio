@@ -156,7 +156,17 @@ function toggleElipse(lang) {
 /**
  * Function that hides the profile picture once the menu bar is opened
  */
-document.addEventListener('click', function (event) {
+document.addEventListener('click', function () {
     let elipseResponsiveImpressum = document.getElementById("hero-section-responsive-impressum");
     let elipseResponsiveMain = document.getElementById("hero-section-responsive");
-})
+    let profilePicture = document.getElementById("menu-profile-picture");
+
+    if (elipseResponsiveImpressum) {
+        elipseResponsiveImpressum.classList.toggle("d_none");
+    }
+
+    if (elipseResponsiveMain.style.display === "flex") {
+        profilePicture.style.display = "flex";
+        elipseResponsiveMain.style.display = "none";
+    }
+});

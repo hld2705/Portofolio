@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Anta&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Sancreek&display=swap"
         rel="stylesheet">
-    <script src="../script.js"></script>
+    <script src="../script.js" defer></script>
     <script src="../translations/translate.js"></script>
     <link rel="icon" type="image/png" href="../img/favicon/favicon.ico">
     <title>Portofolio</title>
@@ -26,7 +26,7 @@
             <div class="hero-section-logowhite-center">
                 <img class="halid-logo" src="../img/Halid logo.png">
             </div>
-            <img class="burger-menu" src="../img/burger menu.svg" onclick="responsiveMenuImpressum()" id="burger-menu">
+            <img class="burger-menu" src="../img/burger menu.svg" onclick="event.stopPropagation(); responsiveMenuImpressum()" id="burger-menu">
         </div>
     </div>
 

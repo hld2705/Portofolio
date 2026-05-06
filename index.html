@@ -28,14 +28,13 @@
             <div class="hero-section-logowhite-center">
                 <img class="halid-logo" src="./img/Halid logo.png">
             </div>
-            <img class="burger-menu" src="./img/burger menu.svg" onclick="responsiveMenu()" id="burger-menu">
+            <img class="burger-menu" src="./img/burger menu.svg" onclick="event.stopPropagation(); responsiveMenu()" id="burger-menu">
         </div>
 
     </div>
 
     <div class="hero-section" id="hero-section">
-        <div class="hero-section-responsive" id="hero-section-responsive" style="display: none;"
-            onclick="event.stopPropagation()">
+        <div class="hero-section-responsive" id="hero-section-responsive" style="display: none;">
             <img class="menu-eclipse-responsive" src="./img/Menu-responsive-elipse.svg">
             <div class="menu-buttons-responsive">
                 <p id="anchor2-why-me-responsive" class="menu-text-responsive" onclick="menuScroll('whyMe')">Why me
