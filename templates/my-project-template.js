@@ -2,8 +2,9 @@
  * Template for the join project
  */
 function joinTemplate() {
-    return `<div class="project-details-placement-div">
-                <div class="project-details-description-div">
+    return ` <div style="display:flex; max-width: 1440px">
+                <div class="project-details-placement-div">
+                    <div class="project-details-description-div">
                     <div class="project-details-description-section">
                         <!-- About the project -->
                         <div class="project-details-description-item">
@@ -47,7 +48,7 @@ function joinTemplate() {
                     </div>
                 </div>
             </div>
-        <div class="project-details-pictures-div">
+            <div class="project-details-pictures-div">
                 <div class="projects-pictures-techonolgies-combined">
                     <p class="project-details-pictures-text" data-i18n="technologies">Technologies</p>
                         <div class="project-details-technologies-div">
@@ -56,20 +57,21 @@ function joinTemplate() {
                             <img src="./img/Technologie CSS.svg">
                         </div>
                 </div>
-            <img src="./img/Screenshot join.svg">
-            <div class="projects-pictures-buttons">
+                <img src="./img/Screenshot join.svg">
+                <div class="projects-pictures-buttons">
                 <div class="projects-live-test-button"><p class="projects-live-test-button-text">Live Test</p></div>
                 <div class="projects-github-button"><p class="projects-github-button-text">GitHub</p></div>
             </div>
-        </div>
-            `
+            </div>
+        </div>`
 }
 
 /**
  * El Pollo Loco template
  */
 function elPolloLocoTemplate() {
-    return `<div class="project-details-placement-div">
+    return `<div style="display:flex; max-width:1440px;">
+                <div class="project-details-placement-div">
                 <div class="project-details-description-div">
                     <div class="project-details-description-section">
                         <!-- About the project -->
@@ -126,15 +128,16 @@ function elPolloLocoTemplate() {
                 <div class="projects-live-test-button"><p class="projects-live-test-button-text">Live Test</p></div>
                 <div class="projects-github-button"><p class="projects-github-button-text">GitHub</p></div>
             </div>
-        </div>
-            `
+            </div>
+        </div>`
 }
 
 /**
  * PokeDex template
  */
 function pokeDexTemplate() {
-    return `<div class="project-details-placement-div">
+    return `<div style="display:flex; max-width:1440px;">
+                <div class="project-details-placement-div">
                 <div class="project-details-description-div">
                     <div class="project-details-description-section">
                         <!-- About the project -->
@@ -190,7 +193,7 @@ function pokeDexTemplate() {
                 <div class="projects-github-button"><p class="projects-github-button-text">GitHub</p></div>
             </div>
         </div>
-            `
+            </div>`
 }
 
 /**
