@@ -463,6 +463,9 @@
     .game-screenshot {
         height: 190px;
     }
+    .project-details-description-item{
+    padding-bottom: 20px;
+}
 }
 
 @media (min-width: 950px) and (max-width: 1400px) {
@@ -479,8 +482,11 @@
         margin: 0;
         padding-left: 44px;
         line-height: 1.2;
-        padding-bottom: 20px;
     }
+
+.project-details-description-item{
+    padding-bottom: 20px;
+}
 
     .project-details-description-section {
         gap: 0px;
@@ -524,11 +530,16 @@
     .contact-me-formular-privacy-policy-accept {
         max-width: 95%;
         padding-left: 10px;
+        flex-direction: column;
     }
 
     .contact-me-checkbox-text {
         word-break: keep-all;
         white-space: normal;
+    }
+
+    .check-box-img{
+        width: 83px;
     }
 
     .game-screenshot-el-pollo-loco {
@@ -547,6 +558,10 @@
         margin-top: 83px;
         font-size: 44px;
     }
+
+    .project-details-description-item{
+    padding-bottom: 20px;
+}
 
     .contact-me-email-div {
         gap: 0px;

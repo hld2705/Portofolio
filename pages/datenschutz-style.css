@@ -8,6 +8,17 @@
     box-sizing: border-box;
 }
 
+.menu-text-responsive {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 0.1;
+    margin: 14px;
+    color:black;
+}
+
 p{
     font-family: Josefin Sans;
     font-weight: 400;
@@ -72,3 +83,4 @@ a{
     justify-content: center;
     color: #F8F5EC;
 }
+

@@ -256,8 +256,8 @@ body {
     align-items: center;
     justify-content: center;
     gap: 26px;
-    z-index: 2;
     top: 250px;
+    cursor:pointer;
 }
 
 .menu-text-responsive {
