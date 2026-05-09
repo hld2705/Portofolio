@@ -34,7 +34,6 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 1px;
-    cursor: pointer;
 }
 
 .under-logodark-text-name {
@@ -647,7 +646,7 @@ body::-webkit-scrollbar-thumb {
 .project-details-placement-div {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    /*align-items: flex-start;*/
     justify-content: center;
     width: 100%;
     max-width: 1440px;
@@ -1022,7 +1021,7 @@ body::-webkit-scrollbar-thumb {
     font-family: Josefin Sans;
     font-weight: 400;
     font-style: Regular;
-    font-size: 14px;
+    font-size: 16px;
     color: #F8F5EC;
 }
 
@@ -1030,7 +1029,7 @@ body::-webkit-scrollbar-thumb {
     font-family: Josefin Sans;
     font-weight: 400;
     font-style: Regular;
-    font-size: 14px;
+    font-size: 16px;
     background: #262E34;
     background-color: none;
     text-decoration: none;
@@ -1188,7 +1187,7 @@ footer {
     font-family: Josefin Sans;
     font-weight: 400;
     font-style: Regular;
-    font-size: 14px;
+    font-size: 16px;
     color: #F8F5EC;
     margin: 0px;
     line-height: 1.8;

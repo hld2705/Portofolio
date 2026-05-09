@@ -472,11 +472,12 @@
         font-family: Josefin Sans;
         font-weight: 400;
         font-style: Regular;
-        font-size: 15px;
+        font-size: 16px;
         color: #F8F5EC;
         margin: 0;
         padding-left: 44px;
         line-height: 1.2;
+        padding-bottom: 20px;
     }
 
     .project-details-description-section {
@@ -488,11 +489,11 @@
     }
 
     .hero-section-text-p {
-        font-size: 24px;
+        font-size: 22px;
     }
 
     .hero-section-text-h1 {
-        font-size: 62px;
+        font-size: 52px;
     }
 
     .need-a-teamplayer {

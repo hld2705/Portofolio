@@ -3,7 +3,8 @@
  */
 function init() {
     templateRoute('join');
-    setLanguage('en');
+    const savedLang = localStorage.getItem("lang") || "en";
+    setLanguage(savedLang);
 }
 
 /**
@@ -161,11 +162,11 @@ document.addEventListener('click', function () {
     let elipseResponsiveMain = document.getElementById("hero-section-responsive");
     let profilePicture = document.getElementById("menu-profile-picture");
 
-    if (elipseResponsiveImpressum) {
-        elipseResponsiveImpressum.classList.toggle("d_none");
+    if (elipseResponsiveImpressum && !elipseResponsiveImpressum.classList.contains("d_none")) {
+        elipseResponsiveImpressum.classList.add("d_none");
     }
 
-    if (elipseResponsiveMain.style.display === "flex") {
+    if (elipseResponsiveMain && elipseResponsiveMain.style.display === "flex") {
         profilePicture.style.display = "flex";
         elipseResponsiveMain.style.display = "none";
     }

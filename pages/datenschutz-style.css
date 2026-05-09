@@ -1,0 +1,74 @@
+.datenschutz-positioning{
+    width: 100%;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    max-width: 1440px;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 16px;
+    color: #F8F5EC;
+    line-height: 25px;
+}
+
+h3, h5{
+    font-family: Anta;
+    font-weight: 400;
+    font-size: 34px;
+    color: #89BCD9;
+    margin: 30px;
+    margin-left: 0px;
+}
+
+ul{
+    color: #89BCD9;
+    padding-left: 33px;
+    line-height: 1.9;
+}
+
+li{
+    color: #F8F5EC;
+    font-family: Josefin Sans;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #89BCD9;
+}
+
+p,
+li,
+a{
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+.menu-buttons-language-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    cursor: pointer;
+    color: black;
+}
+
+.menu-buttons-language-text:hover {
+    color: #F8F5EC;
+    transition: color 0.3s ease;
+}
+
+.elipse {
+    width: 36px;
+    height: 24px;
+    background-image: url("../img/Ellipse 24.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F8F5EC;
+}

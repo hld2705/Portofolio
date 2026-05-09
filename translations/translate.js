@@ -152,6 +152,75 @@ const translations_projects = {
     }
 };
 
+    const translation_datenschutz = {
+    de: {
+        privacyPolicyTitle: "Erklärung zur Informationspflicht",
+        privacyPolicyHeading: "Datenschutzerklärung",
+        privacyIntro: "In folgender Datenschutzerklärung informieren wir Sie über die wichtigsten Aspekte der Datenverarbeitung im Rahmen unserer Webseite. Wir erheben und verarbeiten personenbezogene Daten nur auf Grundlage der gesetzlichen Bestimmungen (Datenschutzgrundverordnung, Telekommunikationsgesetz 2003).",
+        ipTracking: "Sobald Sie als Benutzer auf unsere Webseite zugreifen oder diese besuchen wird Ihre IP-Adresse, Beginn sowie Beginn und Ende der Sitzung erfasst. Dies ist technisch bedingt und stellt somit ein berechtigtes Interesse iSv Art 6 Abs 1 lit f DSGVO.",
+        contactTitle: "Kontakt mit uns",
+        contactText: "Wenn Sie uns, entweder über unser Kontaktformular auf unserer Webseite, oder per Email kontaktieren, dann werden die von Ihnen an uns übermittelten Daten zwecks Bearbeitung Ihrer Anfrage oder für den Fall von weiteren Anschlussfragen für sechs Monate bei uns gespeichert. Es erfolgt, ohne Ihre Einwilligung, keine Weitergabe Ihrer übermittelten Daten.",
+        cookiesTitle: "Cookies",
+        cookiesText: "Unsere Website verwendet so genannte Cookies. Dabei handelt es sich um kleine Textdateien, die mit Hilfe des Browsers auf Ihrem Endgerät abgelegt werden. Sie richten keinen Schaden an. Wir nutzen Cookies dazu, unser Angebot nutzerfreundlich zu gestalten. Einige Cookies bleiben auf Ihrem Endgerät gespeichert, bis Sie diese löschen. Sie ermöglichen es uns, Ihren Browser beim nächsten Besuch wiederzuerkennen. Wenn Sie dies nicht wünschen, so können Sie Ihren Browser so einrichten, dass er Sie über das Setzen von Cookies informiert und Sie dies nur im Einzelfall erlauben. Bei der Deaktivierung von Cookies kann die Funktionalität unserer Website eingeschränkt sein.",
+        googleFontsTitle: "Google Fonts",
+        googleFontsText: "Unsere Website verwendet Schriftarten von „Google Fonts“. Der Dienstanbieter dieser Funktion ist:",
+        googleAddress: "Google Ireland Limited Gordon House, Barrow Street Dublin 4. Ireland",
+        googlePhone: "Tel: +353 1 543 1000",
+        googleCacheText: "Beim Aufrufen dieser Webseite lädt Ihr Browser Schriftarten und speichert diese in den Cache. Da Sie, als Besucher der Webseite, Daten des Dienstanbieters empfangen kann Google unter Umständen Cookies auf Ihrem Rechner setzen oder analysieren.",
+        googleUsageText: "Die Nutzung von „Google-Fonts“ dient der Optimierung unserer Dienstleistung und der einheitlichen Darstellung von Inhalten. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.",
+        googleMoreInfo: "Weitere Informationen zu Google Fonts erhalten Sie unter folgendem Link:",
+        googlePrivacyInfo: "Weitere Informationen über den Umgang mit Nutzerdaten von Google können Sie der Datenschutzerklärung entnehmen:",
+        googleUsaText: "Google verarbeitet die Daten auch in den USA, hat sich jedoch dem EU-US Privacy-Shield unterworfen.",
+        rightsTitle: "Ihre Rechte als Betroffener",
+        rightsText: "Sie als Betroffener haben bezüglich Ihrer Daten, welche bei uns gespeichert sind grundsätzlich ein Recht auf:",
+        rightInfo: "Auskunft",
+        rightDelete: "Löschung der Daten",
+        rightCorrection: "Berichtigung der Daten",
+        rightTransfer: "Übertragbarkeit der Daten",
+        rightWithdraw: "Wiederruf und Widerspruch zur Datenverarbeitung",
+        rightRestriction: "Einschränkung",
+        complaintText: "Wenn sie vermuten, dass im Zuge der Verarbeitung Ihrer Daten Verstöße gegen das Datenschutzrecht passiert sind, so haben Sie die Möglichkeit sich bei uns (halidcrnkic@gmail.com) oder der Datenschutzbehörde zu beschweren.",
+        contactDetailsTitle: "Sie erreichen mich unter folgenden Kontaktdaten:",
+        websiteOperator: "Webseitenbetreiber:",
+        phoneNumber: "Telefonnummer:",
+        email: "Email:"
+    },
+
+    en: {
+        privacyPolicyTitle: "Declaration on the Obligation to Provide Information",
+        privacyPolicyHeading: "Privacy Policy",
+        privacyIntro: "In the following privacy policy, we inform you about the most important aspects of data processing within the scope of our website. We collect and process personal data only on the basis of legal regulations (General Data Protection Regulation, Telecommunications Act 2003).",
+        ipTracking: "As soon as you access or visit our website as a user, your IP address, as well as the beginning and end of the session, are recorded. This is technically necessary and therefore represents a legitimate interest pursuant to Art. 6 para. 1 lit. f GDPR.",
+        contactTitle: "Contacting Us",
+        contactText: "If you contact us either via our contact form on the website or by email, the data you provide will be stored by us for six months for the purpose of processing your request or in case of follow-up questions. Your transmitted data will not be shared without your consent.",
+        cookiesTitle: "Cookies",
+        cookiesText: "Our website uses so-called cookies. These are small text files that are stored on your device with the help of the browser. They do not cause any damage. We use cookies to make our services more user-friendly. Some cookies remain stored on your device until you delete them. They allow us to recognize your browser on your next visit. If you do not want this, you can configure your browser to inform you about the setting of cookies and allow this only in individual cases. Disabling cookies may limit the functionality of our website.",
+        googleFontsTitle: "Google Fonts",
+        googleFontsText: "Our website uses fonts from “Google Fonts”. The service provider of this function is:",
+        googleAddress: "Google Ireland Limited Gordon House, Barrow Street Dublin 4, Ireland",
+        googlePhone: "Phone: +353 1 543 1000",
+        googleCacheText: "When accessing this website, your browser loads fonts and stores them in the cache. Since you, as a visitor to the website, receive data from the service provider, Google may under certain circumstances set or analyze cookies on your computer.",
+        googleUsageText: "The use of “Google Fonts” serves to optimize our service and ensure a consistent presentation of content. This constitutes a legitimate interest within the meaning of Art. 6 para. 1 lit. f GDPR.",
+        googleMoreInfo: "Further information about Google Fonts can be found at the following link:",
+        googlePrivacyInfo: "Further information about how Google handles user data can be found in the privacy policy:",
+        googleUsaText: "Google also processes data in the USA but has submitted itself to the EU-US Privacy Shield.",
+        rightsTitle: "Your Rights as a Data Subject",
+        rightsText: "As a data subject, you generally have the following rights regarding your data stored by us:",
+        rightInfo: "Information",
+        rightDelete: "Deletion of data",
+        rightCorrection: "Correction of data",
+        rightTransfer: "Data portability",
+        rightWithdraw: "Withdrawal and objection to data processing",
+        rightRestriction: "Restriction",
+        complaintText: "If you believe that violations of data protection law have occurred during the processing of your data, you have the option to contact us (halidcrnkic@gmail.com) or file a complaint with the data protection authority.",
+        contactDetailsTitle: "You can reach us using the following contact details:",
+        websiteOperator: "Website operator:",
+        phoneNumber: "Phone number:",
+        email: "Email:"
+        
+    }
+}
+
 const translations_teamplayer = {
     en: {
         philipp: "'Halid worked calmly, reliably and productively. He was always open to creative solutions and even when things got tricky, we found a way together.'",
@@ -164,13 +233,15 @@ const translations_teamplayer = {
 }
 
 function setLanguage(lang) {
+    localStorage.setItem("lang", lang)
     currentLang = lang
     toggleElipse(lang)
     const elements = document.querySelectorAll("[data-i18n]");
     elements.forEach(el => {
         const key = el.getAttribute("data-i18n");
         const project = el.getAttribute("data-project");
-        let value = translations[lang]?.[key];
+        let value = translations[lang]?.[key] ||
+        translation_datenschutz?.[lang]?.[key];
         if (project && translations_projects[lang]?.[project]?.[key]) {
             value = translations_projects[lang][project][key];}
         if (translations_teamplayer[lang]?.[key]) {
