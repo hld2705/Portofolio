@@ -111,7 +111,7 @@ body {
 
 .hero-section {
     opacity: 1;
-    height: 705px;
+    height: calc(100vh - 104px);
     top: 41px;
     left: 114px;
     display: flex;
@@ -198,7 +198,7 @@ input:-webkit-autofill:active {
     width: 579.9999900737229px;
     height: 615.9999894576091px;
     opacity: 1;
-    top: 66.3px;
+    top: 82.3px;
     overflow: hidden;
     left: 62.23px;
     display: flex;
@@ -212,7 +212,7 @@ input:-webkit-autofill:active {
     width: 579.9999900737229px;
     height: 615.9999894576091px;
     opacity: 1;
-    top: 66.3px;
+    top: 82.3px;
     left: 62.23px;
     z-index: 9999;
 }

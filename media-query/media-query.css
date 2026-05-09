@@ -315,6 +315,7 @@
     .project-details-description-text {
         padding-left: 44px;
         font-size: 16px;
+        padding-bottom: 20px;
     }
 
     .description-dot-icon {
@@ -401,6 +402,7 @@
     .project-details-description-text {
         font-size: 14px;
         padding-left: 35px;
+        padding-bottom: 20px;
     }
 
     .description-dot-icon {
@@ -583,5 +585,11 @@
         transition: 0.3s ease;
         word-break: keep-all;
         white-space: normal;
+    }
+}
+
+@media (min-width: 1500px) {
+    .hero-section{
+        height: 704px;
     }
 }

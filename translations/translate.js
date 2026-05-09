@@ -98,9 +98,9 @@ const translations_projects = {
             aboutTitle: "About the project",
             aboutText: "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
             processTitle: "How I have organised my work process",
-            processText: "I've organized my work in such way that me and my colleagues focused on all of the important parts firstly, connecting all of the small pieces with firebase, and keeping our database structured, every single detail was very much precisely construced, so much so that we actually did the responsive part for a whole month for the best user experience.",
+            processText: "My colleagues and I focused on the core features first, integrated everything with Firebase, and refined the responsive design for the best user experience.",
             teamTitle: "My group work experience",
-            teamText: "Our team consisted of three people each with its own assigment.My role was focusing on the 'backend' part, keep the comunication and all of the individual loops running smoothly as possible. Was very pleased with the competence of my teammates, as it provided for both a painfree and fun time working on this project."
+            teamText: "Our team consisted of three people, each with their own role. I focused on the backend, ensuring smooth communication and functionality. Working with such competent teammates made the project both efficient and enjoyable."
         },
 
         el_pollo_loco: {
@@ -127,9 +127,9 @@ const translations_projects = {
             aboutTitle: "Über das Projekt",
             aboutText: "Aufgabenmanager inspiriert vom Kanban-System. Aufgaben erstellen und per Drag & Drop organisieren.",
             processTitle: "Wie ich meinen Arbeitsprozess organisiert habe",
-            processText: "Ich habe meine Arbeit so organisiert, dass meine Kollegen und ich uns zunächst auf alle wichtigen Aspekte konzentriert haben: die Anbindung aller kleinen Komponenten an Firebase und die Strukturierung unserer Datenbank. Jedes einzelne Detail wurde sehr präzise ausgearbeitet, sodass wir tatsächlich einen ganzen Monat an der responsiven Gestaltung gearbeitet haben, um die bestmögliche Benutzererfahrung zu gewährleisten.",
+            processText: "Meine Kollegen und ich konzentrierten uns auf die Kernfunktionen, die Firebase-Anbindung und eine saubere Datenbankstruktur, mit besonderem Fokus auf responsives Design.",
             teamTitle: "Meine Erfahrung in der Teamarbeit",
-            teamText: "Unser Team bestand aus drei Personen mit jeweils eigener Aufgabe. Meine Rolle konzentrierte sich auf den Backend-Bereich und sorgte für einen reibungslosen Ablauf der Kommunikation und aller einzelnen Prozesse. Ich war sehr zufrieden mit der Kompetenz meiner Teamkollegen, da die Arbeit an diesem Projekt dadurch angenehm und unkompliziert verlief."
+            teamText: "Unser Team bestand aus drei Personen mit klaren Aufgaben. Ich war für das Backend und den reibungslosen Ablauf der Prozesse verantwortlich."
         },
 
         el_pollo_loco: {

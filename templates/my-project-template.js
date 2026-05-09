@@ -26,10 +26,7 @@ function joinTemplate() {
                                 <p class="project-details-description-title" data-project="join" data-i18n="processTitle">How I have organised my work process</p>
                             </div>
                             <p class="project-details-description-text" data-project="join" data-i18n="processText">
-                            I've organized my work in such way that me and my colleagues 
-                            focused on all of the important parts firstly, connecting all of the small pieces with firebase, and keeping our 
-                            database structured, every single detail was very much precisely construced, so much so that we actually did the responsive
-                            part for a whole month for the best user experience.
+                            My colleagues and I focused on the core features first, integrated everything with Firebase, and refined the responsive design for the best user experience.
                             </p>
                         </div>
                         
@@ -40,9 +37,7 @@ function joinTemplate() {
                                 <p class="project-details-description-title" data-project="join" data-i18n="teamTitle">My group work experience</p>
                             </div>
                             <p class="project-details-description-text" data-project="join" data-i18n="teamText">
-                            Our team consisted of three people each with its own assigment.
-                            My role was focusing on the "backend" part, keep the comunication and all of the individual loops running smoothly as possible.
-                            Was very pleased with the competence of my teammates, as it provided for both a painfree and fun time working on this project.
+                            Our team consisted of three people, each with their own role. I focused on the backend, ensuring smooth communication and functionality. Working with such competent teammates made the project both efficient and enjoyable.
                             </p>
                         </div>
                     </div>
