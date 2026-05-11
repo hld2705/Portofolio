@@ -1,14 +1,12 @@
 html {
     background-color: rgba(38, 46, 52, 1);
     scroll-behavior: smooth;
-    height: 100%;
+    height: 100vh;
 }
 
 body {
     margin: 0px;
-    min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
 }
 
 
@@ -148,6 +146,14 @@ body {
     color: #89BCD9;
 }
 
+.menu-bar-content-limit{
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    justify-content: space-around;
+    width: 100%;
+}
+
 .legal-notice-small-text {
     display: flex;
     flex-direction: column;
@@ -269,6 +275,7 @@ body {
     line-height: 0.1;
     margin: 14px;
 }
+
 
 @media (min-width: 540px) and (max-width: 750px) {
     .menu-buttons {
@@ -435,5 +442,11 @@ body {
         padding-left: 33px;
         padding-bottom: 60px;
         height: auto;
+    }
+}
+
+@media (min-width: 1500px) {
+    .legal-notice-title{
+        height: calc(100vh - 378px);
     }
 }

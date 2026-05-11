@@ -2,10 +2,11 @@
  * Template for the join project
  */
 function joinTemplate() {
-    return ` <div style="display:flex; max-width: 1440px">
-                <div class="project-details-placement-div">
-                    <div class="project-details-description-div">
-                    <div class="project-details-description-section">
+    return ` <div class="project-parent-div">
+                <div style="display:flex; max-width: 1440px">
+                    <div class="project-details-placement-div">
+                        <div class="project-details-description-div">
+                            <div class="project-details-description-section">
                         <!-- About the project -->
                         <div class="project-details-description-item">
                             <div class="project-details-description-header">
@@ -56,7 +57,8 @@ function joinTemplate() {
                 <div class="projects-pictures-buttons">
                 <div class="projects-live-test-button"><a style="text-decoration: none;" href="https://halid-crnkic.developerakademie.net/Join/index.html" target="_blank"><p class="projects-live-test-button-text">Live Test</p></a></div>
                 <div class="projects-github-button"><a style="text-decoration: none;" href="https://github.com/hld2705/Join" target="_blank"><p class="projects-github-button-text">GitHub</p></a></div>
-            </div>
+                </div>
+                </div>
             </div>
         </div>`
 }
@@ -65,7 +67,8 @@ function joinTemplate() {
  * El Pollo Loco template
  */
 function elPolloLocoTemplate() {
-    return `<div style="display:flex; max-width:1440px;">
+    return `<div class="project-parent-div">
+                    <div style="display:flex; max-width:1440px;">
                 <div class="project-details-placement-div">
                 <div class="project-details-description-div">
                     <div class="project-details-description-section">
@@ -124,6 +127,7 @@ function elPolloLocoTemplate() {
                 <div class="projects-github-button"><a style="text-decoration: none;" href="https://github.com/hld2705/El-Pollo-Loco" target="_blank"><p class="projects-github-button-text">GitHub</p></a></div>
             </div>
             </div>
+        </div>
         </div>`
 }
 
@@ -131,7 +135,8 @@ function elPolloLocoTemplate() {
  * PokeDex template
  */
 function pokeDexTemplate() {
-    return `<div style="display:flex; max-width:1440px;">
+    return `<div class="project-parent-div">
+                <div style="display:flex; max-width:1440px;">
                 <div class="project-details-placement-div">
                 <div class="project-details-description-div">
                     <div class="project-details-description-section">
@@ -188,7 +193,8 @@ function pokeDexTemplate() {
                 <div class="projects-github-button"><a style="text-decoration: none;" href="https://github.com/hld2705/PokeDex" target="_blank"><p class="projects-github-button-text">GitHub</p></a></div>
             </div>
         </div>
-            </div>`
+            </div>
+        </div>`
 }
 
 /**

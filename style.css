@@ -115,7 +115,7 @@ body {
     top: 41px;
     left: 114px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-evenly;
 }
 
@@ -167,16 +167,17 @@ body {
 .hero-section-content-limit{
     width: 100%; 
     display: flex; 
-    align-items: center; 
+    align-items: flex-end; 
     justify-content: space-around; 
     max-width: 1440px;
+        height: calc(100vh - 104px);
 }
 
 .menu-bar-content-limit{
     display: flex;
     align-items: center;
     max-width: 1440px;
-    justify-content: space-evenly;
+    justify-content: space-around;
     width: 100%;
 }
 
@@ -190,7 +191,7 @@ input:-webkit-autofill:active {
 }
 
 .profile-elipse-hover {
-    position: relative;
+    /*position: relative;*/
     background-image: url("./img/Property 1 Default.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -198,9 +199,9 @@ input:-webkit-autofill:active {
     width: 579.9999900737229px;
     height: 615.9999894576091px;
     opacity: 1;
-    top: 82.3px;
+    /*top: 82.3px;*/
     overflow: hidden;
-    left: 62.23px;
+    /*left: 62.23px;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -278,6 +279,11 @@ input:-webkit-autofill:active {
     align-items: center;
 }
 
+.project-parent-div{
+    width: 100%;
+    max-width: 1238px !important;
+}
+
 .hero-section-logo-text-placement-div {
     display: flex;
     flex-direction: column;
@@ -296,6 +302,7 @@ input:-webkit-autofill:active {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    margin-bottom: 40px;
 }
 
 .arrow-down-img:hover {
@@ -443,6 +450,7 @@ input:-webkit-autofill:active {
     align-items: center;
     justify-content: space-between;
     gap: 80px;
+    padding-right: 20px;
 }
 
 .why-me-details-text-text {
@@ -452,6 +460,7 @@ input:-webkit-autofill:active {
     font-size: 18px;
     color: #F8F5EC;
     margin: 0px;
+    text-align: center;
 }
 
 .why-me-details-text-button {
@@ -531,7 +540,6 @@ input:-webkit-autofill:active {
 .my-skills-default-elipse::after {
     content: "";
     position: absolute;
-    inset: -12%;
     background: url("./img/Hover my skills elipse.svg") center/contain no-repeat;
     opacity: 0;
     transition: opacity 0.35s ease-out;
@@ -643,14 +651,16 @@ body::-webkit-scrollbar-thumb {
     padding: 0px 50px 0px 50px;
 }
 
+.last-formular-placement{
+    margin-bottom: 25px;
+}
+
 .project-details-placement-div {
     display: flex;
     flex-direction: row;
     /*align-items: flex-start;*/
     justify-content: center;
     width: 100%;
-    max-width: 1440px;
-    padding: 40px;
 }
 
 .project-details-description-div {
@@ -714,6 +724,7 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
     padding-left: 44px;
     line-height: 1.6;
+    padding-right: 40px;
 }
 
 .project-details-pictures-div {
@@ -721,7 +732,6 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 40px;
     gap: 15px;
 }
 
@@ -1014,7 +1024,7 @@ body::-webkit-scrollbar-thumb {
 .contact-me-last-formular-checkbox-placement-div {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .contact-me-checkbox-text {
@@ -1103,10 +1113,9 @@ footer {
 
 .footer-placement-div {
     display: flex;
-    width: 100%;
+    width: 1440px;
     align-items: center;
     justify-content: space-around;
-    max-width: 1440px;
 }
 
 .footer-text {

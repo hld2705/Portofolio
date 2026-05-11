@@ -41,11 +41,15 @@ function validateEmail() {
         email.placeholder = "*Please enter your email!";
         return false;
     }
-    if (email.value.length < 3) {
+    if (email.value.length < 5) {
         email.classList.add("invalid-input");
         emailError.innerHTML = `<p class="error-message" data-i18n="threeCharactersNeeded">*At least 3 characters needed!</p>`
         return false;
-    } else { emailError.innerHTML = ""; }
+    } if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())){
+        email.classList.add("invalid-input");
+        emailError.innerHTML = `<p class="error-message" data-i18n="validEmail">*Please enter a valid email address!</p>`
+        return false;
+    }else { emailError.innerHTML = ""; }
     return true;
 }
 
@@ -54,13 +58,11 @@ function validateEmail() {
  */
 function validateMessage() {
     message.classList.remove("invalid-input");
-
     if (message.value.trim() === "") {
         message.classList.add("invalid-input");
         message.placeholder = "*Please enter your name!";
         return false;
     }
-
     if (message.value.length < 5) {
         message.classList.add("invalid-input");
         messageError.innerHTML = `<p class="error-message" data-i18n="fiveCharactersNeeded">*At least 5 characters needed!</p>`
@@ -75,13 +77,12 @@ function validateMessage() {
  * Validation function for the contact part of the page 
  */
 function sendMessage() {
-    
     if(isFormValid()){
         document.body.insertAdjacentHTML('beforeend', messageSentTemplate());
         const overlay = document.querySelector('.message-sent-overlay');
         setTimeout(() => {
         overlay.remove();
-    }, 3000)
+    }, 1500)
     }
     name.value = "";
     email.value = "";

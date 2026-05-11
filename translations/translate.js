@@ -16,7 +16,7 @@ const translations = {
         privacyTextStart: "I've read the ",
         privacyLink: "privacy policy",
         privacyTextEnd: " and agree to the processing of my data as outlined.",
-        iAmPassionate: "I am passionate about coding because i see it <br> as a hoby.My perfectionist attitude towards coding <br> encourages me to keep pushing my own boundaries. <br> With a problem solving analytical thinking and persistence <br> attitude i am trying to be the very best when it goes about coding.",
+        iAmPassionate: "Passionate about coding, with a strong focus on problem-solving, growth, and continuous improvement.",
         IAm: "I Am",
         Located: "Located in Graz",
         iAmCurrentlyLearning: "I am currently learning",
@@ -44,6 +44,7 @@ const translations = {
         fiveCharactersNeeded: "*At least 5 characters needed!",
         emailRequired: "*Please enter your email!",
         messageRequired: "*Please enter your message!",
+        validEmail: "*Please enter a valid email address!"
     },
 
     de: {
@@ -61,7 +62,7 @@ const translations = {
         privacyTextStart: "Ich habe die ",
         privacyLink: "Datenschutzbestimmungen",
         privacyTextEnd: " gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
-        iAmPassionate: "Programmieren ist meine Leidenschaft, denn ich sehe es <br> als Hobby. Mein Perfektionismus beim Programmieren <br> spornt mich an, meine Grenzen immer wieder neu auszuloten. <br> Mit analytischem Denkvermögen, Problemlösungskompetenz und Ausdauer <br> versuche ich, beim Programmieren Bestleistungen zu erzielen.",
+        iAmPassionate: "Passioniert fürs Programmieren, mit einem starken Fokus auf Problemlösung, Wachstum und kontinuierliche Verbesserung.",
         IAm: "Ich befinde",
         Located: "mich in Graz",
         iAmCurrentlyLearning: "Ich lerne gerade",
@@ -77,7 +78,7 @@ const translations = {
         yourName: "Ihr Name",
         yourEmail: "Ihr Email",
         yourMessage: "Ihre Nachricht",
-        send: "Shicken",
+        send: "Senden",
         consumerDispute: "Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle",
         WeAreNeither: "Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen",
         sourceText: "Quelle: ",
@@ -89,6 +90,7 @@ const translations = {
         fiveCharactersNeeded: "*Mindestens 5 Zeichen erforderlich!",
         emailRequired: "*Bitte geben Sie Ihre E-Mail-Adresse ein!",
         messageRequired: "*Bitte geben Sie Ihre Nachricht ein!",
+        validEmail: "*Bitte geben Sie eine gültige E-Mail-Adresse ein!"
     }
 };
 
