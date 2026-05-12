@@ -164,16 +164,16 @@ body {
     display: none;
 }
 
-.hero-section-content-limit{
-    width: 100%; 
-    display: flex; 
-    align-items: flex-end; 
-    justify-content: space-around; 
+.hero-section-content-limit {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
     max-width: 1440px;
-        height: calc(100vh - 104px);
+    height: calc(100vh - 104px);
 }
 
-.menu-bar-content-limit{
+.menu-bar-content-limit {
     display: flex;
     align-items: center;
     max-width: 1440px;
@@ -279,7 +279,7 @@ input:-webkit-autofill:active {
     align-items: center;
 }
 
-.project-parent-div{
+.project-parent-div {
     width: 100%;
     max-width: 1238px !important;
 }
@@ -522,6 +522,26 @@ input:-webkit-autofill:active {
     max-width: 300px;
 }
 
+.skill-icon-text-currently {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #89BCD9;
+    margin: 0px;
+}
+
+.skill-icon-text-positioning{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+}
+
 .my-skills-default-elipse {
     position: relative;
     width: clamp(280px, 10vw, 380px);
@@ -539,6 +559,7 @@ input:-webkit-autofill:active {
 
 .my-skills-default-elipse::after {
     content: "";
+    inset: -12%;
     position: absolute;
     background: url("./img/Hover my skills elipse.svg") center/contain no-repeat;
     opacity: 0;
@@ -651,7 +672,7 @@ body::-webkit-scrollbar-thumb {
     padding: 0px 50px 0px 50px;
 }
 
-.last-formular-placement{
+.last-formular-placement {
     margin-bottom: 25px;
 }
 
@@ -1428,6 +1449,7 @@ textarea::placeholder {
         transform: translateY(100%);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
