@@ -127,6 +127,10 @@
         margin-top: 10px;
     }
 
+     #contact{
+    scroll-margin-top: 400px;
+ }
+
     .arrow-down-img-responsive {
         display: block;
         cursor: pointer;

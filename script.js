@@ -73,17 +73,18 @@ async function arrowScrollHeader() {
  * Function for making the menu-bar buttons scrollable
  */
 function menuScroll(id) {
-    const elements = {
-        whyMe: ["anchor2-why-me", 750],
-        skills: ["anchor3-skills", 1050],
-        projects: ["anchor4-projects", 1600],
-        contacts: ["anchor5-contacts", 3000],
-        letstalk: ["anchor5-contacts", 4500]
+    const sections = {
+        whyMe: 'why-me',
+        skills: 'skills',
+        projects: 'projects',
+        contacts: 'contact',
+        letstalk: 'contact'
     };
 
     removeHighlight();
-    document.getElementById(elements[id][0]).classList.add("menu-bar-highlight");
-    setTimeout(() => window.scrollTo(0, elements[id][1]), 200);
+    const anchorMap = { whyMe: 'anchor2-why-me', skills: 'anchor3-skills', projects: 'anchor4-projects', contacts: 'anchor5-contacts', letstalk: 'anchor5-contacts' };
+    document.getElementById(anchorMap[id])?.classList.add('menu-bar-highlight');
+    document.getElementById(sections[id])?.scrollIntoView({ behavior: 'smooth' });
 }
 
 /**

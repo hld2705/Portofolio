@@ -557,6 +557,10 @@ input:-webkit-autofill:active {
     z-index: 1;
 }
 
+#why-me, #skills, #projects, #contact {
+    scroll-margin-top: 100px;
+}
+
 .my-skills-default-elipse::after {
     content: "";
     inset: -12%;
