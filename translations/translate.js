@@ -61,7 +61,7 @@ const translations = {
         raisedInterest: "Falls mein Portfolio Ihr Interesse an einer Zusammenarbeit geweckt hat, kontaktieren Sie mich gerne, um Ihr Projekt gemeinsam voranzubringen",
         privacyTextStart: "Ich habe die ",
         privacyLink: "Datenschutzbestimmungen",
-        privacyTextEnd: " gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+        privacyTextEnd: " gelesen und stimme der Verarbeitung meiner Daten wie <br> beschrieben zu.",
         iAmPassionate: "Passioniert fürs Programmieren, mit einem starken Fokus auf Problemlösung, Wachstum und kontinuierliche Verbesserung.",
         IAm: "Ich befinde",
         Located: "mich in Graz",

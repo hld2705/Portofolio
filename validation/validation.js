@@ -76,17 +76,28 @@ function validateMessage() {
 /**
  * Validation function for the contact part of the page 
  */
-function sendMessage() {
-    if(isFormValid()){
+async function sendMessage() {
+    const name = document.getElementById('inputname').value;
+    const email = document.getElementById('inputemail').value;
+    const message = document.getElementById('inputmessage').value;
+
+    if (!isFormValid()) return;
+
+    const response = await fetch('https://halid-crnkic.at/send-mail.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, message })
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
         document.body.insertAdjacentHTML('beforeend', messageSentTemplate());
-        const overlay = document.querySelector('.message-sent-overlay');
-        setTimeout(() => {
-        overlay.remove();
-    }, 1500)
+        setTimeout(() => document.querySelector('.message-sent-overlay')?.remove(), 1500);
+        document.getElementById('inputname').value = "";
+        document.getElementById('inputemail').value = "";
+        document.getElementById('inputmessage').value = "";
     }
-    name.value = "";
-    email.value = "";
-    message.value = "";
 }
 
 /**

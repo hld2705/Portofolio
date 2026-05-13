@@ -127,9 +127,9 @@
         margin-top: 10px;
     }
 
-     #contact{
-    scroll-margin-top: 400px;
- }
+  #why-me, #skills, #projects, #contact {
+    scroll-margin-top: 0px;
+}
 
     .arrow-down-img-responsive {
         display: block;
@@ -628,8 +628,12 @@
         }
     }
 
-    @media (min-width: 1500px) {
+    @media (min-width: 3000px) {
         .hero-section {
-            height: 704px;
+            min-height: 704px;
+        }
+
+        .hero-section-content-limit{
+            height: auto;
         }
     }
