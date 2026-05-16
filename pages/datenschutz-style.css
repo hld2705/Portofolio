@@ -19,6 +19,13 @@
     color:black;
 }
 
+.datenschutz-positioning-height{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 p{
     font-family: Josefin Sans;
     font-weight: 400;
@@ -84,3 +91,9 @@ a{
     color: #F8F5EC;
 }
 
+@media (min-width: 3000px){
+    .datenschutz-positioning-height{
+        height: calc(100vh - 365px);
+        margin-top: 80px;
+    }
+}

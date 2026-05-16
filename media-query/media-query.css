@@ -127,9 +127,12 @@
         margin-top: 10px;
     }
 
-  #why-me, #skills, #projects, #contact {
-    scroll-margin-top: 0px;
-}
+    #why-me,
+    #skills,
+    #projects,
+    #contact {
+        scroll-margin-top: 0px;
+    }
 
     .arrow-down-img-responsive {
         display: block;
@@ -193,10 +196,6 @@
         width: 58px;
     }
 
-    .check-box-img {
-        width: 50px;
-    }
-
     .error-message {
         margin-bottom: 20px;
     }
@@ -217,11 +216,11 @@
 
     .contact-me-description-text {
         padding-right: 40px;
-        padding-left: 25px;
+        padding-left: 40px;
     }
 
     .contact-me-icons-placement {
-        padding-left: 25px;
+        padding-left: 40px;
     }
 
     .contact-me-formular-first-two-fields {
@@ -244,7 +243,7 @@
     input,
     textarea {
         margin: 0;
-        padding: 10px;
+        padding: 35px;
     }
 
     .contact-me-formular {
@@ -485,155 +484,198 @@
     .my-skills-default-elipse::after {
         width: fit-content;
     }
+
+    .i-am {
+        font-size: 21px;
+    }
+
+
 }
-    @media (min-width: 950px) and (max-width: 1400px) {
-        .project-details-description-title {
-            font-size: 22px;
-        }
 
-        .project-details-description-text {
-            font-family: Josefin Sans;
-            font-weight: 400;
-            font-style: Regular;
-            font-size: 16px;
-            color: #F8F5EC;
-            margin: 0;
-            padding-left: 44px;
-            line-height: 1.2;
-        }
-
-        .project-details-description-item {
-            padding-bottom: 20px;
-        }
-
-        .project-details-description-section {
-            gap: 0px;
-        }
-
-        .hero-section-responsive {
-            display: none;
-        }
-
-        .hero-section-text-p {
-            font-size: 22px;
-        }
-
-        .hero-section-text-h1 {
-            font-size: 52px;
-        }
-
-        .need-a-teamplayer {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            overflow-x: auto;
-        }
-
-        .project-details-pictures-div {
-            padding-right: 40px;
-        }
-
-        .project-details-description-div {
-            padding-left: 40px;
-        }
+@media (min-width: 950px) and (max-width: 1400px) {
+    .project-details-description-title {
+        font-size: 22px;
     }
 
-    @media (min-width: 320px) and (max-width: 500px) {
-
-        .menu-eclipse-responsive {
-            width: 80%;
-        }
-
-        .why-me-details-text-text {
-            font-size: 19px;
-            padding-left: 10px;
-            padding-right: 10px;
-            line-height: 1.2;
-            text-align: center;
-        }
-
-        .contact-me-formular-privacy-policy-accept {
-            max-width: 95%;
-            padding-left: 10px;
-            flex-direction: column;
-        }
-
-        .contact-me-checkbox-text {
-            word-break: keep-all;
-            white-space: normal;
-        }
-
-        .check-box-img {
-            width: 83px;
-        }
-
-        .game-screenshot-el-pollo-loco {
-            height: 160px;
-        }
-
-        .project-details-description-section {
-            padding-left: 0px;
-        }
-
-        .project-details {
-            padding: 19px;
-        }
-
-        .why-me-p {
-            font-size: 44px;
-        }
-
-        .project-details-description-item {
-            padding-bottom: 20px !important;
-        }
-
-        .contact-me-email-div {
-            gap: 0px;
-        }
-
-        .contact-me-p {
-            font-size: 17px;
-        }
-
-        .project-names {
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            width: 100%;
-            gap: 0px;
-        }
-
-        .highlight {
-            background: #89BCD912;
-            height: 81px;
-            border-radius: 15px 15px 0px 0px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0px 15px 0px 15px;
-        }
-
-        .project-names-tabs {
-            font-family: Josefin Sans;
-            font-weight: 500;
-            font-style: Medium;
-            font-size: 15px;
-            color: #89BCD9;
-            cursor: pointer;
-            margin: 0px;
-            transition: 0.3s ease;
-            word-break: keep-all;
-            white-space: normal;
-        }
+    .project-details-description-text {
+        font-family: Josefin Sans;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        color: #F8F5EC;
+        margin: 0;
+        padding-left: 44px;
+        line-height: 1.2;
     }
 
-    @media (min-width: 3000px) {
-        .hero-section {
-            min-height: 704px;
-        }
-
-        .hero-section-content-limit{
-            height: auto;
-        }
+    .project-details-description-item {
+        padding-bottom: 20px;
     }
+
+    .project-details-description-section {
+        gap: 0px;
+    }
+
+    .hero-section-responsive {
+        display: none;
+    }
+
+    .hero-section-text-p {
+        font-size: 22px;
+    }
+
+    .hero-section-text-h1 {
+        font-size: 52px;
+    }
+
+    .need-a-teamplayer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow-x: auto;
+    }
+
+    .project-details-pictures-div {
+        padding-right: 40px;
+    }
+
+    .project-details-description-div {
+        padding-left: 40px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+
+    #contact-me{
+        padding-left: 17px;
+    }
+
+    .contact-me-formular-privacy-policy-accept {
+        gap: 35px;
+    }
+
+    .need-a-teamplayer-elipse {
+        background-size: 333px;
+        background-repeat: no-repeat;
+        min-width: 333px;
+    }
+
+    .need-a-teamplayer-elipse:hover {
+        background-size: 333px;
+        background-repeat: no-repeat;
+        min-width: 333px;
+    }
+
+    .need-a-teamplayer-elipse {
+        justify-content: center;
+    }
+
+    .need-a-teamplayer-elipse-div {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .need-a-teamplayer-details {
+        font-size: 16px;
+    }
+
+    .standpoint-icon {
+        height: 30px;
+    }
+
+    .why-me-details-standpoint-text-icons {
+        margin-left: 0px;
+        padding-left: 10px;
+    }
+
+    .why-me-details-standpoint-text-div {
+        padding-right: 0px;
+    }
+
+    .located-in {
+        font-size: 21px;
+    }
+
+    .menu-eclipse-responsive {
+        width: 80%;
+    }
+
+    .why-me-details-text-text {
+        font-size: 19px;
+        padding-left: 10px;
+        padding-right: 10px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .contact-me-formular-privacy-policy-accept {
+        max-width: 95%;
+        padding-left: 10px;
+        flex-direction: column;
+    }
+
+    .contact-me-checkbox-text {
+        word-break: keep-all;
+        white-space: normal;
+    }
+
+    .game-screenshot-el-pollo-loco {
+        height: 160px;
+    }
+
+    .project-details-description-section {
+        padding-left: 0px;
+    }
+
+    .project-details {
+        padding: 19px;
+    }
+
+    .why-me-p {
+        font-size: 44px;
+    }
+
+    .project-details-description-item {
+        padding-bottom: 20px !important;
+    }
+
+    .contact-me-email-div {
+        gap: 0px;
+    }
+
+    .contact-me-p {
+        font-size: 17px;
+    }
+
+    .project-names {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 0px;
+    }
+
+    .highlight {
+        background: #89BCD912;
+        height: 81px;
+        border-radius: 15px 15px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 15px 0px 15px;
+    }
+
+    .project-names-tabs {
+        font-family: Josefin Sans;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 15px;
+        color: #89BCD9;
+        cursor: pointer;
+        margin: 0px;
+        transition: 0.3s ease;
+        word-break: keep-all;
+        white-space: normal;
+    }
+}

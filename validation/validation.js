@@ -41,11 +41,11 @@ function validateEmail() {
         email.placeholder = "*Please enter your email!";
         return false;
     }
-    if (email.value.length < 5) {
+    if (email.value.length < 3) {
         email.classList.add("invalid-input");
         emailError.innerHTML = `<p class="error-message" data-i18n="threeCharactersNeeded">*At least 3 characters needed!</p>`
         return false;
-    } if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim())){
+    } if (!/^[^\s@.]+(\.[^\s@.]+)*@[^\s@.]+(\.[^\s@.]+)+$/.test(email.value.trim())){
         email.classList.add("invalid-input");
         emailError.innerHTML = `<p class="error-message" data-i18n="validEmail">*Please enter a valid email address!</p>`
         return false;
@@ -77,27 +77,21 @@ function validateMessage() {
  * Validation function for the contact part of the page 
  */
 async function sendMessage() {
-    const name = document.getElementById('inputname').value;
-    const email = document.getElementById('inputemail').value;
-    const message = document.getElementById('inputmessage').value;
-
     if (!isFormValid()) return;
-
-    const response = await fetch('https://halid-crnkic.at/send-mail.php', {
+    let checkbox = document.getElementById('check-box-img');
+    if (!checkbox.classList.contains('check-box-checked'))
+        return checkbox.classList.remove('vibrate'), void checkbox.offsetWidth, checkbox.classList.add('vibrate');
+    let values = ['inputname', 'inputemail', 'inputmessage']
+        .map(id => document.getElementById(id).value);
+    let response = await fetch('https://halid-crnkic.at/send-mail.php', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, message })
+        body: JSON.stringify({ name: values[0], email: values[1], message: values[2] })
     });
-
-    const result = await response.json();
-
-    if (result.success) {
-        document.body.insertAdjacentHTML('beforeend', messageSentTemplate());
-        setTimeout(() => document.querySelector('.message-sent-overlay')?.remove(), 1500);
-        document.getElementById('inputname').value = "";
-        document.getElementById('inputemail').value = "";
-        document.getElementById('inputmessage').value = "";
-    }
+    if ((await response.json()).success)
+        document.body.insertAdjacentHTML('beforeend', messageSentTemplate()),
+        setTimeout(() => document.querySelector('.message-sent-overlay')?.remove(), 1500),
+        ['inputname', 'inputemail', 'inputmessage'].forEach(id => document.getElementById(id).value = '');
 }
 
 /**
@@ -112,33 +106,18 @@ function isFormValid() {
  * When clickin on the button to confirm the privacy policy it first gets tested if all of the input fields are valid
  */
 function sendButtonActivation() {
-    let valid = isFormValid();
-    if (valid) {
-        document.querySelector(".contact-me-send-button")
-            .classList.add("contact-me-send-button-true");
-        document.querySelector(".contact-me-send-button-text")
-            .classList.add("contact-me-send-button-text-true");
-    } else {
-        document.querySelector(".contact-me-send-button")
-            .classList.remove("contact-me-send-button-true");
-        document.querySelector(".contact-me-send-button-text")
-            .classList.remove("contact-me-send-button-text-true");
-    }
-    checkBoxValidation(valid);
-}
-
-/**
- * Function that changes the shape of the checkbox regarding its validity
- */
-function checkBoxValidation(valid) {
     let checkbox = document.getElementById("check-box-img");
-    let link = document.getElementById("privacypolicylink");
-    checkbox.classList.remove("check-box-checked", "check-box-red");
-    if (valid) {
-        checkbox.classList.add("check-box-checked");
-        link.style.color = "#89BCD9";
-    } else {
-        checkbox.classList.add("check-box-red");
-        link.style.color = "#E44C36";
-    }
+    let active = isFormValid() && !checkbox.classList.contains("check-box-checked");
+
+    checkbox.classList.toggle("check-box-checked", active);
+    checkbox.classList.toggle("check-box-red", !isFormValid());
+
+    document.getElementById("privacypolicylink").style.color =
+        active ? "#89BCD9" : "#E44C36";
+
+    document.querySelector(".contact-me-send-button")
+        .classList.toggle("contact-me-send-button-true", active);
+
+    document.querySelector(".contact-me-send-button-text")
+        .classList.toggle("contact-me-send-button-text-true", active);
 }
