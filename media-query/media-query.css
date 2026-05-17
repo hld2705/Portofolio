@@ -41,6 +41,7 @@
         height: auto;
         top: auto;
         left: auto;
+        min-height: auto;
     }
 
     .profile-elipse-hover {
@@ -130,7 +131,7 @@
     #why-me,
     #skills,
     #projects,
-    #contact {
+    #contact-me {
         scroll-margin-top: 0px;
     }
 
@@ -210,7 +211,7 @@
 
     .contact-me-description {
         flex-direction: column-reverse;
-        gap: 25px;
+        gap: 15px;
         max-width: 100%;
     }
 
@@ -243,13 +244,12 @@
     input,
     textarea {
         margin: 0;
-        padding: 35px;
+        padding: 27px;
     }
 
     .contact-me-formular {
         width: 100%;
-        max-width: 95%;
-        padding-left: 10px;
+        max-width: 94%;
         padding-bottom: 50px;
     }
 

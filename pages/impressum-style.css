@@ -127,6 +127,10 @@ body {
     justify-content: center;
 }
 
+#why-me, #skills, #projects, #contact-me {
+    scroll-margin-top: 100px;
+}
+
 .legal-notice-title {
     flex: 1;
     display: flex;
@@ -135,8 +139,10 @@ body {
     justify-content: center;
     padding-left: 100px;
     padding-bottom: 60px;
-    max-width: 1440px;
+    max-width: 1111px;
     margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .legal-notice-p {
@@ -323,6 +329,10 @@ body {
 
 @media (min-width: 320px) and (max-width: 540px) {
 
+    #why-me, #skills, #projects, #contact-me {
+    scroll-margin-top: 0px;
+}
+
     .menu-bar {
         display: none;
     }
@@ -410,6 +420,10 @@ body {
 
 @media(min-width: 540px) and (max-width: 750px) {
 
+    #why-me, #skills, #projects, #contact-me {
+    scroll-margin-top: 0px;
+}
+
     .menu-text {
         padding: 0px 9px;
         font-size: 20px;
@@ -424,7 +438,7 @@ body {
     }
 }
 
-@media (min-width: 750px) and (max-width: 1500px) {
+@media (min-width: 750px) and (max-width: 1300px) {
 
     .legal-notice-title {
         flex: 1;
@@ -445,8 +459,10 @@ body {
     }
 }
 
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
     .legal-notice-title{
         height: calc(100vh - 378px);
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
 }

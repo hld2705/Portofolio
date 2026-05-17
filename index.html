@@ -192,7 +192,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="my-skills" id="skills">
         <p class="why-me-p" id="my-skills" data-i18n="mySkills">My Skills</p>
         <div class="skills-currently-learning-positioning">
@@ -246,7 +246,7 @@
         </div>
     </div>
 
-    <div>
+    <div style="padding-top: 40px; padding-bottom: 40px;">
         <p class="need-a-team-player-headline" data-i18n="NeedATeamplayer">Need a teamplayer? Here's what my
             colleagues say about me</p>
     </div>
@@ -314,44 +314,50 @@
 
 
     </div>
-    <div class="contact-me-formular" id="contact">
-        <div class="contact-me-formular-first-two-fields">
-            <div class="input-field-responsive">
-                <p class="contact-me-formular-text" data-i18n="yourName">Your name</p>
-                <input class="contact-formular-first-two-inputfields" type="text" id="inputname" onblur="validateName()">
-                <div id="errorname"></div>
-            </div>
-            <div class="input-field-responsive">
-                <p class="contact-me-formular-text" data-i18n="yourEmail">Your Email</p>
-                <input class="contact-formular-first-two-inputfields" type="email" id="inputemail" onblur="validateEmail()">
-                <div id="erroremail"></div>
-            </div>
-        </div>
-        <div class="contact-me-last-formular-checkbox-placement-div">
-            <div class="last-formular-placement">
-                <p class="contact-me-formular-text" data-i18n="yourMessage">Your Message</p>
-                <textarea class="contact-me-formular-last-inputfield" type="text" id="inputmessage" onblur="validateMessage()"></textarea>
-            </div>
-            <div id="errormessage"></div>
-            <div class="contact-me-formular-privacy-policy-accept">
-                <div class="contact-me-formular-privacy-policy-accept-div">
-                    <div class="check-box-img" onclick="sendButtonActivation()" id="check-box-img"></div>
-                    <p class="contact-me-checkbox-text">
-                        <span data-i18n="privacyTextStart"></span>
-                        <a class="contact-link" href="./pages/datenschutz.html" data-i18n="privacyLink"
-                            id="privacypolicylink"></a>
-                        <span data-i18n="privacyTextEnd"></span>
-                    </p>
+    <div class="contact-me-inputfields-together">
+        <div class="contact-me-formular" id="contact">
+            <div class="contact-me-formular-first-two-fields">
+                <div class="input-field-responsive">
+                    <p class="contact-me-formular-text" data-i18n="yourName">Your name</p>
+                    <input class="contact-formular-first-two-inputfields" type="text" id="inputname"
+                        onblur="validateName()">
+                    <div id="errorname"></div>
                 </div>
-                <div class="contact-me-send-button" onclick="sendMessage()">
-                    <p class="contact-me-send-button-text" data-i18n="send">Send</p>
+                <div class="input-field-responsive">
+                    <p class="contact-me-formular-text" data-i18n="yourEmail">Your Email</p>
+                    <input class="contact-formular-first-two-inputfields" type="email" id="inputemail"
+                        onblur="validateEmail()">
+                    <div id="erroremail"></div>
                 </div>
             </div>
+            <div class="contact-me-last-formular-checkbox-placement-div">
+                <div class="last-formular-placement">
+                    <p class="contact-me-formular-text" data-i18n="yourMessage">Your Message</p>
+                    <textarea class="contact-me-formular-last-inputfield" type="text" id="inputmessage"
+                        onblur="validateMessage()"></textarea>
+                </div>
+                <div id="errormessage"></div>
+                <div class="contact-me-formular-privacy-policy-accept">
+                    <div class="contact-me-formular-privacy-policy-accept-div">
+                        <div class="check-box-img" onclick="sendButtonActivation()" id="check-box-img"></div>
+                        <p class="contact-me-checkbox-text">
+                            <span data-i18n="privacyTextStart"></span>
+                            <a class="contact-link" href="./pages/datenschutz.html" data-i18n="privacyLink"
+                                id="privacypolicylink"></a>
+                            <span data-i18n="privacyTextEnd"></span>
+                        </p>
+                    </div>
+                    <div class="contact-me-send-button" onclick="sendMessage()">
+                        <p class="contact-me-send-button-text" data-i18n="send">Send</p>
+                    </div>
+                </div>
 
 
-        </div>
-        <div class="arrow-down-div-responsive">
-            <img class="arrow-up-img-responsive" src="./img/Arrow up.svg" id="arrowup" onclick="arrowScrollHeader()">
+            </div>
+            <div class="arrow-down-div-responsive">
+                <img class="arrow-up-img-responsive" src="./img/Arrow up.svg" id="arrowup"
+                    onclick="arrowScrollHeader()">
+            </div>
         </div>
     </div>
     <footer>

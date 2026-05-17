@@ -77,7 +77,7 @@ function menuScroll(id) {
         whyMe: 'why-me',
         skills: 'skills',
         projects: 'projects',
-        contacts: 'contact',
+        contacts: 'contact-me',
         letstalk: 'contact'
     };
 
@@ -99,16 +99,11 @@ function removeHighlight() {
  * Needed a separate function for menuScroll Impressum, because the page needs to route back to index.html
  */
 function menuScrollImpressum(id) {
-    const elements = {
-        whyMe: ["anchor2-why-me", 750],
-        skills: ["anchor3-skills", 1050],
-        projects: ["anchor4-projects", 1600],
-        contacts: ["anchor5-contacts", 3000],
-    };
-    const routes = { whyMe: "#why-me", skills: "#skills", projects: "#projects", contacts: "#contact" }
+    const routes = { whyMe: "#why-me", skills: "#skills", projects: "#projects", contacts: "#contact-me" };
+    const anchorMap = { whyMe: 'anchor2-why-me', skills: 'anchor3-skills', projects: 'anchor4-projects', contacts: 'anchor5-contacts' };
     removeHighlight();
-    document.getElementById(elements[id][0]).classList.add("menu-bar-highlight");
-    setTimeout(() => { window.location.href = "../index.html" + routes[id]; }, 200)
+    document.getElementById(anchorMap[id])?.classList.add('menu-bar-highlight');
+    setTimeout(() => { window.location.href = "../index.html" + routes[id]; }, 200);
 }
 
 /**

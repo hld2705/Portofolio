@@ -573,7 +573,7 @@ input:-webkit-autofill:active {
     z-index: 1;
 }
 
-#why-me, #skills, #projects, #contact {
+#why-me, #skills, #projects, #contact-me {
     scroll-margin-top: 100px;
 }
 
@@ -1518,4 +1518,10 @@ textarea::placeholder {
 
 .vibrate {
     animation: vibrate 0.4s ease;
+}
+
+.contact-me-inputfields-together{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
