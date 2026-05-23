@@ -41,7 +41,6 @@ body {
     justify-content: center;
     flex-direction: column;
     gap: 1px;
-    cursor: pointer;
 }
 
 .under-logodark-text-name {

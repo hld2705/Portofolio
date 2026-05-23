@@ -5,6 +5,7 @@ function init() {
     templateRoute('join');
     const savedLang = localStorage.getItem("lang") || "en";
     setLanguage(savedLang);
+    startTypewriter()
 }
 
 /**
@@ -167,3 +168,27 @@ document.addEventListener('click', function () {
         elipseResponsiveMain.style.display = "none";
     }
 });
+
+
+
+function startTypewriter() {
+    const el = document.querySelector('.located-in');
+    const iAm = document.querySelector('.i-am');
+    if(!el && !iAm) return
+    const strings = {
+        en: { iam: 'I am', texts: ['located in Graz...', 'available remote...'] },
+        de: { iam: 'Ich', texts: ['befinde mich in Graz...', 'bin remote verfügbar...'] }
+    };
+    let index = 0, isDeleting = false, text = '';
+    function type() {
+        const lang = localStorage.getItem('lang') || 'en';
+        const current = strings[lang].texts[index];
+        iAm.textContent = strings[lang].iam;
+        text = isDeleting ? current.slice(0, text.length - 1) : current.slice(0, text.length + 1);
+        el.textContent = text;
+        if (!isDeleting && text === current) { isDeleting = true; setTimeout(type, 1800); return; }
+        if (isDeleting && text === '') { isDeleting = false; index = (index + 1) % strings[lang].texts.length; }
+        setTimeout(type, isDeleting ? 40 : 80);
+    }
+    type();
+}
