@@ -1,0 +1,245 @@
+.menu-bar {
+    height: 104px;
+    width: 100%;
+    background-color: rgba(137, 188, 217, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.menu-bar-content-limit {
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.menu-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 677px;
+}
+
+.menu-text {
+    font-family: Josefin Sans;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 26px;
+    text-align: center;
+    padding: 0 25px;
+    color: rgba(38, 46, 52, 1);
+    cursor: pointer;
+}
+
+.menu-text:hover {
+    color: #F8F5EC;
+    transition: color 0.3s ease;
+}
+
+.menu-bar-highlight {
+    background-image: url("../img/Menu-bar-clicked-elipse.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    white-space: nowrap;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F8F5EC;
+}
+
+.menu-buttons-language {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 31px;
+    width: 92px;
+}
+
+.menu-buttons-language-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.menu-buttons-language-text:hover {
+    color: #F8F5EC;
+    transition: color 0.3s ease;
+}
+
+.elipse {
+    width: 36px;
+    height: 24px;
+    background-image: url("../img/Ellipse 24.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F8F5EC;
+}
+
+.logo-dark-mob {
+    width: 48px;
+    height: 30px;
+    top: 5px;
+    left: 2px;
+    opacity: 1;
+    border-width: 4px;
+}
+
+.logodark-text-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.under-logodark-text-name {
+    font-family: Anta;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    color: rgba(248, 245, 236, 1);
+    margin: 0px;
+}
+
+.under-logodark-text-text {
+    font-family: Josefin Sans;
+    font-weight: 300;
+    font-style: Light;
+    font-size: 14px;
+    color: rgba(38, 46, 52, 1);
+    margin: 0px;
+}
+
+.burger-menu {
+    cursor: pointer;
+}
+
+.halid-logo {
+    cursor: default;
+}
+
+/* RESPONSIVE NAVBAR */
+
+.menu-bar-responsive {
+    display: none;
+}
+
+.menu-buttons-responsive {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 17px;
+}
+
+.menu-text-responsive {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 0.1;
+}
+
+.menu-buttons-language-responsive {
+    bottom: -63px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 26px;
+}
+
+.menu-eclipse-responsive {
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+}
+
+.hero-section-responsive {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.d_none {
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 950px) {
+
+    .menu-bar {
+        display: none;
+    }
+
+    .menu-bar-responsive {
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        margin-right: 15px;
+        padding-bottom: 20px;
+    }
+
+    .halid-logo {
+        height: 72px;
+        width: 58px;
+    }
+
+    .menu-eclipse-responsive {
+        width: 80%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+
+    .menu-eclipse-responsive {
+        width: 80%;
+    }
+
+    .project-names {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        gap: 0px;
+    }
+
+    .highlight {
+        background: #89BCD912;
+        height: 81px;
+        border-radius: 15px 15px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 15px 0px 15px;
+    }
+
+    .project-names-tabs {
+        font-family: Josefin Sans;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 15px;
+        color: #89BCD9;
+        cursor: pointer;
+        margin: 0px;
+        transition: 0.3s ease;
+        word-break: keep-all;
+        white-space: normal;
+    }
+}

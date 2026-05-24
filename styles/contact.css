@@ -1,0 +1,309 @@
+.contact-me {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-me-placement-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 80px 0;
+}
+
+.contact-me-description-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: justify;
+    color: #F8F5EC;
+}
+
+.contact-me-email-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.contact-me-email-div img {
+    width: 22px;
+    height: 22px;
+}
+
+.contact-me-p {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    color: #F8F5EC;
+    margin: 7px;
+    white-space: nowrap;
+}
+
+.contact-me-description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 71%;
+    gap: 80px;
+    margin-top: 20px;
+}
+
+.contact-me-icons-placement {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact-me-formular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-me-formular-first-two-fields {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.contact-me-formular-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+    color: #89BCD9;
+    margin: 0px;
+    margin-left: 17px;
+}
+
+.contact-formular-first-two-inputfields {
+    width: 415px;
+    height: 60px;
+    top: 20px;
+    border-width: 1px;
+    border-radius: 30px;
+    border: 1px solid #89BCD9;
+    background-color: #262E34;
+    margin-bottom: 15px;
+    outline: none;
+    caret-color: #FFFFFF;
+    padding-left: 20px;
+    font-family: Josefin Sans, sans-serif;
+    font-size: 16px;
+    color: #FFFFFF
+}
+
+.contact-me-formular-last-inputfield {
+    width: 911px;
+    height: 146.6px;
+    border: 1px solid #89BCD9;
+    border-radius: 30px;
+    background-color: #262E34;
+    outline: none;
+    caret-color: #FFFFFF;
+    padding: 20px;
+    box-sizing: border-box;
+    resize: none;
+    line-height: 1.5;
+    color: #FFFFFF;
+    font-family: Josefin Sans, sans-serif;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.contact-formular-first-two-inputfields:focus {
+    background-color: #313F48;
+    border: 1px solid #89BCD9;
+    transition: 0.3s ease-in;
+}
+
+.contact-me-formular-last-inputfield:focus {
+    background-color: #313F48;
+    border: 1px solid #89BCD9;
+    transition: 0.3s ease-in;
+}
+
+.contact-me-formular-privacy-policy-accept {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    width: 100%;
+    margin-top: 15px;
+    padding-bottom: 100px;
+}
+
+.contact-me-last-formular-checkbox-placement-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-me-checkbox-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 16px;
+    color: #F8F5EC;
+    line-height: 1.4;
+    margin: 0;
+    flex: 1;
+    min-width: 0;
+}
+
+.contact-link {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    background: #262E34;
+    background-color: none;
+    text-decoration: none;
+    color: #89BCD9;
+    cursor: pointer;
+}
+
+.contact-me-send-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 101px;
+    height: 48px;
+    top: 32px;
+    left: 810px;
+    opacity: 0.5;
+    border-width: 1px;
+    gap: 10px;
+    border-radius: 30px;
+    border: 1px solid #F8F5EC;
+}
+
+.contact-me-send-button-true {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 101px;
+    height: 48px;
+    top: 32px;
+    left: 810px;
+    opacity: 1.5;
+    border-width: 1px;
+    gap: 10px;
+    border-radius: 30px;
+    border: 1px solid #89BCD9;
+    cursor: pointer;
+}
+
+.contact-me-send-button-true:hover {
+    background-color: #464E53;
+}
+
+.contact-me-send-button-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    color: #F8F5EC;
+}
+
+.contact-me-send-button-text-true {
+    color: #89BCD9;
+}
+
+.contact-me-formular-privacy-policy-accept-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex: 1;
+    min-width: 0;
+}
+
+
+.contact-me-inputfields-together{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 320px) and (max-width: 950px){
+        .contact-me-description {
+        flex-direction: column-reverse;
+        gap: 15px;
+        max-width: 100%;
+    }
+
+    .contact-me-description-text {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    .contact-me-icons-placement {
+        padding-left: 40px;
+    }
+
+    .contact-me-formular-first-two-fields {
+        flex-direction: column;
+        gap: 0px;
+        width: 100%;
+    }
+
+    .contact-me-last-formular-checkbox-placement-div {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .contact-formular-first-two-inputfields,
+    .contact-me-formular-last-inputfield {
+        width: 100%;
+        box-sizing: border-box;
+    }
+        .contact-me-formular {
+        width: 100%;
+        max-width: 94%;
+        padding-bottom: 50px;
+    }
+
+    .contact-me-formular-privacy-policy-accept {
+        padding-bottom: 50px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 500px) {
+    
+    #contact-me{
+        padding-left: 17px;
+    }
+
+    .contact-me-formular-privacy-policy-accept {
+        gap: 35px;
+    }
+    .contact-me-formular-privacy-policy-accept {
+        max-width: 95%;
+        padding-left: 10px;
+        flex-direction: column;
+    }
+
+    .contact-me-checkbox-text {
+        word-break: keep-all;
+        white-space: normal;
+    }
+
+    .contact-me-email-div {
+        gap: 0px;
+    }
+
+    .contact-me-p {
+        font-size: 17px;
+    }
+
+}

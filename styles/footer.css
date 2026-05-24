@@ -1,0 +1,125 @@
+
+footer {
+    background-color: #89BCD9;
+    width: 100%;
+    height: 214px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.footer-placement-div {
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-text {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 18px;
+    color: #262E34;
+    text-decoration: none;
+}
+
+.footer-social-media-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.footer-social-media-div .social-icon {
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 50%;
+    color: #464E53;
+}
+
+
+.footer-social-media-div .social-icon:hover {
+    background-color: #F8F5EC;
+}
+
+
+.footer-social-media-div .social-icon.email circle,
+.footer-social-media-div .social-icon.email rect,
+.footer-social-media-div .social-icon.email path {
+    stroke: #464E53;
+}
+
+
+.footer-social-media-div .social-icon.email:hover circle,
+.footer-social-media-div .social-icon.email:hover rect,
+.footer-social-media-div .social-icon.email:hover path {
+    stroke: #262E34;
+}
+
+
+.footer-social-media-div .social-icon.github path {
+    fill: #464E53;
+    stroke: none;
+}
+
+
+.footer-social-media-div .social-icon.github:hover path {
+    fill: #262E34;
+}
+
+
+.footer-social-media-div .social-icon.linkedin path {
+    stroke: #464E53;
+    fill: none;
+}
+
+
+.footer-social-media-div .social-icon.linkedin:hover path {
+    stroke: #262E34;
+}
+
+.footer-link {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-size: 18px;
+    color: #262E34;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: #F8F5EC;
+}
+
+.responsive-footer {
+    display: none;
+}
+
+@media (min-width: 320px) and (max-width: 950px) {
+
+   footer {
+        display: none;
+    }
+
+    .responsive-footer {
+        display: flex;
+        background-color: #89BCD9;
+        width: 100%;
+        height: 214px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: auto;
+    }
+
+    .footer-links-name {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+}

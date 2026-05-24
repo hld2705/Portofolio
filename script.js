@@ -5,7 +5,28 @@ function init() {
     templateRoute('join');
     const savedLang = localStorage.getItem("lang") || "en";
     setLanguage(savedLang);
-    startTypewriter()
+    startTypewriter();
+    initScrollAnimations();
+}
+
+/**
+ * Function for scroll animations
+ */
+function initScrollAnimations() {
+    const items = document.querySelectorAll('.why-me, .my-skills, .my-projects, .contact-me-placement-div');
+
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    items.forEach(function(item) {
+        observer.observe(item);
+    });
 }
 
 /**
@@ -30,7 +51,6 @@ function templateRoute(projectId) {
     document.getElementById(projectId || "join")?.classList.add("highlight");
     container.innerHTML = (isMobile ? mobile : desktop)();
 }
-
 
 window.addEventListener('resize', function () {
     const currentProject = document.querySelector('.project-names-tabs.highlight')?.id;
@@ -81,7 +101,6 @@ function menuScroll(id) {
         contacts: 'contact-me',
         letstalk: 'contact'
     };
-
     removeHighlight();
     const anchorMap = { whyMe: 'anchor2-why-me', skills: 'anchor3-skills', projects: 'anchor4-projects', contacts: 'anchor5-contacts', letstalk: 'anchor5-contacts' };
     document.getElementById(anchorMap[id])?.classList.add('menu-bar-highlight');
@@ -114,13 +133,8 @@ function responsiveMenu() {
     let elipseResponsive = document.getElementById("hero-section-responsive");
     let profilePicture = document.getElementById("menu-profile-picture");
 
-    if (elipseResponsive.style.display === "flex") {
-        profilePicture.style.display = "flex";
-        elipseResponsive.style.display = "none";
-    } else {
-        profilePicture.style.display = "none";
-        elipseResponsive.style.display = "flex";
-    }
+    elipseResponsive.classList.toggle("d_none");
+    profilePicture.classList.toggle("d_none");
 }
 
 /**
@@ -170,7 +184,10 @@ document.addEventListener('click', function () {
 });
 
 
-
+/**
+ * 
+ * @returns Typewritter effect
+ */
 function startTypewriter() {
     const el = document.querySelector('.located-in');
     const iAm = document.querySelector('.i-am');

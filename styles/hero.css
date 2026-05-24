@@ -1,0 +1,119 @@
+.hero-section {
+    opacity: 1;
+    min-height: calc(100vh - 104px);
+    top: 41px;
+    left: 114px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.hero-section-content-limit {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 1440px;
+    height: calc(100vh - 104px);
+}
+
+.hero-section-text-h1 {
+    font-family: Anta;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 88px;
+    text-align: center;
+    color: rgba(248, 245, 236, 1);
+    margin: 0px;
+}
+
+.hero-section-text-p {
+    font-family: Josefin Sans;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    color: rgba(248, 245, 236, 1);
+    margin: 0px;
+}
+
+.hero-section-logowhite {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero-section-logowhite-center {
+    position: relative;
+    left: -11%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-section-logo-text-placement-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 122px;
+}
+
+.social-media-hero-icon {
+    cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 950px) {
+
+    .hero-section {
+        flex-direction: column;
+        height: auto;
+        top: auto;
+        left: auto;
+        min-height: auto;
+    }
+
+    .hero-section-logo-text-placement-div {
+        display: none;
+    }
+
+    .hero-section-logowhite-center {
+        position: absolute;
+        left: 14%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .hero-section-content-limit {
+        height: auto;
+    }
+
+    .hero-section-responsive {
+        display: none;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1400px){
+    
+    .hero-section-text-p {
+        font-size: 22px;
+    }
+
+    .hero-section-text-h1 {
+        font-size: 52px;
+    }
+
+}
