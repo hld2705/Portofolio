@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./styles/projects.css">
     <link rel="stylesheet" href="./styles/hero.css">
     <link rel="stylesheet" href="./styles/navbar.css">
-    
+
     <script src="./validation/validation.js" defer></script>
     <script src="./translations/translate.js"></script>
     <script src="./templates/my-project-template.js" defer></script>
@@ -41,17 +41,17 @@
 
     <div class="hero-section" id="hero-section">
         <div class="hero-section-content-limit">
-            <div class="hero-section-responsive d_none" id="hero-section-responsive" >
+            <div class="hero-section-responsive d_none" id="hero-section-responsive">
                 <img class="menu-eclipse-responsive" src="./img/Menu-responsive-elipse.svg">
                 <div class="menu-buttons-responsive">
-                    <p id="anchor2-why-me-responsive" class="menu-text-responsive" onclick="menuScroll('whyMe')">Why me
-                    </p>
-                    <p id="anchor3-skills-responsive" class="menu-text-responsive" onclick="menuScroll('skills')">Skills
-                    </p>
-                    <p id="anchor4-projects-responsive" class="menu-text-responsive" onclick="menuScroll('projects')">
-                        Projects</p>
-                    <p id="anchor5-contacts-responsive" class="menu-text-responsive" onclick="menuScroll('contacts')">
-                        Contact</p>
+                    <anchor id="anchor2-why-me-responsive" class="menu-text-responsive" onclick="menuScroll('whyMe')">Why me
+                    </anchor>
+                    <anchor id="anchor3-skills-responsive" class="menu-text-responsive" onclick="menuScroll('skills')">Skills
+                    </anchor>
+                    <anchor id="anchor4-projects-responsive" class="menu-text-responsive" onclick="menuScroll('projects')">
+                        Projects</anchor>
+                    <anchor id="anchor5-contacts-responsive" class="menu-text-responsive" onclick="menuScroll('contacts')">
+                        Contact</anchor>
                     <div class="menu-buttons-language-responsive">
                         <p class="menu-buttons-language-text" id="deresponsive" onclick="setLanguage('de')">DE</p>
                         <p class="menu-buttons-language-text" id="enresponsive" onclick="setLanguage('en')">EN</p>
@@ -160,13 +160,13 @@
                 <p class="under-logodark-text-text" data-i18n="developer">developer</p>
             </div>
             <div class="menu-buttons">
-                <p id="anchor2-why-me" class="menu-text" data-i18n="whyMe" onclick="menuScroll('whyMe')">Why me</p>
-                <p id="anchor3-skills" class="menu-text" data-i18n="skills" onclick="menuScroll('skills')">Skills</p>
-                <p id="anchor4-projects" class="menu-text" data-i18n="projects" onclick="menuScroll('projects')">
+                <anchor id="anchor2-why-me" class="menu-text" data-i18n="whyMe" onclick="menuScroll('whyMe')">Why me</anchor>
+                <anchor id="anchor3-skills" class="menu-text" data-i18n="skills" onclick="menuScroll('skills')">Skills</anchor>
+                <anchor id="anchor4-projects" class="menu-text" data-i18n="projects" onclick="menuScroll('projects')">
                     Projects
-                </p>
-                <p id="anchor5-contacts" class="menu-text" data-i18n="contact" onclick="menuScroll('contacts')">Contact
-                </p>
+                </anchor>
+                <anchor id="anchor5-contacts" class="menu-text" data-i18n="contact" onclick="menuScroll('contacts')">Contact
+                </anchor>
             </div>
             <div class="menu-buttons-language">
                 <p class="menu-buttons-language-text" id="de" onclick="setLanguage('de')">DE</p>
@@ -202,14 +202,38 @@
         <p class="why-me-p" id="my-skills" data-i18n="mySkills">My Skills</p>
         <div class="skills-currently-learning-positioning">
             <div class="skills-icons">
-                <img class="skill-icon" src="./img/Skill HTML.svg">
-                <img class="skill-icon" src="./img/Skill CSS.svg">
-                <img class="skill-icon" src="./img/Skill JavaScript.svg">
-                <img class="skill-icon" src="./img/Skill Git.svg">
-                <img class="skill-icon" src="./img/Skill RESTApi.svg">
-                <img class="skill-icon" src="./img/Skill Scrum.svg">
-                <img class="skill-icon" src="./img/Skill Material Design.svg">
-                <img class="skill-icon" src="./img/Skill Supabase.svg">
+                <div class="skill-icon-text-positioning">
+                    <img class="skill-icon" src="./img/Skill HTML.svg">
+                    <p class="skill-icon-text-currently">HTML</p>
+                </div>
+                <div class="skill-icon-text-positioning">
+                    <img class="skill-icon" src="./img/Skill CSS.svg">
+                    <p class="skill-icon-text-currently">CSS</p>
+                </div>
+                <div class="skill-icon-text-positioning">
+                    <img class="skill-icon" src="./img/Skill JavaScript.svg">
+                    <p class="skill-icon-text-currently">JavaScript</p>
+                </div>
+                <div class="skill-icon-text-positioning">
+                    <img class="skill-icon" src="./img/Skill Git.svg">
+                    <p class="skill-icon-text-currently">Git</p>
+                </div>
+                <div class="skill-icon-text-positioning">
+                    <img class="skill-icon" src="./img/Skill RESTApi.svg">
+                    <p class="skill-icon-text-currently">RESTApi</p>
+                </div>
+                <div class="skill-icon-text-positioning">
+                    <img class="skill-icon" src="./img/Skill Scrum.svg">
+                    <p class="skill-icon-text-currently">Scrum</p>
+                </div>
+                <div class="skill-icon-text-positioning">
+                    <img class="skill-icon" src="./img/Skill Material Design.svg">
+                    <p class="skill-icon-text-currently">Material Design</p>
+                </div>
+                <div class="skill-icon-text-positioning">
+                    <img class="skill-icon" src="./img/Skill Supabase.svg">
+                    <p class="skill-icon-text-currently">Supabase</p>
+                </div>
             </div>
             <div class="currently-learning-skills-icon">
                 <div class="my-skills-default-elipse">
@@ -238,7 +262,7 @@
             </div>
         </div>
     </div>
-    </div>
+
     <div class="my-projects" id="projects">
         <p class="why-me-p" id="my-projects" data-i18n="myProjects">My Projects</p>
         <div class="project-names">
@@ -251,7 +275,7 @@
         </div>
     </div>
 
-    <div style="padding-top: 40px; padding-bottom: 40px;">
+    <div class="need-a-team-player-spacing">
         <p class="need-a-team-player-headline" data-i18n="NeedATeamplayer">Need a teamplayer? Here's what my
             colleagues say about me</p>
     </div>

@@ -22,7 +22,7 @@ function initScrollAnimations() {
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.70 });
 
     items.forEach(function(item) {
         observer.observe(item);

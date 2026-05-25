@@ -1,4 +1,3 @@
-
 html {
     background-color: rgba(38, 46, 52, 1);
     scroll-behavior: smooth;
@@ -181,10 +180,10 @@ input:-webkit-autofill:active {
     align-items: center;
     justify-content: center;
     width: 100%;
-   
+
 }
 
-.why-me-content-limit{
+.why-me-content-limit {
     max-width: 1440px;
     margin: 0 auto;
     box-sizing: border-box;
@@ -213,6 +212,7 @@ input:-webkit-autofill:active {
     gap: 10px;
     margin-left: 20px;
     white-space: nowrap;
+    min-width: 445px;
 }
 
 .why-me-details-standpoint-text-div {
@@ -298,19 +298,25 @@ input:-webkit-autofill:active {
     font-weight: 400;
     font-style: Regular;
     font-size: 18px;
-    leading-trim: NONE;
-    line-height: 120%;
-    letter-spacing: 0%;
     color: #89BCD9;
     margin: 0px;
 }
 
-.skill-icon-text-positioning{
+.skill-icon-text-positioning {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 4px;
+    gap: 10px;
+}
+
+.need-a-team-player-spacing{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.projects-text-direction{
+    text-decoration: none;
 }
 
 .my-skills-default-elipse {
@@ -328,7 +334,10 @@ input:-webkit-autofill:active {
     z-index: 1;
 }
 
-#why-me, #skills, #projects, #contact-me {
+#why-me,
+#skills,
+#projects,
+#contact-me {
     scroll-margin-top: 100px;
 }
 
@@ -624,7 +633,9 @@ textarea::placeholder {
     margin-left: 17px;
 }
 
-#errorname, #erroremail, #errormessage {
+#errorname,
+#erroremail,
+#errormessage {
     min-height: 24px;
     margin-bottom: 5px;
 }
@@ -680,11 +691,27 @@ textarea::placeholder {
 }
 
 @keyframes vibrate {
-    0%, 100% { transform: translateX(0); }
-    20% { transform: translateX(-5px); }
-    40% { transform: translateX(5px); }
-    60% { transform: translateX(-5px); }
-    80% { transform: translateX(5px); }
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-5px);
+    }
+
+    40% {
+        transform: translateX(5px);
+    }
+
+    60% {
+        transform: translateX(-5px);
+    }
+
+    80% {
+        transform: translateX(5px);
+    }
 }
 
 .vibrate {
@@ -713,25 +740,31 @@ textarea::placeholder {
     display: none;
 }
 
-.d_none{
+.d_none {
     display: none;
 }
 
-.d_flex{
+.d_flex {
     display: flex;
 }
 
-.d_block{
+.d_block {
     display: block;
 }
 
-.why-me, .my-skills, .my-projects, .contact-me-placement-div {
+.why-me,
+.my-skills,
+.my-projects,
+.contact-me-placement-div {
     opacity: 0;
     transform: translateY(40px);
     transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
-.why-me.visible, .my-skills.visible, .my-projects.visible, .contact-me-placement-div.visible {
+.why-me.visible,
+.my-skills.visible,
+.my-projects.visible,
+.contact-me-placement-div.visible {
     opacity: 1;
     transform: translateY(0);
 }
@@ -745,7 +778,9 @@ textarea::placeholder {
         width: 100%;
     }
 
-
+    .why-me-details-standpoint-text-icons {
+        min-width: 245px;
+    }
 
     .profile-elipse-hover {
         width: 80% !important;
@@ -928,7 +963,7 @@ textarea::placeholder {
 }
 
 @media (min-width: 950px) and (max-width: 1400px) {
- 
+
     .need-a-teamplayer {
         display: flex;
         flex-direction: column;
@@ -941,7 +976,7 @@ textarea::placeholder {
 
 @media (min-width: 320px) and (max-width: 500px) {
 
-    .i-am{
+    .i-am {
         font-size: 21px;
     }
 

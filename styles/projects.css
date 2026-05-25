@@ -239,6 +239,10 @@
     max-width: 1238px !important;
 }
 
+.project-flex-width{
+    display: flex;
+    max-width: 1440px;
+}
 
 @media (min-width: 320px) and (max-width: 950px) {
 

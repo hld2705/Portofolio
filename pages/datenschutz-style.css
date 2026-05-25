@@ -19,8 +19,11 @@
     color:black;
 }
 
+.datenschutz-header-text{
+    text-align: center;
+}
+
 .datenschutz-positioning-height{
-    
     display: flex;
     align-items: center;
     justify-content: center;
