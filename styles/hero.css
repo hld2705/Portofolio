@@ -104,6 +104,9 @@
     .hero-section-responsive {
         display: none;
     }
+     .hero-section-text-h1 {
+        font-size: 44px;
+    }
 }
 
 @media (min-width: 950px) and (max-width: 1400px){

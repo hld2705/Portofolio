@@ -60,7 +60,7 @@ function validateMessage() {
     message.classList.remove("invalid-input");
     if (message.value.trim() === "") {
         message.classList.add("invalid-input");
-        message.placeholder = "*Please enter your name!";
+        message.placeholder = "*Please enter your message!";
         return false;
     }
     if (message.value.length < 5) {

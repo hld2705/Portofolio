@@ -14,7 +14,6 @@ function init() {
  */
 function initScrollAnimations() {
     const items = document.querySelectorAll('.why-me, .my-skills, .my-projects, .contact-me-placement-div');
-
     const observer = new IntersectionObserver(function(entries) {
         entries.forEach(function(entry) {
             if (entry.isIntersecting) {
@@ -22,8 +21,7 @@ function initScrollAnimations() {
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.70 });
-
+    }, { threshold: 0.10 });
     items.forEach(function(item) {
         observer.observe(item);
     });

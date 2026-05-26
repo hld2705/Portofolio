@@ -142,7 +142,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    top: 17px;
+    top: 34px;
+    gap: 52px;
 }
 
 .menu-text-responsive {
@@ -155,7 +156,7 @@
 }
 
 .menu-buttons-language-responsive {
-    bottom: -63px;
+    bottom: -78px;
     position: absolute;
     display: flex;
     align-items: center;

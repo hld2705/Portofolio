@@ -842,7 +842,7 @@ textarea::placeholder {
     }
 
     .why-me-p {
-        margin-top: 10px;
+        margin-top: 32px;
     }
 
     .need-a-teamplayer {
@@ -972,6 +972,34 @@ textarea::placeholder {
         overflow-x: auto;
     }
 
+    .profile-picture-div {
+    width: 409px;
+    height: 218px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .profile-elipse-hover {
+    height: 463.999989px;
+    width: 456px;
+}
+    .profile-elipse-hover:hover{
+     height: 463.999989px;
+     width: 456px;
+    }
+
+    .profile-picture-img{
+        height: 625px;
+    }
+
+    .arrow-down-div{
+        height: 221px;
+    }
+
+    #why-me, #skills, #projects, #contact-me {
+    margin-top: 30px;
+}
 }
 
 @media (min-width: 320px) and (max-width: 500px) {

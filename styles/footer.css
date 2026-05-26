@@ -16,6 +16,7 @@ footer {
     box-sizing: border-box;
     align-items: center;
     justify-content: space-around;
+    gap: 205px;
 }
 
 .footer-text {
@@ -121,5 +122,11 @@ footer {
         align-items: center;
         justify-content: center;
         gap: 20px;
+    }
+}
+
+@media (min-width: 1024px){
+    .footer-placement-div{
+        gap: 210px;
     }
 }
