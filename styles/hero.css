@@ -31,7 +31,7 @@
     font-family: Josefin Sans;
     font-weight: 400;
     font-style: Regular;
-    font-size: 40px;
+    font-size: 37px;
     line-height: 120%;
     text-align: center;
     color: rgba(248, 245, 236, 1);
@@ -71,6 +71,56 @@
 
 .social-media-hero-icon {
     cursor: pointer;
+}
+
+@media (max-width: 950px) {
+
+    .hero-mobile-stack {
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero-section {
+        min-height: auto;
+        align-items: center;
+    }
+
+    .hero-section-content-limit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: auto;
+}
+
+    .hero-section-logo-text-placement-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .arrow-down-div-responsive {
+        height: auto;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .profile-elipse-hover {
+        width: 80%;
+        max-width: 350px;
+        height: auto;
+    }
+}
+
+@media(max-width:414px) and (min-width: 320px) {
+    .hero-mobile-stack {
+        min-height: 87dvh;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 950px) {

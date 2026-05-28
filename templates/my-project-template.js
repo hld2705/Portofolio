@@ -56,7 +56,7 @@ function joinTemplate() {
                 <img src="./img/Screenshot join.svg">
                 <div class="projects-pictures-buttons">
                 <div class="projects-live-test-button"><a class="projects-text-direction" href="https://join.halid-crnkic.at/" target="_blank"><p class="projects-live-test-button-text">Live Test</p></a></div>
-                <div class="projects-github-button"><a class="projects-text-direction" href="https://github.com/hld2705/Join" target="_blank"><p class="projects-github-button-text">GitHub</p></a></div>
+                <div class="projects-github-button"><a class="projects-text-direction projects-github-button-text" href="https://github.com/hld2705/Join" target="_blank"><p class="projects-github-button-text">GitHub</p></a></div>
                 </div>
                 </div>
             </div>
@@ -250,7 +250,7 @@ function joinTemplateResponsive() {
                         </div>
                         <div class="projects-pictures-buttons">
                             <div class="projects-live-test-button"><a class="projects-text-direction" href="https://join.halid-crnkic.at/" target="_blank"><p class="projects-live-test-button-text">Live Test</p></a></div>
-                            <div class="projects-github-button"><a class=projects-text-direction" href="https://github.com/hld2705/Join" target="_blank"><p class="projects-github-button-text">GitHub</p></a></div>
+                            <div class="projects-github-button"><a class="projects-text-direction" href="https://github.com/hld2705/Join" target="_blank"><p class="projects-github-button-text">GitHub</p></a></div>
                         </div> 
                     </div>
                 </div>

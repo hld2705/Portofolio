@@ -206,6 +206,7 @@ body {
 .halid-logo {
     height: 72px;
     width: 58px;
+    cursor: pointer;
 }
 
 .arrow-back {
@@ -229,7 +230,7 @@ body {
 
 .menu-eclipse-responsive {
     position: relative;
-    width: 350px;
+    width: 285px;
     height: 350px;
     background-image: url("../img/Menu-responsive-elipse.svg");
     background-repeat: no-repeat;
@@ -243,7 +244,7 @@ body {
 
 .menu-buttons-responsive {
     position: absolute;
-    top: 45%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -281,6 +282,13 @@ body {
     margin: 14px;
 }
 
+.impressum-link-logo{
+    text-decoration: none;
+}
+
+    #why-me, #skills, #projects, #contact-me {
+    scroll-margin-top: 100px;
+}
 
 @media (min-width: 540px) and (max-width: 750px) {
     .menu-buttons {
@@ -329,7 +337,7 @@ body {
 @media (min-width: 320px) and (max-width: 540px) {
 
     #why-me, #skills, #projects, #contact-me {
-    scroll-margin-top: 0px;
+    scroll-margin-top: 100px;
 }
 
     .menu-bar {

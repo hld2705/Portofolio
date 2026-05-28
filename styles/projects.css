@@ -9,6 +9,10 @@
     color: #F8F5EC;
 }
 
+.projects-text-direction{
+    text-decoration: none;
+}
+
 .project-details-placement-div {
     display: flex;
     flex-direction: row;
@@ -169,15 +173,12 @@
     font-style: Regular;
     font-size: 18px;
     color: #89BCD9;
+    text-decoration: none;
 }
 
 .pokeDex-screenshot {
     width: 320px;
     border-radius: 30px;
-}
-
-#why-me, #skills, #projects, #contact-me {
-    scroll-margin-top: 100px;
 }
 
 .project-details-title-responsive {
@@ -250,14 +251,6 @@
         padding-bottom: 20px;
     }
 
-   #why-me,
-    #skills,
-    #projects,
-    #contact-me {
-        scroll-margin-top: 0px;
-    }
-
-    
     .projects-pictures-buttons {
         flex-direction: column;
         width: 100%;
@@ -490,7 +483,7 @@
         font-family: Josefin Sans;
         font-weight: 500;
         font-style: Medium;
-        font-size: 15px;
+        font-size: 17px;
         color: #89BCD9;
         cursor: pointer;
         margin: 0px;

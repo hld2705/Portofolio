@@ -7,6 +7,13 @@ function init() {
     setLanguage(savedLang);
     startTypewriter();
     initScrollAnimations();
+
+    if (window.location.hash) {
+    setTimeout(() => {
+        const el = document.querySelector(window.location.hash);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }, 300);
+}
 }
 
 /**

@@ -12,10 +12,9 @@ let messageError = document.getElementById("errormessage");
  */
 function validateName() {
     name.classList.remove("invalid-input");
-
     if (name.value.trim() === "") {
         name.classList.add("invalid-input");
-        name.placeholder = "*Please enter your name!"
+        name.placeholder = translations[currentLang]?.nameRequired || "*Please enter your name!";
         return false;
     }
     if (name.value.length < 3) {
@@ -38,7 +37,7 @@ function validateEmail() {
     email.classList.remove("invalid-input");
     if (email.value.trim() === "") {
         email.classList.add("invalid-input");
-        email.placeholder = "*Please enter your email!";
+        email.placeholder = translations[currentLang]?.emailRequired || "*Please enter your email!";
         return false;
     }
     if (email.value.length < 3) {
@@ -60,7 +59,7 @@ function validateMessage() {
     message.classList.remove("invalid-input");
     if (message.value.trim() === "") {
         message.classList.add("invalid-input");
-        message.placeholder = "*Please enter your message!";
+        message.placeholder = translations[currentLang]?.messageRequired || "*Please enter your message!";
         return false;
     }
     if (message.value.length < 5) {

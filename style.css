@@ -601,6 +601,13 @@ body::-webkit-scrollbar-thumb {
     height: 30px;
 }
 
+.check-box-red:hover {
+    background-image: url("./img/Check box red.svg");
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+}
+
 .check-box-checked {
     background-image: url("./img/Check box checked.svg");
     background-repeat: no-repeat;
@@ -608,6 +615,10 @@ body::-webkit-scrollbar-thumb {
     height: 30px;
 }
 
+.check-box-checked:hover {
+    background-image: url("./img/Check box checked.svg");
+    background-repeat: no-repeat;
+}
 
 .invalid-input {
     border: 2px solid #E44C36;
@@ -816,6 +827,7 @@ textarea::placeholder {
         display: flex;
         flex-direction: column;
         padding-top: 30px;
+        gap: 20px;
     }
 
 
@@ -866,7 +878,7 @@ textarea::placeholder {
     #skills,
     #projects,
     #contact-me {
-        scroll-margin-top: 0px;
+        scroll-margin-top: 100px;
     }
 
     .arrow-down-img-responsive {
@@ -1000,6 +1012,13 @@ textarea::placeholder {
     #why-me, #skills, #projects, #contact-me {
     margin-top: 30px;
 }
+
+}
+
+@media(min-width:1200px){
+    .located-in{
+        min-width: 357px;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 500px) {
@@ -1044,6 +1063,7 @@ textarea::placeholder {
 
     .why-me-details-standpoint-text-div {
         padding-right: 0px;
+      
     }
 
     .located-in {
