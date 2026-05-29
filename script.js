@@ -13,7 +13,7 @@ function init() {
         const el = document.querySelector(window.location.hash);
         if (el) {
             if (window.location.hash === '#contact-me') {
-                el.style.scrollMarginTop = "25px";
+                el.style.scrollMarginTop = "65px";
             }
             el.scrollIntoView({ behavior: 'smooth' });
         }
@@ -84,8 +84,8 @@ async function arrowScrollFooter() {
     arrowDown.classList.add("arrow-down-img-clicked");
     await delay(200);
     window.scrollTo(0, 800);
-    if(window.innerWidth<900){
-        window.scrollTo(0, 990);
+    if(window.innerWidth < 900){
+        window.scrollTo(0, 900);
     }
     await delay(500);
     arrowDown.classList.remove("arrow-down-img-clicked");
