@@ -336,9 +336,12 @@ input:-webkit-autofill:active {
 
 #why-me,
 #skills,
-#projects,
-#contact-me {
+#projects{
     scroll-margin-top: 100px;
+}
+
+#contact-me {
+    scroll-margin-top: 150px;
 }
 
 .my-skills-default-elipse::after {
@@ -874,13 +877,6 @@ textarea::placeholder {
         margin-top: 10px;
     }
 
-    #why-me,
-    #skills,
-    #projects,
-    #contact-me {
-        scroll-margin-top: 100px;
-    }
-
     .arrow-down-img-responsive {
         display: block;
         cursor: pointer;
@@ -972,6 +968,17 @@ textarea::placeholder {
         font-size: 30px;
     }
 
+    #why-me,
+    #skills{
+        scroll-margin-top: 2px;
+    }
+
+    #projects{
+        scroll-margin-top: 0px;
+    }
+    #contact-me{
+        scroll-margin-top: 25px;
+    }
 }
 
 @media (min-width: 950px) and (max-width: 1400px) {

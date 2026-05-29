@@ -11,7 +11,12 @@ function init() {
     if (window.location.hash) {
     setTimeout(() => {
         const el = document.querySelector(window.location.hash);
-        if (el) el.scrollIntoView({ behavior: 'smooth' });
+        if (el) {
+            if (window.location.hash === '#contact-me') {
+                el.style.scrollMarginTop = "25px";
+            }
+            el.scrollIntoView({ behavior: 'smooth' });
+        }
     }, 300);
 }
 }
@@ -78,7 +83,10 @@ async function arrowScrollFooter() {
     let arrowDown = document.getElementById("arrowdown");
     arrowDown.classList.add("arrow-down-img-clicked");
     await delay(200);
-    window.scrollTo(0, 750);
+    window.scrollTo(0, 800);
+    if(window.innerWidth<900){
+        window.scrollTo(0, 990);
+    }
     await delay(500);
     arrowDown.classList.remove("arrow-down-img-clicked");
 }
@@ -128,7 +136,7 @@ function menuScrollImpressum(id) {
     const anchorMap = { whyMe: 'anchor2-why-me', skills: 'anchor3-skills', projects: 'anchor4-projects', contacts: 'anchor5-contacts' };
     removeHighlight();
     document.getElementById(anchorMap[id])?.classList.add('menu-bar-highlight');
-    setTimeout(() => { window.location.href = "../index.html" + routes[id]; }, 200);
+    setTimeout(() => { window.location.href = "../index.html" + routes[id]; }, 400);
 }
 
 /**

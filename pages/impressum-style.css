@@ -336,10 +336,13 @@ body {
 
 @media (min-width: 320px) and (max-width: 540px) {
 
-    #why-me, #skills, #projects, #contact-me {
+    #why-me, #skills, #projects{
     scroll-margin-top: 100px;
 }
 
+    #contact-me{
+        scroll-margin-top: 0px;
+    }
     .menu-bar {
         display: none;
     }
@@ -427,9 +430,13 @@ body {
 
 @media(min-width: 540px) and (max-width: 750px) {
 
-    #why-me, #skills, #projects, #contact-me {
-    scroll-margin-top: 0px;
+   #why-me, #skills, #projects{
+    scroll-margin-top: 100px;
 }
+
+    #contact-me{
+        scroll-margin-top: 0px;
+    }
 
     .menu-text {
         padding: 0px 9px;
